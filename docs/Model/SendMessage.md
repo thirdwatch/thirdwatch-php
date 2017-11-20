@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **recipientUserId** | **string** | _userID of the receiving user by default Store. | [optional] 
 **subject** | **string** | The subject of the message. | [optional] 
 **content** | **string** | The text content of the message. | [optional] 
-**customInfo** | [**\ai.thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
+**customInfo** | [**\ai\thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "ai.thirdwatch\\" : "thirdwatch_api/" }
+        "psr-4": { "ai\\thirdwatch\\" : "thirdwatch_api/" }
     },
     "autoload-dev": {
-        "psr-4": { "ai.thirdwatch\\" : "test/" }
+        "psr-4": { "ai\\thirdwatch\\" : "test/" }
     }
 }

@@ -18,12 +18,12 @@ Name | Type | Description | Notes
 **isGift** | **bool** | Is user chosen gift pack. | [optional] 
 **isReturn** | **bool** | Is this return order. | [optional] 
 **isFirstTimeBuyer** | **bool** | Is user first time buyer. | [optional] 
-**billingAddress** | [**\ai.thirdwatch\Model\BillingAddress**](BillingAddress.md) |  | [optional] 
-**shippingAddress** | [**\ai.thirdwatch\Model\ShippingAddress**](ShippingAddress.md) |  | [optional] 
-**paymentMethods** | [**\ai.thirdwatch\Model\PaymentMethod[]**](PaymentMethod.md) | The payment information associated with this order. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc. | [optional] 
-**promotions** | [**\ai.thirdwatch\Model\Promotion[]**](Promotion.md) | The list of promotions that apply to this order. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event. | [optional] 
-**items** | [**\ai.thirdwatch\Model\Item[]**](Item.md) | The list of items ordered. Represented as a JSON array of item | [optional] 
-**customInfo** | [**\ai.thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
+**billingAddress** | [**\ai\thirdwatch\Model\BillingAddress**](BillingAddress.md) |  | [optional] 
+**shippingAddress** | [**\ai\thirdwatch\Model\ShippingAddress**](ShippingAddress.md) |  | [optional] 
+**paymentMethods** | [**\ai\thirdwatch\Model\PaymentMethod[]**](PaymentMethod.md) | The payment information associated with this order. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc. | [optional] 
+**promotions** | [**\ai\thirdwatch\Model\Promotion[]**](Promotion.md) | The list of promotions that apply to this order. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event. | [optional] 
+**items** | [**\ai\thirdwatch\Model\Item[]**](Item.md) | The list of items ordered. Represented as a JSON array of item | [optional] 
+**customInfo** | [**\ai\thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

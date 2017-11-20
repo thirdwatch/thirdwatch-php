@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * AddToCart Class Doc Comment
  *
  * @category    Class
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -58,8 +58,8 @@ class AddToCart implements ArrayAccess
         'sessionId' => 'string',
         'deviceIp' => 'string',
         'originTimestamp' => 'string',
-        'item' => '\ai.thirdwatch\Model\Item',
-        'customInfo' => '\ai.thirdwatch\Model\CustomInfo'
+        'item' => '\ai\thirdwatch\Model\Item',
+        'customInfo' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -276,7 +276,7 @@ class AddToCart implements ArrayAccess
 
     /**
      * Gets item
-     * @return \ai.thirdwatch\Model\Item
+     * @return \ai\thirdwatch\Model\Item
      */
     public function getItem()
     {
@@ -285,7 +285,7 @@ class AddToCart implements ArrayAccess
 
     /**
      * Sets item
-     * @param \ai.thirdwatch\Model\Item $item
+     * @param \ai\thirdwatch\Model\Item $item
      * @return $this
      */
     public function setItem($item)
@@ -297,7 +297,7 @@ class AddToCart implements ArrayAccess
 
     /**
      * Gets customInfo
-     * @return \ai.thirdwatch\Model\CustomInfo
+     * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
@@ -306,7 +306,7 @@ class AddToCart implements ArrayAccess
 
     /**
      * Sets customInfo
-     * @param \ai.thirdwatch\Model\CustomInfo $customInfo
+     * @param \ai\thirdwatch\Model\CustomInfo $customInfo
      * @return $this
      */
     public function setCustomInfo($customInfo)
@@ -367,10 +367,10 @@ class AddToCart implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * UpdateAccount Class Doc Comment
  *
  * @category    Class
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -66,10 +66,10 @@ class UpdateAccount implements ArrayAccess
         'gender' => 'string',
         'referralCode' => 'string',
         'referrerUserId' => 'string',
-        'billingAddress' => '\ai.thirdwatch\Model\BillingAddress',
-        'shippingAddress' => '\ai.thirdwatch\Model\ShippingAddress',
-        'paymentMethods' => '\ai.thirdwatch\Model\PaymentMethod[]',
-        'promotions' => '\ai.thirdwatch\Model\Promotion[]',
+        'billingAddress' => '\ai\thirdwatch\Model\BillingAddress',
+        'shippingAddress' => '\ai\thirdwatch\Model\ShippingAddress',
+        'paymentMethods' => '\ai\thirdwatch\Model\PaymentMethod[]',
+        'promotions' => '\ai\thirdwatch\Model\Promotion[]',
         'socialSignOnType' => 'string',
         'emailConfirmedStatus' => 'string',
         'phoneConfirmedStatus' => 'string',
@@ -78,7 +78,7 @@ class UpdateAccount implements ArrayAccess
         'facebookId' => 'string',
         'googleId' => 'string',
         'twitterId' => 'string',
-        'customInfo' => '\ai.thirdwatch\Model\CustomInfo'
+        'customInfo' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -558,7 +558,7 @@ class UpdateAccount implements ArrayAccess
 
     /**
      * Gets billingAddress
-     * @return \ai.thirdwatch\Model\BillingAddress
+     * @return \ai\thirdwatch\Model\BillingAddress
      */
     public function getBillingAddress()
     {
@@ -567,7 +567,7 @@ class UpdateAccount implements ArrayAccess
 
     /**
      * Sets billingAddress
-     * @param \ai.thirdwatch\Model\BillingAddress $billingAddress
+     * @param \ai\thirdwatch\Model\BillingAddress $billingAddress
      * @return $this
      */
     public function setBillingAddress($billingAddress)
@@ -579,7 +579,7 @@ class UpdateAccount implements ArrayAccess
 
     /**
      * Gets shippingAddress
-     * @return \ai.thirdwatch\Model\ShippingAddress
+     * @return \ai\thirdwatch\Model\ShippingAddress
      */
     public function getShippingAddress()
     {
@@ -588,7 +588,7 @@ class UpdateAccount implements ArrayAccess
 
     /**
      * Sets shippingAddress
-     * @param \ai.thirdwatch\Model\ShippingAddress $shippingAddress
+     * @param \ai\thirdwatch\Model\ShippingAddress $shippingAddress
      * @return $this
      */
     public function setShippingAddress($shippingAddress)
@@ -600,7 +600,7 @@ class UpdateAccount implements ArrayAccess
 
     /**
      * Gets paymentMethods
-     * @return \ai.thirdwatch\Model\PaymentMethod[]
+     * @return \ai\thirdwatch\Model\PaymentMethod[]
      */
     public function getPaymentMethods()
     {
@@ -609,7 +609,7 @@ class UpdateAccount implements ArrayAccess
 
     /**
      * Sets paymentMethods
-     * @param \ai.thirdwatch\Model\PaymentMethod[] $paymentMethods The payment information associated with this account. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc.
+     * @param \ai\thirdwatch\Model\PaymentMethod[] $paymentMethods The payment information associated with this account. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc.
      * @return $this
      */
     public function setPaymentMethods($paymentMethods)
@@ -621,7 +621,7 @@ class UpdateAccount implements ArrayAccess
 
     /**
      * Gets promotions
-     * @return \ai.thirdwatch\Model\Promotion[]
+     * @return \ai\thirdwatch\Model\Promotion[]
      */
     public function getPromotions()
     {
@@ -630,7 +630,7 @@ class UpdateAccount implements ArrayAccess
 
     /**
      * Sets promotions
-     * @param \ai.thirdwatch\Model\Promotion[] $promotions The list of promotions that apply to this account. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event.
+     * @param \ai\thirdwatch\Model\Promotion[] $promotions The list of promotions that apply to this account. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event.
      * @return $this
      */
     public function setPromotions($promotions)
@@ -810,7 +810,7 @@ class UpdateAccount implements ArrayAccess
 
     /**
      * Gets customInfo
-     * @return \ai.thirdwatch\Model\CustomInfo
+     * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
@@ -819,7 +819,7 @@ class UpdateAccount implements ArrayAccess
 
     /**
      * Sets customInfo
-     * @param \ai.thirdwatch\Model\CustomInfo $customInfo
+     * @param \ai\thirdwatch\Model\CustomInfo $customInfo
      * @return $this
      */
     public function setCustomInfo($customInfo)
@@ -880,10 +880,10 @@ class UpdateAccount implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

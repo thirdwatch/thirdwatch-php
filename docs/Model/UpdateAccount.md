@@ -15,10 +15,10 @@ Name | Type | Description | Notes
 **gender** | **string** | Gender of the user e.g. \&quot;_male\&quot;, \&quot;_female\&quot; or \&quot;_trans\&quot; | [optional] 
 **referralCode** | **string** | Code or promotion used by the user while creating account. | [optional] 
 **referrerUserId** | **string** | The ID of the user that referred the current user to your business. This field is required for detecting referral fraud. | [optional] 
-**billingAddress** | [**\ai.thirdwatch\Model\BillingAddress**](BillingAddress.md) |  | [optional] 
-**shippingAddress** | [**\ai.thirdwatch\Model\ShippingAddress**](ShippingAddress.md) |  | [optional] 
-**paymentMethods** | [**\ai.thirdwatch\Model\PaymentMethod[]**](PaymentMethod.md) | The payment information associated with this account. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc. | [optional] 
-**promotions** | [**\ai.thirdwatch\Model\Promotion[]**](Promotion.md) | The list of promotions that apply to this account. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event. | [optional] 
+**billingAddress** | [**\ai\thirdwatch\Model\BillingAddress**](BillingAddress.md) |  | [optional] 
+**shippingAddress** | [**\ai\thirdwatch\Model\ShippingAddress**](ShippingAddress.md) |  | [optional] 
+**paymentMethods** | [**\ai\thirdwatch\Model\PaymentMethod[]**](PaymentMethod.md) | The payment information associated with this account. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc. | [optional] 
+**promotions** | [**\ai\thirdwatch\Model\Promotion[]**](Promotion.md) | The list of promotions that apply to this account. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event. | [optional] 
 **socialSignOnType** | **string** | If the user logged in with a social identify provider, give the name here. e.g. _google, _facebook, _twitter, _linkedin, _other | [optional] 
 **emailConfirmedStatus** | **string** | Status of email verification. e.g. _success, _failure, _pending | [optional] 
 **phoneConfirmedStatus** | **string** | Status of phone verification. e.g. _success, _failure, _pending | [optional] 
@@ -27,7 +27,7 @@ Name | Type | Description | Notes
 **facebookId** | **string** | Facebook user id or token of the user. This can help to varify his social identity. | [optional] 
 **googleId** | **string** | Google user id or token of the user. This can help to varify his social identity. | [optional] 
 **twitterId** | **string** | Twitter handle or token of the user. This can help to varify his social identity. | [optional] 
-**customInfo** | [**\ai.thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
+**customInfo** | [**\ai\thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -23,7 +23,7 @@ Name | Type | Description | Notes
 **country** | **string** | The [ISO-3166](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code of the item, e.g., \&quot;IN\&quot; in case of India. | [optional] 
 **descriptionShort** | **string** | Short description of the item. | [optional] 
 **description** | **string** | Detail description of the item. | [optional] 
-**seller** | [**\ai.thirdwatch\Model\Seller**](Seller.md) |  | [optional] 
+**seller** | [**\ai\thirdwatch\Model\Seller**](Seller.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
