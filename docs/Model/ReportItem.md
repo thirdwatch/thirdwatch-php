@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **deviceIp** | **string** | IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps. | [optional] 
 **originTimestamp** | **string** | Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string. | [optional] 
 **userEmail** | **string** | Email of the user creating this order. Note - If the user&#39;s email is also their account ID in your system, set both the userId and userEmail fields to their email address. | [optional] 
-**customInfo** | [**\ai.thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
+**customInfo** | [**\ai\thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

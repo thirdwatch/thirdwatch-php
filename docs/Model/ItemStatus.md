@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **source** | **string** | The source of a decision. e.g. _automated, _manualReview\&quot; | [optional] 
 **analyst** | **string** | The analyst who made the decision, if manual. | [optional] 
 **description** | **string** | Any additional information about this order status change. | [optional] 
-**customInfo** | [**\ai.thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
+**customInfo** | [**\ai\thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

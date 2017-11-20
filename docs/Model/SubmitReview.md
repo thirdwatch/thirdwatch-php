@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **itemId** | **string** | The ID of the product or service being reviewed. | [optional] 
 **submissionStatus** | **string** | If reviews in your system must be approved, use _submissionStatus to represent the status of the review. e.g. _success, _failure, _pending | [optional] 
 **rating** | **string** | The rating provided by the user. e.g. \&quot;4\&quot; | [optional] 
-**customInfo** | [**\ai.thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
+**customInfo** | [**\ai\thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

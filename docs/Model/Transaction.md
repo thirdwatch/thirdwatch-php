@@ -15,10 +15,10 @@ Name | Type | Description | Notes
 **transactionType** | **string** | The type of transaction being recorded. e.g. _sale, _authorize, _capture, _void, _refund, _deposit, _withdrawal, _transfer | [optional] 
 **transactionStatus** | **string** | Use _transactionStatus to indicate the status of the transaction. The value can be \&quot;_success\&quot; (default value), \&quot;_failure\&quot; or \&quot;_pending\&quot;. For instance, If the transaction was rejected by the payment gateway, set the value to \&quot;_failure\&quot;. | 
 **isFirstTimeBuyer** | **bool** | Is user first time buyer. | [optional] 
-**billingAddress** | [**\ai.thirdwatch\Model\BillingAddress**](BillingAddress.md) |  | [optional] 
-**shippingAddress** | [**\ai.thirdwatch\Model\ShippingAddress**](ShippingAddress.md) |  | [optional] 
-**paymentMethod** | [**\ai.thirdwatch\Model\PaymentMethod**](PaymentMethod.md) |  | [optional] 
-**customInfo** | [**\ai.thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
+**billingAddress** | [**\ai\thirdwatch\Model\BillingAddress**](BillingAddress.md) |  | [optional] 
+**shippingAddress** | [**\ai\thirdwatch\Model\ShippingAddress**](ShippingAddress.md) |  | [optional] 
+**paymentMethod** | [**\ai\thirdwatch\Model\PaymentMethod**](PaymentMethod.md) |  | [optional] 
+**customInfo** | [**\ai\thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

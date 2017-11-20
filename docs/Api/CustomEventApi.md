@@ -1,4 +1,4 @@
-# ai.thirdwatch\CustomEventApi
+# ai\thirdwatch\CustomEventApi
 
 All URIs are relative to *https://localhost/event*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **customEvent**
-> \ai.thirdwatch\Model\EventResponse customEvent($jSON)
+> \ai\thirdwatch\Model\EventResponse customEvent($jSON)
 
 Use order_status to track the order processing workflow of a previously submitted order.
 
@@ -20,12 +20,12 @@ Custom events and fields capture user behavior and differences not covered by ou
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
+ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
+// ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
-$api_instance = new ai.thirdwatch\Api\CustomEventApi();
-$jSON = new \ai.thirdwatch\Model\Custom(); // \ai.thirdwatch\Model\Custom | Pass order status to thirdwatch. Only `_userID` is required field. But this should contain custom info.
+$api_instance = new ai\thirdwatch\Api\CustomEventApi();
+$jSON = new \ai\thirdwatch\Model\Custom(); // \ai\thirdwatch\Model\Custom | Pass order status to thirdwatch. Only `_userID` is required field. But this should contain custom info.
 
 try {
     $result = $api_instance->customEvent($jSON);
@@ -40,11 +40,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai.thirdwatch\Model\Custom**](../Model/Custom.md)| Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain custom info. |
+ **jSON** | [**\ai\thirdwatch\Model\Custom**](../Model/Custom.md)| Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain custom info. |
 
 ### Return type
 
-[**\ai.thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
+[**\ai\thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
 
 ### Authorization
 

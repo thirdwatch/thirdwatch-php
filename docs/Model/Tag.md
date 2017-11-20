@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **description** | **string** | The text content of the tag.Useful as annotation on why the label was added. | [optional] 
 **source** | **string** | String describing the original source of the tag information (e.g. payment gateway, manual review, etc.). | [optional] 
 **analyst** | **string** | Unique identifier (e.g. email address) of the analyst who applied the label. Useful for tracking purposes after the fact. | [optional] 
-**customInfo** | [**\ai.thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
+**customInfo** | [**\ai\thirdwatch\Model\CustomInfo**](CustomInfo.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

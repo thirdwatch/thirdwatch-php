@@ -1,4 +1,4 @@
-# ai.thirdwatch\LogoutApi
+# ai\thirdwatch\LogoutApi
 
 All URIs are relative to *https://localhost/event*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **logout**
-> \ai.thirdwatch\Model\EventResponse logout($jSON)
+> \ai\thirdwatch\Model\EventResponse logout($jSON)
 
 Use logout to record when a user logs out.
 
@@ -18,12 +18,12 @@ Use logout to record when a user logs out.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
+ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
+// ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
-$api_instance = new ai.thirdwatch\Api\LogoutApi();
-$jSON = new \ai.thirdwatch\Model\Logout(); // \ai.thirdwatch\Model\Logout | Pass logout status to thirdwatch. Only `_userID` is required field. But this should contain logout info.
+$api_instance = new ai\thirdwatch\Api\LogoutApi();
+$jSON = new \ai\thirdwatch\Model\Logout(); // \ai\thirdwatch\Model\Logout | Pass logout status to thirdwatch. Only `_userID` is required field. But this should contain logout info.
 
 try {
     $result = $api_instance->logout($jSON);
@@ -38,11 +38,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai.thirdwatch\Model\Logout**](../Model/Logout.md)| Pass logout status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain logout info. |
+ **jSON** | [**\ai\thirdwatch\Model\Logout**](../Model/Logout.md)| Pass logout status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain logout info. |
 
 ### Return type
 
-[**\ai.thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
+[**\ai\thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * CreateOrder Class Doc Comment
  *
  * @category    Class
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -69,12 +69,12 @@ class CreateOrder implements ArrayAccess
         'isGift' => 'bool',
         'isReturn' => 'bool',
         'isFirstTimeBuyer' => 'bool',
-        'billingAddress' => '\ai.thirdwatch\Model\BillingAddress',
-        'shippingAddress' => '\ai.thirdwatch\Model\ShippingAddress',
-        'paymentMethods' => '\ai.thirdwatch\Model\PaymentMethod[]',
-        'promotions' => '\ai.thirdwatch\Model\Promotion[]',
-        'items' => '\ai.thirdwatch\Model\Item[]',
-        'customInfo' => '\ai.thirdwatch\Model\CustomInfo'
+        'billingAddress' => '\ai\thirdwatch\Model\BillingAddress',
+        'shippingAddress' => '\ai\thirdwatch\Model\ShippingAddress',
+        'paymentMethods' => '\ai\thirdwatch\Model\PaymentMethod[]',
+        'promotions' => '\ai\thirdwatch\Model\Promotion[]',
+        'items' => '\ai\thirdwatch\Model\Item[]',
+        'customInfo' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -603,7 +603,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Gets billingAddress
-     * @return \ai.thirdwatch\Model\BillingAddress
+     * @return \ai\thirdwatch\Model\BillingAddress
      */
     public function getBillingAddress()
     {
@@ -612,7 +612,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Sets billingAddress
-     * @param \ai.thirdwatch\Model\BillingAddress $billingAddress
+     * @param \ai\thirdwatch\Model\BillingAddress $billingAddress
      * @return $this
      */
     public function setBillingAddress($billingAddress)
@@ -624,7 +624,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Gets shippingAddress
-     * @return \ai.thirdwatch\Model\ShippingAddress
+     * @return \ai\thirdwatch\Model\ShippingAddress
      */
     public function getShippingAddress()
     {
@@ -633,7 +633,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Sets shippingAddress
-     * @param \ai.thirdwatch\Model\ShippingAddress $shippingAddress
+     * @param \ai\thirdwatch\Model\ShippingAddress $shippingAddress
      * @return $this
      */
     public function setShippingAddress($shippingAddress)
@@ -645,7 +645,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Gets paymentMethods
-     * @return \ai.thirdwatch\Model\PaymentMethod[]
+     * @return \ai\thirdwatch\Model\PaymentMethod[]
      */
     public function getPaymentMethods()
     {
@@ -654,7 +654,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Sets paymentMethods
-     * @param \ai.thirdwatch\Model\PaymentMethod[] $paymentMethods The payment information associated with this order. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc.
+     * @param \ai\thirdwatch\Model\PaymentMethod[] $paymentMethods The payment information associated with this order. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc.
      * @return $this
      */
     public function setPaymentMethods($paymentMethods)
@@ -666,7 +666,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Gets promotions
-     * @return \ai.thirdwatch\Model\Promotion[]
+     * @return \ai\thirdwatch\Model\Promotion[]
      */
     public function getPromotions()
     {
@@ -675,7 +675,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Sets promotions
-     * @param \ai.thirdwatch\Model\Promotion[] $promotions The list of promotions that apply to this order. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event.
+     * @param \ai\thirdwatch\Model\Promotion[] $promotions The list of promotions that apply to this order. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event.
      * @return $this
      */
     public function setPromotions($promotions)
@@ -687,7 +687,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Gets items
-     * @return \ai.thirdwatch\Model\Item[]
+     * @return \ai\thirdwatch\Model\Item[]
      */
     public function getItems()
     {
@@ -696,7 +696,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Sets items
-     * @param \ai.thirdwatch\Model\Item[] $items The list of items ordered. Represented as a JSON array of item
+     * @param \ai\thirdwatch\Model\Item[] $items The list of items ordered. Represented as a JSON array of item
      * @return $this
      */
     public function setItems($items)
@@ -708,7 +708,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Gets customInfo
-     * @return \ai.thirdwatch\Model\CustomInfo
+     * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
@@ -717,7 +717,7 @@ class CreateOrder implements ArrayAccess
 
     /**
      * Sets customInfo
-     * @param \ai.thirdwatch\Model\CustomInfo $customInfo
+     * @param \ai\thirdwatch\Model\CustomInfo $customInfo
      * @return $this
      */
     public function setCustomInfo($customInfo)
@@ -778,10 +778,10 @@ class CreateOrder implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

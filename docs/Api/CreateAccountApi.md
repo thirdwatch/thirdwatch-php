@@ -1,4 +1,4 @@
-# ai.thirdwatch\CreateAccountApi
+# ai\thirdwatch\CreateAccountApi
 
 All URIs are relative to *https://localhost/event*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **createAccount**
-> \ai.thirdwatch\Model\EventResponse createAccount($jSON)
+> \ai\thirdwatch\Model\EventResponse createAccount($jSON)
 
 Use create_account to pass user details at user registration.
 
@@ -18,12 +18,12 @@ Use create_account to pass user details at user registration.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
+ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
+// ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
-$api_instance = new ai.thirdwatch\Api\CreateAccountApi();
-$jSON = new \ai.thirdwatch\Model\CreateAccount(); // \ai.thirdwatch\Model\CreateAccount | Pass user details after registration. Only `_userID` is required field. But this should contain user info.
+$api_instance = new ai\thirdwatch\Api\CreateAccountApi();
+$jSON = new \ai\thirdwatch\Model\CreateAccount(); // \ai\thirdwatch\Model\CreateAccount | Pass user details after registration. Only `_userID` is required field. But this should contain user info.
 
 try {
     $result = $api_instance->createAccount($jSON);
@@ -38,11 +38,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai.thirdwatch\Model\CreateAccount**](../Model/CreateAccount.md)| Pass user details after registration. Only &#x60;_userID&#x60; is required field. But this should contain user info. |
+ **jSON** | [**\ai\thirdwatch\Model\CreateAccount**](../Model/CreateAccount.md)| Pass user details after registration. Only &#x60;_userID&#x60; is required field. But this should contain user info. |
 
 ### Return type
 
-[**\ai.thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
+[**\ai\thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
 
 ### Authorization
 

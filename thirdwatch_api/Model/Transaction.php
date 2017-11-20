@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * Transaction Class Doc Comment
  *
  * @category    Class
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -66,10 +66,10 @@ class Transaction implements ArrayAccess
         'transactionType' => 'string',
         'transactionStatus' => 'string',
         'isFirstTimeBuyer' => 'bool',
-        'billingAddress' => '\ai.thirdwatch\Model\BillingAddress',
-        'shippingAddress' => '\ai.thirdwatch\Model\ShippingAddress',
-        'paymentMethod' => '\ai.thirdwatch\Model\PaymentMethod',
-        'customInfo' => '\ai.thirdwatch\Model\CustomInfo'
+        'billingAddress' => '\ai\thirdwatch\Model\BillingAddress',
+        'shippingAddress' => '\ai\thirdwatch\Model\ShippingAddress',
+        'paymentMethod' => '\ai\thirdwatch\Model\PaymentMethod',
+        'customInfo' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -516,7 +516,7 @@ class Transaction implements ArrayAccess
 
     /**
      * Gets billingAddress
-     * @return \ai.thirdwatch\Model\BillingAddress
+     * @return \ai\thirdwatch\Model\BillingAddress
      */
     public function getBillingAddress()
     {
@@ -525,7 +525,7 @@ class Transaction implements ArrayAccess
 
     /**
      * Sets billingAddress
-     * @param \ai.thirdwatch\Model\BillingAddress $billingAddress
+     * @param \ai\thirdwatch\Model\BillingAddress $billingAddress
      * @return $this
      */
     public function setBillingAddress($billingAddress)
@@ -537,7 +537,7 @@ class Transaction implements ArrayAccess
 
     /**
      * Gets shippingAddress
-     * @return \ai.thirdwatch\Model\ShippingAddress
+     * @return \ai\thirdwatch\Model\ShippingAddress
      */
     public function getShippingAddress()
     {
@@ -546,7 +546,7 @@ class Transaction implements ArrayAccess
 
     /**
      * Sets shippingAddress
-     * @param \ai.thirdwatch\Model\ShippingAddress $shippingAddress
+     * @param \ai\thirdwatch\Model\ShippingAddress $shippingAddress
      * @return $this
      */
     public function setShippingAddress($shippingAddress)
@@ -558,7 +558,7 @@ class Transaction implements ArrayAccess
 
     /**
      * Gets paymentMethod
-     * @return \ai.thirdwatch\Model\PaymentMethod
+     * @return \ai\thirdwatch\Model\PaymentMethod
      */
     public function getPaymentMethod()
     {
@@ -567,7 +567,7 @@ class Transaction implements ArrayAccess
 
     /**
      * Sets paymentMethod
-     * @param \ai.thirdwatch\Model\PaymentMethod $paymentMethod
+     * @param \ai\thirdwatch\Model\PaymentMethod $paymentMethod
      * @return $this
      */
     public function setPaymentMethod($paymentMethod)
@@ -579,7 +579,7 @@ class Transaction implements ArrayAccess
 
     /**
      * Gets customInfo
-     * @return \ai.thirdwatch\Model\CustomInfo
+     * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
@@ -588,7 +588,7 @@ class Transaction implements ArrayAccess
 
     /**
      * Sets customInfo
-     * @param \ai.thirdwatch\Model\CustomInfo $customInfo
+     * @param \ai\thirdwatch\Model\CustomInfo $customInfo
      * @return $this
      */
     public function setCustomInfo($customInfo)
@@ -649,10 +649,10 @@ class Transaction implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

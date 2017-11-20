@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -36,7 +36,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description The Item field type represents a product or service for sale in your business. The value must be a nested object with the appropriate item subfields. Generally used in the add_to_cart and remove_from_cart events.
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -75,7 +75,7 @@ class Item implements ArrayAccess
         'country' => 'string',
         'descriptionShort' => 'string',
         'description' => 'string',
-        'seller' => '\ai.thirdwatch\Model\Seller'
+        'seller' => '\ai\thirdwatch\Model\Seller'
     ];
 
     /**
@@ -703,7 +703,7 @@ class Item implements ArrayAccess
 
     /**
      * Gets seller
-     * @return \ai.thirdwatch\Model\Seller
+     * @return \ai\thirdwatch\Model\Seller
      */
     public function getSeller()
     {
@@ -712,7 +712,7 @@ class Item implements ArrayAccess
 
     /**
      * Sets seller
-     * @param \ai.thirdwatch\Model\Seller $seller
+     * @param \ai\thirdwatch\Model\Seller $seller
      * @return $this
      */
     public function setSeller($seller)
@@ -773,10 +773,10 @@ class Item implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 
