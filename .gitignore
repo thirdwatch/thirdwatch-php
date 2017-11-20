@@ -1,0 +1,5 @@
+.swagger-codegen
+.php_cs
+.travis.yml
+config.json
+git_push.sh
