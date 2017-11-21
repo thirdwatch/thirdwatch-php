@@ -15,10 +15,10 @@
  * An example of a project-specific implementation.
  *
  * After registering this autoload function with SPL, the following line
- * would cause the function to attempt to load the \ai.thirdwatch\Baz\Qux class
+ * would cause the function to attempt to load the \ai\thirdwatch\Baz\Qux class
  * from /path/to/project/thirdwatch_api/Baz/Qux.php:
  *
- *      new \ai.thirdwatch\Baz\Qux;
+ *      new \ai\thirdwatch\Baz\Qux;
  *
  * @param string $class The fully-qualified class name.
  *
@@ -27,7 +27,7 @@
 spl_autoload_register(function ($class) {
 
     // project-specific namespace prefix
-    $prefix = 'ai.thirdwatch\\';
+    $prefix = 'ai\\thirdwatch\\';
 
     // base directory for the namespace prefix
     $base_dir = __DIR__ . '/thirdwatch_api/';

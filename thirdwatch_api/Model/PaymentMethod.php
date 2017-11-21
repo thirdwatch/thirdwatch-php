@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -36,7 +36,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description The payment_method field type represents information about the payment methods provided by the user. The value must be a nested object with the appropriate item subfields for the given payment method. Generally usedwith the create_order or transaction events.
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,17 +55,17 @@ class PaymentMethod implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'paymentType' => 'string',
-        'amount' => 'string',
-        'currencyCode' => 'string',
-        'paymentGateway' => 'string',
-        'accountName' => 'string',
-        'cardBin' => 'string',
-        'avsResponseCode' => 'string',
-        'cvvResponseCode' => 'string',
-        'cardLast4' => 'string',
-        'cardExpiryMonth' => 'string',
-        'cardExpiryYear' => 'string'
+        '_payment_type' => 'string',
+        '_amount' => 'string',
+        '_currency_code' => 'string',
+        '_payment_gateway' => 'string',
+        '_account_name' => 'string',
+        '_card_bin' => 'string',
+        '_avs_response_code' => 'string',
+        '_cvv_response_code' => 'string',
+        '_card_last4' => 'string',
+        '_card_expiry_month' => 'string',
+        '_card_expiry_year' => 'string'
     ];
 
     /**
@@ -73,17 +73,17 @@ class PaymentMethod implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'paymentType' => null,
-        'amount' => null,
-        'currencyCode' => null,
-        'paymentGateway' => null,
-        'accountName' => null,
-        'cardBin' => null,
-        'avsResponseCode' => null,
-        'cvvResponseCode' => null,
-        'cardLast4' => null,
-        'cardExpiryMonth' => null,
-        'cardExpiryYear' => null
+        '_payment_type' => null,
+        '_amount' => null,
+        '_currency_code' => null,
+        '_payment_gateway' => null,
+        '_account_name' => null,
+        '_card_bin' => null,
+        '_avs_response_code' => null,
+        '_cvv_response_code' => null,
+        '_card_last4' => null,
+        '_card_expiry_month' => null,
+        '_card_expiry_year' => null
     ];
 
     public static function swaggerTypes()
@@ -101,17 +101,17 @@ class PaymentMethod implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'paymentType' => '_paymentType',
-        'amount' => '_amount',
-        'currencyCode' => '_currencyCode',
-        'paymentGateway' => '_paymentGateway',
-        'accountName' => '_accountName',
-        'cardBin' => '_cardBin',
-        'avsResponseCode' => '_avsResponseCode',
-        'cvvResponseCode' => '_cvvResponseCode',
-        'cardLast4' => '_cardLast4',
-        'cardExpiryMonth' => '_cardExpiryMonth',
-        'cardExpiryYear' => '_cardExpiryYear'
+        '_payment_type' => '_paymentType',
+        '_amount' => '_amount',
+        '_currency_code' => '_currencyCode',
+        '_payment_gateway' => '_paymentGateway',
+        '_account_name' => '_accountName',
+        '_card_bin' => '_cardBin',
+        '_avs_response_code' => '_avsResponseCode',
+        '_cvv_response_code' => '_cvvResponseCode',
+        '_card_last4' => '_cardLast4',
+        '_card_expiry_month' => '_cardExpiryMonth',
+        '_card_expiry_year' => '_cardExpiryYear'
     ];
 
 
@@ -120,17 +120,17 @@ class PaymentMethod implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'paymentType' => 'setPaymentType',
-        'amount' => 'setAmount',
-        'currencyCode' => 'setCurrencyCode',
-        'paymentGateway' => 'setPaymentGateway',
-        'accountName' => 'setAccountName',
-        'cardBin' => 'setCardBin',
-        'avsResponseCode' => 'setAvsResponseCode',
-        'cvvResponseCode' => 'setCvvResponseCode',
-        'cardLast4' => 'setCardLast4',
-        'cardExpiryMonth' => 'setCardExpiryMonth',
-        'cardExpiryYear' => 'setCardExpiryYear'
+        '_payment_type' => 'setPaymentType',
+        '_amount' => 'setAmount',
+        '_currency_code' => 'setCurrencyCode',
+        '_payment_gateway' => 'setPaymentGateway',
+        '_account_name' => 'setAccountName',
+        '_card_bin' => 'setCardBin',
+        '_avs_response_code' => 'setAvsResponseCode',
+        '_cvv_response_code' => 'setCvvResponseCode',
+        '_card_last4' => 'setCardLast4',
+        '_card_expiry_month' => 'setCardExpiryMonth',
+        '_card_expiry_year' => 'setCardExpiryYear'
     ];
 
 
@@ -139,17 +139,17 @@ class PaymentMethod implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'paymentType' => 'getPaymentType',
-        'amount' => 'getAmount',
-        'currencyCode' => 'getCurrencyCode',
-        'paymentGateway' => 'getPaymentGateway',
-        'accountName' => 'getAccountName',
-        'cardBin' => 'getCardBin',
-        'avsResponseCode' => 'getAvsResponseCode',
-        'cvvResponseCode' => 'getCvvResponseCode',
-        'cardLast4' => 'getCardLast4',
-        'cardExpiryMonth' => 'getCardExpiryMonth',
-        'cardExpiryYear' => 'getCardExpiryYear'
+        '_payment_type' => 'getPaymentType',
+        '_amount' => 'getAmount',
+        '_currency_code' => 'getCurrencyCode',
+        '_payment_gateway' => 'getPaymentGateway',
+        '_account_name' => 'getAccountName',
+        '_card_bin' => 'getCardBin',
+        '_avs_response_code' => 'getAvsResponseCode',
+        '_cvv_response_code' => 'getCvvResponseCode',
+        '_card_last4' => 'getCardLast4',
+        '_card_expiry_month' => 'getCardExpiryMonth',
+        '_card_expiry_year' => 'getCardExpiryYear'
     ];
 
     public static function attributeMap()
@@ -183,17 +183,17 @@ class PaymentMethod implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['paymentType'] = isset($data['paymentType']) ? $data['paymentType'] : null;
-        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
-        $this->container['currencyCode'] = isset($data['currencyCode']) ? $data['currencyCode'] : null;
-        $this->container['paymentGateway'] = isset($data['paymentGateway']) ? $data['paymentGateway'] : null;
-        $this->container['accountName'] = isset($data['accountName']) ? $data['accountName'] : null;
-        $this->container['cardBin'] = isset($data['cardBin']) ? $data['cardBin'] : null;
-        $this->container['avsResponseCode'] = isset($data['avsResponseCode']) ? $data['avsResponseCode'] : null;
-        $this->container['cvvResponseCode'] = isset($data['cvvResponseCode']) ? $data['cvvResponseCode'] : null;
-        $this->container['cardLast4'] = isset($data['cardLast4']) ? $data['cardLast4'] : null;
-        $this->container['cardExpiryMonth'] = isset($data['cardExpiryMonth']) ? $data['cardExpiryMonth'] : null;
-        $this->container['cardExpiryYear'] = isset($data['cardExpiryYear']) ? $data['cardExpiryYear'] : null;
+        $this->container['_payment_type'] = isset($data['_payment_type']) ? $data['_payment_type'] : null;
+        $this->container['_amount'] = isset($data['_amount']) ? $data['_amount'] : null;
+        $this->container['_currency_code'] = isset($data['_currency_code']) ? $data['_currency_code'] : null;
+        $this->container['_payment_gateway'] = isset($data['_payment_gateway']) ? $data['_payment_gateway'] : null;
+        $this->container['_account_name'] = isset($data['_account_name']) ? $data['_account_name'] : null;
+        $this->container['_card_bin'] = isset($data['_card_bin']) ? $data['_card_bin'] : null;
+        $this->container['_avs_response_code'] = isset($data['_avs_response_code']) ? $data['_avs_response_code'] : null;
+        $this->container['_cvv_response_code'] = isset($data['_cvv_response_code']) ? $data['_cvv_response_code'] : null;
+        $this->container['_card_last4'] = isset($data['_card_last4']) ? $data['_card_last4'] : null;
+        $this->container['_card_expiry_month'] = isset($data['_card_expiry_month']) ? $data['_card_expiry_month'] : null;
+        $this->container['_card_expiry_year'] = isset($data['_card_expiry_year']) ? $data['_card_expiry_year'] : null;
     }
 
     /**
@@ -222,232 +222,232 @@ class PaymentMethod implements ArrayAccess
 
 
     /**
-     * Gets paymentType
+     * Gets _payment_type
      * @return string
      */
     public function getPaymentType()
     {
-        return $this->container['paymentType'];
+        return $this->container['_payment_type'];
     }
 
     /**
-     * Sets paymentType
-     * @param string $paymentType Values like - _cash, _check, _creditCard, _debitCard, _netBanking, _wallet, _cryptoCurrency, _electronicFundTransfer, _financing, _giftCard, _interac, _invoice, _moneyOrder, _masterPass, _points, _storeCredit, _thirdPartyProcessor, _voucher
+     * Sets _payment_type
+     * @param string $_payment_type Values like - _cash, _check, _creditCard, _debitCard, _netBanking, _wallet, _cryptoCurrency, _electronicFundTransfer, _financing, _giftCard, _interac, _invoice, _moneyOrder, _masterPass, _points, _storeCredit, _thirdPartyProcessor, _voucher
      * @return $this
      */
-    public function setPaymentType($paymentType)
+    public function setPaymentType($_payment_type)
     {
-        $this->container['paymentType'] = $paymentType;
+        $this->container['_payment_type'] = $_payment_type;
 
         return $this;
     }
 
     /**
-     * Gets amount
+     * Gets _amount
      * @return string
      */
     public function getAmount()
     {
-        return $this->container['amount'];
+        return $this->container['_amount'];
     }
 
     /**
-     * Sets amount
-     * @param string $amount The item unit price in numbers, in the base unit of the currency_code.e.g. \"2500\". In case of multiple payment methods in order it's useful.
+     * Sets _amount
+     * @param string $_amount The item unit price in numbers, in the base unit of the currency_code.e.g. \"2500\". In case of multiple payment methods in order it's useful.
      * @return $this
      */
-    public function setAmount($amount)
+    public function setAmount($_amount)
     {
-        $this->container['amount'] = $amount;
+        $this->container['_amount'] = $_amount;
 
         return $this;
     }
 
     /**
-     * Gets currencyCode
+     * Gets _currency_code
      * @return string
      */
     public function getCurrencyCode()
     {
-        return $this->container['currencyCode'];
+        return $this->container['_currency_code'];
     }
 
     /**
-     * Sets currencyCode
-     * @param string $currencyCode The [ISO-4217](http://en.wikipedia.org/wiki/ISO_4217) currency code for the amount. e.g., USD, INR alternative currencies, like bitcoin or points systems. In case of multiple payment methods in order it's useful.
+     * Sets _currency_code
+     * @param string $_currency_code The [ISO-4217](http://en.wikipedia.org/wiki/ISO_4217) currency code for the amount. e.g., USD, INR alternative currencies, like bitcoin or points systems. In case of multiple payment methods in order it's useful.
      * @return $this
      */
-    public function setCurrencyCode($currencyCode)
+    public function setCurrencyCode($_currency_code)
     {
-        $this->container['currencyCode'] = $currencyCode;
+        $this->container['_currency_code'] = $_currency_code;
 
         return $this;
     }
 
     /**
-     * Gets paymentGateway
+     * Gets _payment_gateway
      * @return string
      */
     public function getPaymentGateway()
     {
-        return $this->container['paymentGateway'];
+        return $this->container['_payment_gateway'];
     }
 
     /**
-     * Sets paymentGateway
-     * @param string $paymentGateway fill value like bank name, gateway name, wallet name etc, e.g. payu, paypal, icici, paytm
+     * Sets _payment_gateway
+     * @param string $_payment_gateway fill value like bank name, gateway name, wallet name etc, e.g. payu, paypal, icici, paytm
      * @return $this
      */
-    public function setPaymentGateway($paymentGateway)
+    public function setPaymentGateway($_payment_gateway)
     {
-        $this->container['paymentGateway'] = $paymentGateway;
+        $this->container['_payment_gateway'] = $_payment_gateway;
 
         return $this;
     }
 
     /**
-     * Gets accountName
+     * Gets _account_name
      * @return string
      */
     public function getAccountName()
     {
-        return $this->container['accountName'];
+        return $this->container['_account_name'];
     }
 
     /**
-     * Sets accountName
-     * @param string $accountName Account name oif the user for that payment method
+     * Sets _account_name
+     * @param string $_account_name Account name oif the user for that payment method
      * @return $this
      */
-    public function setAccountName($accountName)
+    public function setAccountName($_account_name)
     {
-        $this->container['accountName'] = $accountName;
+        $this->container['_account_name'] = $_account_name;
 
         return $this;
     }
 
     /**
-     * Gets cardBin
+     * Gets _card_bin
      * @return string
      */
     public function getCardBin()
     {
-        return $this->container['cardBin'];
+        return $this->container['_card_bin'];
     }
 
     /**
-     * Sets cardBin
-     * @param string $cardBin The first six digits of the credit card number. These numbers contain information about the card issuer, the geography and other card details.
+     * Sets _card_bin
+     * @param string $_card_bin The first six digits of the credit card number. These numbers contain information about the card issuer, the geography and other card details.
      * @return $this
      */
-    public function setCardBin($cardBin)
+    public function setCardBin($_card_bin)
     {
-        $this->container['cardBin'] = $cardBin;
+        $this->container['_card_bin'] = $_card_bin;
 
         return $this;
     }
 
     /**
-     * Gets avsResponseCode
+     * Gets _avs_response_code
      * @return string
      */
     public function getAvsResponseCode()
     {
-        return $this->container['avsResponseCode'];
+        return $this->container['_avs_response_code'];
     }
 
     /**
-     * Sets avsResponseCode
-     * @param string $avsResponseCode Response code from the AVS address verification system. Used in payments involving credit cards.
+     * Sets _avs_response_code
+     * @param string $_avs_response_code Response code from the AVS address verification system. Used in payments involving credit cards.
      * @return $this
      */
-    public function setAvsResponseCode($avsResponseCode)
+    public function setAvsResponseCode($_avs_response_code)
     {
-        $this->container['avsResponseCode'] = $avsResponseCode;
+        $this->container['_avs_response_code'] = $_avs_response_code;
 
         return $this;
     }
 
     /**
-     * Gets cvvResponseCode
+     * Gets _cvv_response_code
      * @return string
      */
     public function getCvvResponseCode()
     {
-        return $this->container['cvvResponseCode'];
+        return $this->container['_cvv_response_code'];
     }
 
     /**
-     * Sets cvvResponseCode
-     * @param string $cvvResponseCode Response code from the credit card company indicating if the CVV number entered matches the number on record. Used in payments involving credit cards.
+     * Sets _cvv_response_code
+     * @param string $_cvv_response_code Response code from the credit card company indicating if the CVV number entered matches the number on record. Used in payments involving credit cards.
      * @return $this
      */
-    public function setCvvResponseCode($cvvResponseCode)
+    public function setCvvResponseCode($_cvv_response_code)
     {
-        $this->container['cvvResponseCode'] = $cvvResponseCode;
+        $this->container['_cvv_response_code'] = $_cvv_response_code;
 
         return $this;
     }
 
     /**
-     * Gets cardLast4
+     * Gets _card_last4
      * @return string
      */
     public function getCardLast4()
     {
-        return $this->container['cardLast4'];
+        return $this->container['_card_last4'];
     }
 
     /**
-     * Sets cardLast4
-     * @param string $cardLast4 The last four digits of the credit card number.
+     * Sets _card_last4
+     * @param string $_card_last4 The last four digits of the credit card number.
      * @return $this
      */
-    public function setCardLast4($cardLast4)
+    public function setCardLast4($_card_last4)
     {
-        $this->container['cardLast4'] = $cardLast4;
+        $this->container['_card_last4'] = $_card_last4;
 
         return $this;
     }
 
     /**
-     * Gets cardExpiryMonth
+     * Gets _card_expiry_month
      * @return string
      */
     public function getCardExpiryMonth()
     {
-        return $this->container['cardExpiryMonth'];
+        return $this->container['_card_expiry_month'];
     }
 
     /**
-     * Sets cardExpiryMonth
-     * @param string $cardExpiryMonth Expiry month of the card.
+     * Sets _card_expiry_month
+     * @param string $_card_expiry_month Expiry month of the card.
      * @return $this
      */
-    public function setCardExpiryMonth($cardExpiryMonth)
+    public function setCardExpiryMonth($_card_expiry_month)
     {
-        $this->container['cardExpiryMonth'] = $cardExpiryMonth;
+        $this->container['_card_expiry_month'] = $_card_expiry_month;
 
         return $this;
     }
 
     /**
-     * Gets cardExpiryYear
+     * Gets _card_expiry_year
      * @return string
      */
     public function getCardExpiryYear()
     {
-        return $this->container['cardExpiryYear'];
+        return $this->container['_card_expiry_year'];
     }
 
     /**
-     * Sets cardExpiryYear
-     * @param string $cardExpiryYear Expiry year of the card.
+     * Sets _card_expiry_year
+     * @param string $_card_expiry_year Expiry year of the card.
      * @return $this
      */
-    public function setCardExpiryYear($cardExpiryYear)
+    public function setCardExpiryYear($_card_expiry_year)
     {
-        $this->container['cardExpiryYear'] = $cardExpiryYear;
+        $this->container['_card_expiry_year'] = $_card_expiry_year;
 
         return $this;
     }
@@ -503,10 +503,10 @@ class PaymentMethod implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

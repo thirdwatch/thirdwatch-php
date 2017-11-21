@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -36,7 +36,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description The Seller field type represents information about the seller. The value must be a nested object with the appropriate item subfields for the given seller. Generally usedwith the order, item or transaction events.
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,13 +55,13 @@ class Seller implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'sellerId' => 'string',
-        'name' => 'string',
-        'email' => 'string',
-        'phone' => 'string',
-        'createdDate' => 'string',
-        'lastUpdatedDate' => 'string',
-        'onboardingIpAddress' => 'string'
+        '_seller_id' => 'string',
+        '_name' => 'string',
+        '_email' => 'string',
+        '_phone' => 'string',
+        '_created_date' => 'string',
+        '_last_updated_date' => 'string',
+        '_onboarding_ip_address' => 'string'
     ];
 
     /**
@@ -69,13 +69,13 @@ class Seller implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'sellerId' => null,
-        'name' => null,
-        'email' => null,
-        'phone' => null,
-        'createdDate' => null,
-        'lastUpdatedDate' => null,
-        'onboardingIpAddress' => null
+        '_seller_id' => null,
+        '_name' => null,
+        '_email' => null,
+        '_phone' => null,
+        '_created_date' => null,
+        '_last_updated_date' => null,
+        '_onboarding_ip_address' => null
     ];
 
     public static function swaggerTypes()
@@ -93,13 +93,13 @@ class Seller implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'sellerId' => '_sellerId',
-        'name' => '_name',
-        'email' => '_email',
-        'phone' => '_phone',
-        'createdDate' => '_createdDate',
-        'lastUpdatedDate' => '_lastUpdatedDate',
-        'onboardingIpAddress' => '_onboardingIpAddress'
+        '_seller_id' => '_sellerId',
+        '_name' => '_name',
+        '_email' => '_email',
+        '_phone' => '_phone',
+        '_created_date' => '_createdDate',
+        '_last_updated_date' => '_lastUpdatedDate',
+        '_onboarding_ip_address' => '_onboardingIpAddress'
     ];
 
 
@@ -108,13 +108,13 @@ class Seller implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'sellerId' => 'setSellerId',
-        'name' => 'setName',
-        'email' => 'setEmail',
-        'phone' => 'setPhone',
-        'createdDate' => 'setCreatedDate',
-        'lastUpdatedDate' => 'setLastUpdatedDate',
-        'onboardingIpAddress' => 'setOnboardingIpAddress'
+        '_seller_id' => 'setSellerId',
+        '_name' => 'setName',
+        '_email' => 'setEmail',
+        '_phone' => 'setPhone',
+        '_created_date' => 'setCreatedDate',
+        '_last_updated_date' => 'setLastUpdatedDate',
+        '_onboarding_ip_address' => 'setOnboardingIpAddress'
     ];
 
 
@@ -123,13 +123,13 @@ class Seller implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'sellerId' => 'getSellerId',
-        'name' => 'getName',
-        'email' => 'getEmail',
-        'phone' => 'getPhone',
-        'createdDate' => 'getCreatedDate',
-        'lastUpdatedDate' => 'getLastUpdatedDate',
-        'onboardingIpAddress' => 'getOnboardingIpAddress'
+        '_seller_id' => 'getSellerId',
+        '_name' => 'getName',
+        '_email' => 'getEmail',
+        '_phone' => 'getPhone',
+        '_created_date' => 'getCreatedDate',
+        '_last_updated_date' => 'getLastUpdatedDate',
+        '_onboarding_ip_address' => 'getOnboardingIpAddress'
     ];
 
     public static function attributeMap()
@@ -163,13 +163,13 @@ class Seller implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['sellerId'] = isset($data['sellerId']) ? $data['sellerId'] : null;
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['email'] = isset($data['email']) ? $data['email'] : null;
-        $this->container['phone'] = isset($data['phone']) ? $data['phone'] : null;
-        $this->container['createdDate'] = isset($data['createdDate']) ? $data['createdDate'] : null;
-        $this->container['lastUpdatedDate'] = isset($data['lastUpdatedDate']) ? $data['lastUpdatedDate'] : null;
-        $this->container['onboardingIpAddress'] = isset($data['onboardingIpAddress']) ? $data['onboardingIpAddress'] : null;
+        $this->container['_seller_id'] = isset($data['_seller_id']) ? $data['_seller_id'] : null;
+        $this->container['_name'] = isset($data['_name']) ? $data['_name'] : null;
+        $this->container['_email'] = isset($data['_email']) ? $data['_email'] : null;
+        $this->container['_phone'] = isset($data['_phone']) ? $data['_phone'] : null;
+        $this->container['_created_date'] = isset($data['_created_date']) ? $data['_created_date'] : null;
+        $this->container['_last_updated_date'] = isset($data['_last_updated_date']) ? $data['_last_updated_date'] : null;
+        $this->container['_onboarding_ip_address'] = isset($data['_onboarding_ip_address']) ? $data['_onboarding_ip_address'] : null;
     }
 
     /**
@@ -198,148 +198,148 @@ class Seller implements ArrayAccess
 
 
     /**
-     * Gets sellerId
+     * Gets _seller_id
      * @return string
      */
     public function getSellerId()
     {
-        return $this->container['sellerId'];
+        return $this->container['_seller_id'];
     }
 
     /**
-     * Sets sellerId
-     * @param string $sellerId The seller’s internal account ID. This field is required on all events required seller info.
+     * Sets _seller_id
+     * @param string $_seller_id The seller’s internal account ID. This field is required on all events required seller info.
      * @return $this
      */
-    public function setSellerId($sellerId)
+    public function setSellerId($_seller_id)
     {
-        $this->container['sellerId'] = $sellerId;
+        $this->container['_seller_id'] = $_seller_id;
 
         return $this;
     }
 
     /**
-     * Gets name
+     * Gets _name
      * @return string
      */
     public function getName()
     {
-        return $this->container['name'];
+        return $this->container['_name'];
     }
 
     /**
-     * Sets name
-     * @param string $name Provide the full name associated with the seller here. Concatenate first name and last name together if you collect them separately in your system.
+     * Sets _name
+     * @param string $_name Provide the full name associated with the seller here. Concatenate first name and last name together if you collect them separately in your system.
      * @return $this
      */
-    public function setName($name)
+    public function setName($_name)
     {
-        $this->container['name'] = $name;
+        $this->container['_name'] = $_name;
 
         return $this;
     }
 
     /**
-     * Gets email
+     * Gets _email
      * @return string
      */
     public function getEmail()
     {
-        return $this->container['email'];
+        return $this->container['_email'];
     }
 
     /**
-     * Sets email
-     * @param string $email Email of the seller. Note - If the seller's email is also their account ID in your system, set both the _sellerId and _email fields to their email address.
+     * Sets _email
+     * @param string $_email Email of the seller. Note - If the seller's email is also their account ID in your system, set both the _sellerId and _email fields to their email address.
      * @return $this
      */
-    public function setEmail($email)
+    public function setEmail($_email)
     {
-        $this->container['email'] = $email;
+        $this->container['_email'] = $_email;
 
         return $this;
     }
 
     /**
-     * Gets phone
+     * Gets _phone
      * @return string
      */
     public function getPhone()
     {
-        return $this->container['phone'];
+        return $this->container['_phone'];
     }
 
     /**
-     * Sets phone
-     * @param string $phone The primary phone number of the seller associated with this account. Provide the phone number as a string.
+     * Sets _phone
+     * @param string $_phone The primary phone number of the seller associated with this account. Provide the phone number as a string.
      * @return $this
      */
-    public function setPhone($phone)
+    public function setPhone($_phone)
     {
-        $this->container['phone'] = $phone;
+        $this->container['_phone'] = $_phone;
 
         return $this;
     }
 
     /**
-     * Gets createdDate
+     * Gets _created_date
      * @return string
      */
     public function getCreatedDate()
     {
-        return $this->container['createdDate'];
+        return $this->container['_created_date'];
     }
 
     /**
-     * Sets createdDate
-     * @param string $createdDate Date when seller registered in system.
+     * Sets _created_date
+     * @param string $_created_date Date when seller registered in system.
      * @return $this
      */
-    public function setCreatedDate($createdDate)
+    public function setCreatedDate($_created_date)
     {
-        $this->container['createdDate'] = $createdDate;
+        $this->container['_created_date'] = $_created_date;
 
         return $this;
     }
 
     /**
-     * Gets lastUpdatedDate
+     * Gets _last_updated_date
      * @return string
      */
     public function getLastUpdatedDate()
     {
-        return $this->container['lastUpdatedDate'];
+        return $this->container['_last_updated_date'];
     }
 
     /**
-     * Sets lastUpdatedDate
-     * @param string $lastUpdatedDate Date when seller profile uopdated last time.
+     * Sets _last_updated_date
+     * @param string $_last_updated_date Date when seller profile uopdated last time.
      * @return $this
      */
-    public function setLastUpdatedDate($lastUpdatedDate)
+    public function setLastUpdatedDate($_last_updated_date)
     {
-        $this->container['lastUpdatedDate'] = $lastUpdatedDate;
+        $this->container['_last_updated_date'] = $_last_updated_date;
 
         return $this;
     }
 
     /**
-     * Gets onboardingIpAddress
+     * Gets _onboarding_ip_address
      * @return string
      */
     public function getOnboardingIpAddress()
     {
-        return $this->container['onboardingIpAddress'];
+        return $this->container['_onboarding_ip_address'];
     }
 
     /**
-     * Sets onboardingIpAddress
-     * @param string $onboardingIpAddress Ip address used by seller while registration.
+     * Sets _onboarding_ip_address
+     * @param string $_onboarding_ip_address Ip address used by seller while registration.
      * @return $this
      */
-    public function setOnboardingIpAddress($onboardingIpAddress)
+    public function setOnboardingIpAddress($_onboarding_ip_address)
     {
-        $this->container['onboardingIpAddress'] = $onboardingIpAddress;
+        $this->container['_onboarding_ip_address'] = $_onboarding_ip_address;
 
         return $this;
     }
@@ -395,10 +395,10 @@ class Seller implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

@@ -1,4 +1,4 @@
-# ai.thirdwatch\ChargebackApi
+# ai\thirdwatch\ChargebackApi
 
 All URIs are relative to *https://localhost/event*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **chargeback**
-> \ai.thirdwatch\Model\EventResponse chargeback($jSON)
+> \ai\thirdwatch\Model\EventResponse chargeback($json)
 
 Use chargeback to capture a chargeback reported on a transaction. This event can be called multiple times to record changes to the chargeback state.
 
@@ -20,15 +20,15 @@ Note - When you send a chargeback event you also need to send a label event if y
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
+ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
+// ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
-$api_instance = new ai.thirdwatch\Api\ChargebackApi();
-$jSON = new \ai.thirdwatch\Model\Chargeback(); // \ai.thirdwatch\Model\Chargeback | Pass chargeback to thirdwatch. Only `_userID` is required field. But this should contain chargeback info.
+$api_instance = new ai\thirdwatch\Api\ChargebackApi();
+$json = new \ai\thirdwatch\Model\Chargeback(); // \ai\thirdwatch\Model\Chargeback | Pass chargeback to thirdwatch. Only `_userID` is required field. But this should contain chargeback info.
 
 try {
-    $result = $api_instance->chargeback($jSON);
+    $result = $api_instance->chargeback($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ChargebackApi->chargeback: ', $e->getMessage(), PHP_EOL;
@@ -40,11 +40,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai.thirdwatch\Model\Chargeback**](../Model/Chargeback.md)| Pass chargeback to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain chargeback info. |
+ **json** | [**\ai\thirdwatch\Model\Chargeback**](../Model/Chargeback.md)| Pass chargeback to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain chargeback info. |
 
 ### Return type
 
-[**\ai.thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
+[**\ai\thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -36,7 +36,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description The Item field type represents a product or service for sale in your business. The value must be a nested object with the appropriate item subfields. Generally used in the add_to_cart and remove_from_cart events.
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,27 +55,27 @@ class Item implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'itemId' => 'string',
-        'productTitle' => 'string',
-        'price' => 'string',
-        'currencyCode' => 'string',
-        'upc' => 'string',
-        'sku' => 'string',
-        'isbn' => 'string',
-        'brand' => 'string',
-        'manufacturer' => 'string',
-        'category' => 'string',
-        'tags' => 'string',
-        'color' => 'string',
-        'quantity' => 'int',
-        'isOnSale' => 'bool',
-        'maxQuantity' => 'int',
-        'discountPrice' => 'string',
-        'productWeight' => 'string',
-        'country' => 'string',
-        'descriptionShort' => 'string',
-        'description' => 'string',
-        'seller' => '\ai.thirdwatch\Model\Seller'
+        '_item_id' => 'string',
+        '_product_title' => 'string',
+        '_price' => 'string',
+        '_currency_code' => 'string',
+        '_upc' => 'string',
+        '_sku' => 'string',
+        '_isbn' => 'string',
+        '_brand' => 'string',
+        '_manufacturer' => 'string',
+        '_category' => 'string',
+        '_tags' => 'string',
+        '_color' => 'string',
+        '_quantity' => 'int',
+        '_is_on_sale' => 'bool',
+        '_max_quantity' => 'int',
+        '_discount_price' => 'string',
+        '_product_weight' => 'string',
+        '_country' => 'string',
+        '_description_short' => 'string',
+        '_description' => 'string',
+        '_seller' => '\ai\thirdwatch\Model\Seller'
     ];
 
     /**
@@ -83,27 +83,27 @@ class Item implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'itemId' => null,
-        'productTitle' => null,
-        'price' => null,
-        'currencyCode' => null,
-        'upc' => null,
-        'sku' => null,
-        'isbn' => null,
-        'brand' => null,
-        'manufacturer' => null,
-        'category' => null,
-        'tags' => null,
-        'color' => null,
-        'quantity' => 'int64',
-        'isOnSale' => null,
-        'maxQuantity' => 'int64',
-        'discountPrice' => null,
-        'productWeight' => null,
-        'country' => null,
-        'descriptionShort' => null,
-        'description' => null,
-        'seller' => null
+        '_item_id' => null,
+        '_product_title' => null,
+        '_price' => null,
+        '_currency_code' => null,
+        '_upc' => null,
+        '_sku' => null,
+        '_isbn' => null,
+        '_brand' => null,
+        '_manufacturer' => null,
+        '_category' => null,
+        '_tags' => null,
+        '_color' => null,
+        '_quantity' => 'int64',
+        '_is_on_sale' => null,
+        '_max_quantity' => 'int64',
+        '_discount_price' => null,
+        '_product_weight' => null,
+        '_country' => null,
+        '_description_short' => null,
+        '_description' => null,
+        '_seller' => null
     ];
 
     public static function swaggerTypes()
@@ -121,27 +121,27 @@ class Item implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'itemId' => '_itemId',
-        'productTitle' => '_productTitle',
-        'price' => '_price',
-        'currencyCode' => '_currencyCode',
-        'upc' => '_upc',
-        'sku' => '_sku',
-        'isbn' => '_isbn',
-        'brand' => '_brand',
-        'manufacturer' => '_manufacturer',
-        'category' => '_category',
-        'tags' => '_tags',
-        'color' => '_color',
-        'quantity' => '_quantity',
-        'isOnSale' => '_isOnSale',
-        'maxQuantity' => '_maxQuantity',
-        'discountPrice' => '_discountPrice',
-        'productWeight' => '_productWeight',
-        'country' => '_country',
-        'descriptionShort' => '_descriptionShort',
-        'description' => '_description',
-        'seller' => '_seller'
+        '_item_id' => '_itemId',
+        '_product_title' => '_productTitle',
+        '_price' => '_price',
+        '_currency_code' => '_currencyCode',
+        '_upc' => '_upc',
+        '_sku' => '_sku',
+        '_isbn' => '_isbn',
+        '_brand' => '_brand',
+        '_manufacturer' => '_manufacturer',
+        '_category' => '_category',
+        '_tags' => '_tags',
+        '_color' => '_color',
+        '_quantity' => '_quantity',
+        '_is_on_sale' => '_isOnSale',
+        '_max_quantity' => '_maxQuantity',
+        '_discount_price' => '_discountPrice',
+        '_product_weight' => '_productWeight',
+        '_country' => '_country',
+        '_description_short' => '_descriptionShort',
+        '_description' => '_description',
+        '_seller' => '_seller'
     ];
 
 
@@ -150,27 +150,27 @@ class Item implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'itemId' => 'setItemId',
-        'productTitle' => 'setProductTitle',
-        'price' => 'setPrice',
-        'currencyCode' => 'setCurrencyCode',
-        'upc' => 'setUpc',
-        'sku' => 'setSku',
-        'isbn' => 'setIsbn',
-        'brand' => 'setBrand',
-        'manufacturer' => 'setManufacturer',
-        'category' => 'setCategory',
-        'tags' => 'setTags',
-        'color' => 'setColor',
-        'quantity' => 'setQuantity',
-        'isOnSale' => 'setIsOnSale',
-        'maxQuantity' => 'setMaxQuantity',
-        'discountPrice' => 'setDiscountPrice',
-        'productWeight' => 'setProductWeight',
-        'country' => 'setCountry',
-        'descriptionShort' => 'setDescriptionShort',
-        'description' => 'setDescription',
-        'seller' => 'setSeller'
+        '_item_id' => 'setItemId',
+        '_product_title' => 'setProductTitle',
+        '_price' => 'setPrice',
+        '_currency_code' => 'setCurrencyCode',
+        '_upc' => 'setUpc',
+        '_sku' => 'setSku',
+        '_isbn' => 'setIsbn',
+        '_brand' => 'setBrand',
+        '_manufacturer' => 'setManufacturer',
+        '_category' => 'setCategory',
+        '_tags' => 'setTags',
+        '_color' => 'setColor',
+        '_quantity' => 'setQuantity',
+        '_is_on_sale' => 'setIsOnSale',
+        '_max_quantity' => 'setMaxQuantity',
+        '_discount_price' => 'setDiscountPrice',
+        '_product_weight' => 'setProductWeight',
+        '_country' => 'setCountry',
+        '_description_short' => 'setDescriptionShort',
+        '_description' => 'setDescription',
+        '_seller' => 'setSeller'
     ];
 
 
@@ -179,27 +179,27 @@ class Item implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'itemId' => 'getItemId',
-        'productTitle' => 'getProductTitle',
-        'price' => 'getPrice',
-        'currencyCode' => 'getCurrencyCode',
-        'upc' => 'getUpc',
-        'sku' => 'getSku',
-        'isbn' => 'getIsbn',
-        'brand' => 'getBrand',
-        'manufacturer' => 'getManufacturer',
-        'category' => 'getCategory',
-        'tags' => 'getTags',
-        'color' => 'getColor',
-        'quantity' => 'getQuantity',
-        'isOnSale' => 'getIsOnSale',
-        'maxQuantity' => 'getMaxQuantity',
-        'discountPrice' => 'getDiscountPrice',
-        'productWeight' => 'getProductWeight',
-        'country' => 'getCountry',
-        'descriptionShort' => 'getDescriptionShort',
-        'description' => 'getDescription',
-        'seller' => 'getSeller'
+        '_item_id' => 'getItemId',
+        '_product_title' => 'getProductTitle',
+        '_price' => 'getPrice',
+        '_currency_code' => 'getCurrencyCode',
+        '_upc' => 'getUpc',
+        '_sku' => 'getSku',
+        '_isbn' => 'getIsbn',
+        '_brand' => 'getBrand',
+        '_manufacturer' => 'getManufacturer',
+        '_category' => 'getCategory',
+        '_tags' => 'getTags',
+        '_color' => 'getColor',
+        '_quantity' => 'getQuantity',
+        '_is_on_sale' => 'getIsOnSale',
+        '_max_quantity' => 'getMaxQuantity',
+        '_discount_price' => 'getDiscountPrice',
+        '_product_weight' => 'getProductWeight',
+        '_country' => 'getCountry',
+        '_description_short' => 'getDescriptionShort',
+        '_description' => 'getDescription',
+        '_seller' => 'getSeller'
     ];
 
     public static function attributeMap()
@@ -233,27 +233,27 @@ class Item implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['itemId'] = isset($data['itemId']) ? $data['itemId'] : null;
-        $this->container['productTitle'] = isset($data['productTitle']) ? $data['productTitle'] : null;
-        $this->container['price'] = isset($data['price']) ? $data['price'] : null;
-        $this->container['currencyCode'] = isset($data['currencyCode']) ? $data['currencyCode'] : null;
-        $this->container['upc'] = isset($data['upc']) ? $data['upc'] : null;
-        $this->container['sku'] = isset($data['sku']) ? $data['sku'] : null;
-        $this->container['isbn'] = isset($data['isbn']) ? $data['isbn'] : null;
-        $this->container['brand'] = isset($data['brand']) ? $data['brand'] : null;
-        $this->container['manufacturer'] = isset($data['manufacturer']) ? $data['manufacturer'] : null;
-        $this->container['category'] = isset($data['category']) ? $data['category'] : null;
-        $this->container['tags'] = isset($data['tags']) ? $data['tags'] : null;
-        $this->container['color'] = isset($data['color']) ? $data['color'] : null;
-        $this->container['quantity'] = isset($data['quantity']) ? $data['quantity'] : null;
-        $this->container['isOnSale'] = isset($data['isOnSale']) ? $data['isOnSale'] : null;
-        $this->container['maxQuantity'] = isset($data['maxQuantity']) ? $data['maxQuantity'] : null;
-        $this->container['discountPrice'] = isset($data['discountPrice']) ? $data['discountPrice'] : null;
-        $this->container['productWeight'] = isset($data['productWeight']) ? $data['productWeight'] : null;
-        $this->container['country'] = isset($data['country']) ? $data['country'] : null;
-        $this->container['descriptionShort'] = isset($data['descriptionShort']) ? $data['descriptionShort'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['seller'] = isset($data['seller']) ? $data['seller'] : null;
+        $this->container['_item_id'] = isset($data['_item_id']) ? $data['_item_id'] : null;
+        $this->container['_product_title'] = isset($data['_product_title']) ? $data['_product_title'] : null;
+        $this->container['_price'] = isset($data['_price']) ? $data['_price'] : null;
+        $this->container['_currency_code'] = isset($data['_currency_code']) ? $data['_currency_code'] : null;
+        $this->container['_upc'] = isset($data['_upc']) ? $data['_upc'] : null;
+        $this->container['_sku'] = isset($data['_sku']) ? $data['_sku'] : null;
+        $this->container['_isbn'] = isset($data['_isbn']) ? $data['_isbn'] : null;
+        $this->container['_brand'] = isset($data['_brand']) ? $data['_brand'] : null;
+        $this->container['_manufacturer'] = isset($data['_manufacturer']) ? $data['_manufacturer'] : null;
+        $this->container['_category'] = isset($data['_category']) ? $data['_category'] : null;
+        $this->container['_tags'] = isset($data['_tags']) ? $data['_tags'] : null;
+        $this->container['_color'] = isset($data['_color']) ? $data['_color'] : null;
+        $this->container['_quantity'] = isset($data['_quantity']) ? $data['_quantity'] : null;
+        $this->container['_is_on_sale'] = isset($data['_is_on_sale']) ? $data['_is_on_sale'] : null;
+        $this->container['_max_quantity'] = isset($data['_max_quantity']) ? $data['_max_quantity'] : null;
+        $this->container['_discount_price'] = isset($data['_discount_price']) ? $data['_discount_price'] : null;
+        $this->container['_product_weight'] = isset($data['_product_weight']) ? $data['_product_weight'] : null;
+        $this->container['_country'] = isset($data['_country']) ? $data['_country'] : null;
+        $this->container['_description_short'] = isset($data['_description_short']) ? $data['_description_short'] : null;
+        $this->container['_description'] = isset($data['_description']) ? $data['_description'] : null;
+        $this->container['_seller'] = isset($data['_seller']) ? $data['_seller'] : null;
     }
 
     /**
@@ -282,442 +282,442 @@ class Item implements ArrayAccess
 
 
     /**
-     * Gets itemId
+     * Gets _item_id
      * @return string
      */
     public function getItemId()
     {
-        return $this->container['itemId'];
+        return $this->container['_item_id'];
     }
 
     /**
-     * Sets itemId
-     * @param string $itemId The item's unique identifier according to your systems. Use the same ID that you would use to look up items on your website's database.
+     * Sets _item_id
+     * @param string $_item_id The item's unique identifier according to your systems. Use the same ID that you would use to look up items on your website's database.
      * @return $this
      */
-    public function setItemId($itemId)
+    public function setItemId($_item_id)
     {
-        $this->container['itemId'] = $itemId;
+        $this->container['_item_id'] = $_item_id;
 
         return $this;
     }
 
     /**
-     * Gets productTitle
+     * Gets _product_title
      * @return string
      */
     public function getProductTitle()
     {
-        return $this->container['productTitle'];
+        return $this->container['_product_title'];
     }
 
     /**
-     * Sets productTitle
-     * @param string $productTitle The item's name, e.g., \"WD 2 TB External Hard Drive\".
+     * Sets _product_title
+     * @param string $_product_title The item's name, e.g., \"WD 2 TB External Hard Drive\".
      * @return $this
      */
-    public function setProductTitle($productTitle)
+    public function setProductTitle($_product_title)
     {
-        $this->container['productTitle'] = $productTitle;
+        $this->container['_product_title'] = $_product_title;
 
         return $this;
     }
 
     /**
-     * Gets price
+     * Gets _price
      * @return string
      */
     public function getPrice()
     {
-        return $this->container['price'];
+        return $this->container['_price'];
     }
 
     /**
-     * Sets price
-     * @param string $price The item unit price in numbers, in the base unit of the currency_code.e.g. \"2500\"
+     * Sets _price
+     * @param string $_price The item unit price in numbers, in the base unit of the currency_code.e.g. \"2500\"
      * @return $this
      */
-    public function setPrice($price)
+    public function setPrice($_price)
     {
-        $this->container['price'] = $price;
+        $this->container['_price'] = $_price;
 
         return $this;
     }
 
     /**
-     * Gets currencyCode
+     * Gets _currency_code
      * @return string
      */
     public function getCurrencyCode()
     {
-        return $this->container['currencyCode'];
+        return $this->container['_currency_code'];
     }
 
     /**
-     * Sets currencyCode
-     * @param string $currencyCode The [ISO-4217](http://en.wikipedia.org/wiki/ISO_4217) currency code for the amount. e.g., USD, INR alternative currencies, like bitcoin or points systems.
+     * Sets _currency_code
+     * @param string $_currency_code The [ISO-4217](http://en.wikipedia.org/wiki/ISO_4217) currency code for the amount. e.g., USD, INR alternative currencies, like bitcoin or points systems.
      * @return $this
      */
-    public function setCurrencyCode($currencyCode)
+    public function setCurrencyCode($_currency_code)
     {
-        $this->container['currencyCode'] = $currencyCode;
+        $this->container['_currency_code'] = $_currency_code;
 
         return $this;
     }
 
     /**
-     * Gets upc
+     * Gets _upc
      * @return string
      */
     public function getUpc()
     {
-        return $this->container['upc'];
+        return $this->container['_upc'];
     }
 
     /**
-     * Sets upc
-     * @param string $upc If the item has a Universal Product Code (UPC), provide it here.
+     * Sets _upc
+     * @param string $_upc If the item has a Universal Product Code (UPC), provide it here.
      * @return $this
      */
-    public function setUpc($upc)
+    public function setUpc($_upc)
     {
-        $this->container['upc'] = $upc;
+        $this->container['_upc'] = $_upc;
 
         return $this;
     }
 
     /**
-     * Gets sku
+     * Gets _sku
      * @return string
      */
     public function getSku()
     {
-        return $this->container['sku'];
+        return $this->container['_sku'];
     }
 
     /**
-     * Sets sku
-     * @param string $sku If the item has a Stock-keeping Unit ID (SKU), provide it here.
+     * Sets _sku
+     * @param string $_sku If the item has a Stock-keeping Unit ID (SKU), provide it here.
      * @return $this
      */
-    public function setSku($sku)
+    public function setSku($_sku)
     {
-        $this->container['sku'] = $sku;
+        $this->container['_sku'] = $_sku;
 
         return $this;
     }
 
     /**
-     * Gets isbn
+     * Gets _isbn
      * @return string
      */
     public function getIsbn()
     {
-        return $this->container['isbn'];
+        return $this->container['_isbn'];
     }
 
     /**
-     * Sets isbn
-     * @param string $isbn If the item is a book with an International Standard Book Number (ISBN), provide it here.
+     * Sets _isbn
+     * @param string $_isbn If the item is a book with an International Standard Book Number (ISBN), provide it here.
      * @return $this
      */
-    public function setIsbn($isbn)
+    public function setIsbn($_isbn)
     {
-        $this->container['isbn'] = $isbn;
+        $this->container['_isbn'] = $_isbn;
 
         return $this;
     }
 
     /**
-     * Gets brand
+     * Gets _brand
      * @return string
      */
     public function getBrand()
     {
-        return $this->container['brand'];
+        return $this->container['_brand'];
     }
 
     /**
-     * Sets brand
-     * @param string $brand The brand name of the item.
+     * Sets _brand
+     * @param string $_brand The brand name of the item.
      * @return $this
      */
-    public function setBrand($brand)
+    public function setBrand($_brand)
     {
-        $this->container['brand'] = $brand;
+        $this->container['_brand'] = $_brand;
 
         return $this;
     }
 
     /**
-     * Gets manufacturer
+     * Gets _manufacturer
      * @return string
      */
     public function getManufacturer()
     {
-        return $this->container['manufacturer'];
+        return $this->container['_manufacturer'];
     }
 
     /**
-     * Sets manufacturer
-     * @param string $manufacturer Name of the item's manufacturer.
+     * Sets _manufacturer
+     * @param string $_manufacturer Name of the item's manufacturer.
      * @return $this
      */
-    public function setManufacturer($manufacturer)
+    public function setManufacturer($_manufacturer)
     {
-        $this->container['manufacturer'] = $manufacturer;
+        $this->container['_manufacturer'] = $_manufacturer;
 
         return $this;
     }
 
     /**
-     * Gets category
+     * Gets _category
      * @return string
      */
     public function getCategory()
     {
-        return $this->container['category'];
+        return $this->container['_category'];
     }
 
     /**
-     * Sets category
-     * @param string $category The category this item is listed under in your business. e.g., \"travel\", \"man > bags\".
+     * Sets _category
+     * @param string $_category The category this item is listed under in your business. e.g., \"travel\", \"man > bags\".
      * @return $this
      */
-    public function setCategory($category)
+    public function setCategory($_category)
     {
-        $this->container['category'] = $category;
+        $this->container['_category'] = $_category;
 
         return $this;
     }
 
     /**
-     * Gets tags
+     * Gets _tags
      * @return string
      */
     public function getTags()
     {
-        return $this->container['tags'];
+        return $this->container['_tags'];
     }
 
     /**
-     * Sets tags
-     * @param string $tags The tags used to describe this item in your business. e.g., \"man\", \"summer\".
+     * Sets _tags
+     * @param string $_tags The tags used to describe this item in your business. e.g., \"man\", \"summer\".
      * @return $this
      */
-    public function setTags($tags)
+    public function setTags($_tags)
     {
-        $this->container['tags'] = $tags;
+        $this->container['_tags'] = $_tags;
 
         return $this;
     }
 
     /**
-     * Gets color
+     * Gets _color
      * @return string
      */
     public function getColor()
     {
-        return $this->container['color'];
+        return $this->container['_color'];
     }
 
     /**
-     * Sets color
-     * @param string $color The color of the item.
+     * Sets _color
+     * @param string $_color The color of the item.
      * @return $this
      */
-    public function setColor($color)
+    public function setColor($_color)
     {
-        $this->container['color'] = $color;
+        $this->container['_color'] = $_color;
 
         return $this;
     }
 
     /**
-     * Gets quantity
+     * Gets _quantity
      * @return int
      */
     public function getQuantity()
     {
-        return $this->container['quantity'];
+        return $this->container['_quantity'];
     }
 
     /**
-     * Sets quantity
-     * @param int $quantity The quantity of the item.
+     * Sets _quantity
+     * @param int $_quantity The quantity of the item.
      * @return $this
      */
-    public function setQuantity($quantity)
+    public function setQuantity($_quantity)
     {
-        $this->container['quantity'] = $quantity;
+        $this->container['_quantity'] = $_quantity;
 
         return $this;
     }
 
     /**
-     * Gets isOnSale
+     * Gets _is_on_sale
      * @return bool
      */
     public function getIsOnSale()
     {
-        return $this->container['isOnSale'];
+        return $this->container['_is_on_sale'];
     }
 
     /**
-     * Sets isOnSale
-     * @param bool $isOnSale Is item on sale or running offers on this item .
+     * Sets _is_on_sale
+     * @param bool $_is_on_sale Is item on sale or running offers on this item .
      * @return $this
      */
-    public function setIsOnSale($isOnSale)
+    public function setIsOnSale($_is_on_sale)
     {
-        $this->container['isOnSale'] = $isOnSale;
+        $this->container['_is_on_sale'] = $_is_on_sale;
 
         return $this;
     }
 
     /**
-     * Gets maxQuantity
+     * Gets _max_quantity
      * @return int
      */
     public function getMaxQuantity()
     {
-        return $this->container['maxQuantity'];
+        return $this->container['_max_quantity'];
     }
 
     /**
-     * Sets maxQuantity
-     * @param int $maxQuantity The max quantity per user for this item.
+     * Sets _max_quantity
+     * @param int $_max_quantity The max quantity per user for this item.
      * @return $this
      */
-    public function setMaxQuantity($maxQuantity)
+    public function setMaxQuantity($_max_quantity)
     {
-        $this->container['maxQuantity'] = $maxQuantity;
+        $this->container['_max_quantity'] = $_max_quantity;
 
         return $this;
     }
 
     /**
-     * Gets discountPrice
+     * Gets _discount_price
      * @return string
      */
     public function getDiscountPrice()
     {
-        return $this->container['discountPrice'];
+        return $this->container['_discount_price'];
     }
 
     /**
-     * Sets discountPrice
-     * @param string $discountPrice Price of the product after discount.
+     * Sets _discount_price
+     * @param string $_discount_price Price of the product after discount.
      * @return $this
      */
-    public function setDiscountPrice($discountPrice)
+    public function setDiscountPrice($_discount_price)
     {
-        $this->container['discountPrice'] = $discountPrice;
+        $this->container['_discount_price'] = $_discount_price;
 
         return $this;
     }
 
     /**
-     * Gets productWeight
+     * Gets _product_weight
      * @return string
      */
     public function getProductWeight()
     {
-        return $this->container['productWeight'];
+        return $this->container['_product_weight'];
     }
 
     /**
-     * Sets productWeight
-     * @param string $productWeight Weight of the product in Kilo Gram, e.g. \"3\" , \"0.5\"
+     * Sets _product_weight
+     * @param string $_product_weight Weight of the product in Kilo Gram, e.g. \"3\" , \"0.5\"
      * @return $this
      */
-    public function setProductWeight($productWeight)
+    public function setProductWeight($_product_weight)
     {
-        $this->container['productWeight'] = $productWeight;
+        $this->container['_product_weight'] = $_product_weight;
 
         return $this;
     }
 
     /**
-     * Gets country
+     * Gets _country
      * @return string
      */
     public function getCountry()
     {
-        return $this->container['country'];
+        return $this->container['_country'];
     }
 
     /**
-     * Sets country
-     * @param string $country The [ISO-3166](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code of the item, e.g., \"IN\" in case of India.
+     * Sets _country
+     * @param string $_country The [ISO-3166](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code of the item, e.g., \"IN\" in case of India.
      * @return $this
      */
-    public function setCountry($country)
+    public function setCountry($_country)
     {
-        $this->container['country'] = $country;
+        $this->container['_country'] = $_country;
 
         return $this;
     }
 
     /**
-     * Gets descriptionShort
+     * Gets _description_short
      * @return string
      */
     public function getDescriptionShort()
     {
-        return $this->container['descriptionShort'];
+        return $this->container['_description_short'];
     }
 
     /**
-     * Sets descriptionShort
-     * @param string $descriptionShort Short description of the item.
+     * Sets _description_short
+     * @param string $_description_short Short description of the item.
      * @return $this
      */
-    public function setDescriptionShort($descriptionShort)
+    public function setDescriptionShort($_description_short)
     {
-        $this->container['descriptionShort'] = $descriptionShort;
+        $this->container['_description_short'] = $_description_short;
 
         return $this;
     }
 
     /**
-     * Gets description
+     * Gets _description
      * @return string
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return $this->container['_description'];
     }
 
     /**
-     * Sets description
-     * @param string $description Detail description of the item.
+     * Sets _description
+     * @param string $_description Detail description of the item.
      * @return $this
      */
-    public function setDescription($description)
+    public function setDescription($_description)
     {
-        $this->container['description'] = $description;
+        $this->container['_description'] = $_description;
 
         return $this;
     }
 
     /**
-     * Gets seller
-     * @return \ai.thirdwatch\Model\Seller
+     * Gets _seller
+     * @return \ai\thirdwatch\Model\Seller
      */
     public function getSeller()
     {
-        return $this->container['seller'];
+        return $this->container['_seller'];
     }
 
     /**
-     * Sets seller
-     * @param \ai.thirdwatch\Model\Seller $seller
+     * Sets _seller
+     * @param \ai\thirdwatch\Model\Seller $_seller
      * @return $this
      */
-    public function setSeller($seller)
+    public function setSeller($_seller)
     {
-        $this->container['seller'] = $seller;
+        $this->container['_seller'] = $_seller;
 
         return $this;
     }
@@ -773,10 +773,10 @@ class Item implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

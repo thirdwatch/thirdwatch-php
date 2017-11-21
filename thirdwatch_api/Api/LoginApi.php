@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,18 +26,18 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Api;
+namespace ai\thirdwatch\Api;
 
-use \ai.thirdwatch\ApiClient;
-use \ai.thirdwatch\ApiException;
-use \ai.thirdwatch\Configuration;
-use \ai.thirdwatch\ObjectSerializer;
+use \ai\thirdwatch\ApiClient;
+use \ai\thirdwatch\ApiException;
+use \ai\thirdwatch\Configuration;
+use \ai\thirdwatch\ObjectSerializer;
 
 /**
  * LoginApi Class Doc Comment
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -46,16 +46,16 @@ class LoginApi
     /**
      * API Client
      *
-     * @var \ai.thirdwatch\ApiClient instance of the ApiClient
+     * @var \ai\thirdwatch\ApiClient instance of the ApiClient
      */
     protected $apiClient;
 
     /**
      * Constructor
      *
-     * @param \ai.thirdwatch\ApiClient|null $apiClient The api client to use
+     * @param \ai\thirdwatch\ApiClient|null $apiClient The api client to use
      */
-    public function __construct(\ai.thirdwatch\ApiClient $apiClient = null)
+    public function __construct(\ai\thirdwatch\ApiClient $apiClient = null)
     {
         if ($apiClient === null) {
             $apiClient = new ApiClient();
@@ -67,7 +67,7 @@ class LoginApi
     /**
      * Get API client
      *
-     * @return \ai.thirdwatch\ApiClient get the API client
+     * @return \ai\thirdwatch\ApiClient get the API client
      */
     public function getApiClient()
     {
@@ -77,11 +77,11 @@ class LoginApi
     /**
      * Set the API client
      *
-     * @param \ai.thirdwatch\ApiClient $apiClient set the API client
+     * @param \ai\thirdwatch\ApiClient $apiClient set the API client
      *
      * @return LoginApi
      */
-    public function setApiClient(\ai.thirdwatch\ApiClient $apiClient)
+    public function setApiClient(\ai\thirdwatch\ApiClient $apiClient)
     {
         $this->apiClient = $apiClient;
         return $this;
@@ -92,13 +92,13 @@ class LoginApi
      *
      * Use login to record when a user attempts to log in.
      *
-     * @param \ai.thirdwatch\Model\Login $jSON Pass login status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain login info. (required)
-     * @throws \ai.thirdwatch\ApiException on non-2xx response
-     * @return \ai.thirdwatch\Model\EventResponse
+     * @param \ai\thirdwatch\Model\Login $json Pass login status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain login info. (required)
+     * @throws \ai\thirdwatch\ApiException on non-2xx response
+     * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function login($jSON)
+    public function login($json)
     {
-        list($response) = $this->loginWithHttpInfo($jSON);
+        list($response) = $this->loginWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class LoginApi
      *
      * Use login to record when a user attempts to log in.
      *
-     * @param \ai.thirdwatch\Model\Login $jSON Pass login status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain login info. (required)
-     * @throws \ai.thirdwatch\ApiException on non-2xx response
-     * @return array of \ai.thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
+     * @param \ai\thirdwatch\Model\Login $json Pass login status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain login info. (required)
+     * @throws \ai\thirdwatch\ApiException on non-2xx response
+     * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function loginWithHttpInfo($jSON)
+    public function loginWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling login');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling login');
         }
         // parse inputs
         $resourcePath = "/v1/login";
@@ -131,8 +131,8 @@ class LoginApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)
@@ -154,19 +154,19 @@ class LoginApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\ai.thirdwatch\Model\EventResponse',
+                '\ai\thirdwatch\Model\EventResponse',
                 '/v1/login'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\ai.thirdwatch\Model\EventResponse', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\ai\thirdwatch\Model\EventResponse', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ai.thirdwatch\Model\EventResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ai\thirdwatch\Model\EventResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 default:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ai.thirdwatch\Model\ErrorResponse', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\ai\thirdwatch\Model\ErrorResponse', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

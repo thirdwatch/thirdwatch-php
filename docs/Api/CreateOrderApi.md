@@ -1,4 +1,4 @@
-# ai.thirdwatch\CreateOrderApi
+# ai\thirdwatch\CreateOrderApi
 
 All URIs are relative to *https://localhost/event*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **createOrder**
-> \ai.thirdwatch\Model\EventResponse createOrder($body)
+> \ai\thirdwatch\Model\EventResponse createOrder($body)
 
 Submit a new or existing order to Thirdwatch for review. This API should contain order item info, the payment info, and user identity info.
 
@@ -18,12 +18,12 @@ Submit a new or existing order to Thirdwatch for review. This API should contain
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
+ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
+// ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
-$api_instance = new ai.thirdwatch\Api\CreateOrderApi();
-$body = new \ai.thirdwatch\Model\CreateOrder(); // \ai.thirdwatch\Model\CreateOrder | An order to submit for review. Only `_userID` is required field. But this should contain order info.
+$api_instance = new ai\thirdwatch\Api\CreateOrderApi();
+$body = new \ai\thirdwatch\Model\CreateOrder(); // \ai\thirdwatch\Model\CreateOrder | An order to submit for review. Only `_userID` is required field. But this should contain order info.
 
 try {
     $result = $api_instance->createOrder($body);
@@ -38,11 +38,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\ai.thirdwatch\Model\CreateOrder**](../Model/CreateOrder.md)| An order to submit for review. Only &#x60;_userID&#x60; is required field. But this should contain order info. |
+ **body** | [**\ai\thirdwatch\Model\CreateOrder**](../Model/CreateOrder.md)| An order to submit for review. Only &#x60;_userID&#x60; is required field. But this should contain order info. |
 
 ### Return type
 
-[**\ai.thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
+[**\ai\thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
 
 ### Authorization
 

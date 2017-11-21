@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * ReportItem Class Doc Comment
  *
  * @category    Class
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -54,13 +54,13 @@ class ReportItem implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userId' => 'string',
-        'sessionId' => 'string',
-        'itemId' => 'string',
-        'deviceIp' => 'string',
-        'originTimestamp' => 'string',
-        'userEmail' => 'string',
-        'customInfo' => '\ai.thirdwatch\Model\CustomInfo'
+        '_user_id' => 'string',
+        '_session_id' => 'string',
+        '_item_id' => 'string',
+        '_device_ip' => 'string',
+        '_origin_timestamp' => 'string',
+        '_user_email' => 'string',
+        '_custom_info' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -68,13 +68,13 @@ class ReportItem implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userId' => null,
-        'sessionId' => null,
-        'itemId' => null,
-        'deviceIp' => null,
-        'originTimestamp' => null,
-        'userEmail' => null,
-        'customInfo' => null
+        '_user_id' => null,
+        '_session_id' => null,
+        '_item_id' => null,
+        '_device_ip' => null,
+        '_origin_timestamp' => null,
+        '_user_email' => null,
+        '_custom_info' => null
     ];
 
     public static function swaggerTypes()
@@ -92,13 +92,13 @@ class ReportItem implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userId' => '_userId',
-        'sessionId' => '_sessionId',
-        'itemId' => '_itemId',
-        'deviceIp' => '_deviceIp',
-        'originTimestamp' => '_originTimestamp',
-        'userEmail' => '_userEmail',
-        'customInfo' => '_customInfo'
+        '_user_id' => '_userId',
+        '_session_id' => '_sessionId',
+        '_item_id' => '_itemId',
+        '_device_ip' => '_deviceIp',
+        '_origin_timestamp' => '_originTimestamp',
+        '_user_email' => '_userEmail',
+        '_custom_info' => '_customInfo'
     ];
 
 
@@ -107,13 +107,13 @@ class ReportItem implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userId' => 'setUserId',
-        'sessionId' => 'setSessionId',
-        'itemId' => 'setItemId',
-        'deviceIp' => 'setDeviceIp',
-        'originTimestamp' => 'setOriginTimestamp',
-        'userEmail' => 'setUserEmail',
-        'customInfo' => 'setCustomInfo'
+        '_user_id' => 'setUserId',
+        '_session_id' => 'setSessionId',
+        '_item_id' => 'setItemId',
+        '_device_ip' => 'setDeviceIp',
+        '_origin_timestamp' => 'setOriginTimestamp',
+        '_user_email' => 'setUserEmail',
+        '_custom_info' => 'setCustomInfo'
     ];
 
 
@@ -122,13 +122,13 @@ class ReportItem implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userId' => 'getUserId',
-        'sessionId' => 'getSessionId',
-        'itemId' => 'getItemId',
-        'deviceIp' => 'getDeviceIp',
-        'originTimestamp' => 'getOriginTimestamp',
-        'userEmail' => 'getUserEmail',
-        'customInfo' => 'getCustomInfo'
+        '_user_id' => 'getUserId',
+        '_session_id' => 'getSessionId',
+        '_item_id' => 'getItemId',
+        '_device_ip' => 'getDeviceIp',
+        '_origin_timestamp' => 'getOriginTimestamp',
+        '_user_email' => 'getUserEmail',
+        '_custom_info' => 'getCustomInfo'
     ];
 
     public static function attributeMap()
@@ -162,13 +162,13 @@ class ReportItem implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
-        $this->container['sessionId'] = isset($data['sessionId']) ? $data['sessionId'] : null;
-        $this->container['itemId'] = isset($data['itemId']) ? $data['itemId'] : null;
-        $this->container['deviceIp'] = isset($data['deviceIp']) ? $data['deviceIp'] : null;
-        $this->container['originTimestamp'] = isset($data['originTimestamp']) ? $data['originTimestamp'] : null;
-        $this->container['userEmail'] = isset($data['userEmail']) ? $data['userEmail'] : null;
-        $this->container['customInfo'] = isset($data['customInfo']) ? $data['customInfo'] : null;
+        $this->container['_user_id'] = isset($data['_user_id']) ? $data['_user_id'] : null;
+        $this->container['_session_id'] = isset($data['_session_id']) ? $data['_session_id'] : null;
+        $this->container['_item_id'] = isset($data['_item_id']) ? $data['_item_id'] : null;
+        $this->container['_device_ip'] = isset($data['_device_ip']) ? $data['_device_ip'] : null;
+        $this->container['_origin_timestamp'] = isset($data['_origin_timestamp']) ? $data['_origin_timestamp'] : null;
+        $this->container['_user_email'] = isset($data['_user_email']) ? $data['_user_email'] : null;
+        $this->container['_custom_info'] = isset($data['_custom_info']) ? $data['_custom_info'] : null;
     }
 
     /**
@@ -197,148 +197,148 @@ class ReportItem implements ArrayAccess
 
 
     /**
-     * Gets userId
+     * Gets _user_id
      * @return string
      */
     public function getUserId()
     {
-        return $this->container['userId'];
+        return $this->container['_user_id'];
     }
 
     /**
-     * Sets userId
-     * @param string $userId The user's account ID according to your systems. Note that user IDs are case sensitive.
+     * Sets _user_id
+     * @param string $_user_id The user's account ID according to your systems. Note that user IDs are case sensitive.
      * @return $this
      */
-    public function setUserId($userId)
+    public function setUserId($_user_id)
     {
-        $this->container['userId'] = $userId;
+        $this->container['_user_id'] = $_user_id;
 
         return $this;
     }
 
     /**
-     * Gets sessionId
+     * Gets _session_id
      * @return string
      */
     public function getSessionId()
     {
-        return $this->container['sessionId'];
+        return $this->container['_session_id'];
     }
 
     /**
-     * Sets sessionId
-     * @param string $sessionId The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
+     * Sets _session_id
+     * @param string $_session_id The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
      * @return $this
      */
-    public function setSessionId($sessionId)
+    public function setSessionId($_session_id)
     {
-        $this->container['sessionId'] = $sessionId;
+        $this->container['_session_id'] = $_session_id;
 
         return $this;
     }
 
     /**
-     * Gets itemId
+     * Gets _item_id
      * @return string
      */
     public function getItemId()
     {
-        return $this->container['itemId'];
+        return $this->container['_item_id'];
     }
 
     /**
-     * Sets itemId
-     * @param string $itemId The unique ID for the item that is being reported. Note - item IDs are case sensitive.
+     * Sets _item_id
+     * @param string $_item_id The unique ID for the item that is being reported. Note - item IDs are case sensitive.
      * @return $this
      */
-    public function setItemId($itemId)
+    public function setItemId($_item_id)
     {
-        $this->container['itemId'] = $itemId;
+        $this->container['_item_id'] = $_item_id;
 
         return $this;
     }
 
     /**
-     * Gets deviceIp
+     * Gets _device_ip
      * @return string
      */
     public function getDeviceIp()
     {
-        return $this->container['deviceIp'];
+        return $this->container['_device_ip'];
     }
 
     /**
-     * Sets deviceIp
-     * @param string $deviceIp IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
+     * Sets _device_ip
+     * @param string $_device_ip IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
      * @return $this
      */
-    public function setDeviceIp($deviceIp)
+    public function setDeviceIp($_device_ip)
     {
-        $this->container['deviceIp'] = $deviceIp;
+        $this->container['_device_ip'] = $_device_ip;
 
         return $this;
     }
 
     /**
-     * Gets originTimestamp
+     * Gets _origin_timestamp
      * @return string
      */
     public function getOriginTimestamp()
     {
-        return $this->container['originTimestamp'];
+        return $this->container['_origin_timestamp'];
     }
 
     /**
-     * Sets originTimestamp
-     * @param string $originTimestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
+     * Sets _origin_timestamp
+     * @param string $_origin_timestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
      * @return $this
      */
-    public function setOriginTimestamp($originTimestamp)
+    public function setOriginTimestamp($_origin_timestamp)
     {
-        $this->container['originTimestamp'] = $originTimestamp;
+        $this->container['_origin_timestamp'] = $_origin_timestamp;
 
         return $this;
     }
 
     /**
-     * Gets userEmail
+     * Gets _user_email
      * @return string
      */
     public function getUserEmail()
     {
-        return $this->container['userEmail'];
+        return $this->container['_user_email'];
     }
 
     /**
-     * Sets userEmail
-     * @param string $userEmail Email of the user creating this order. Note - If the user's email is also their account ID in your system, set both the userId and userEmail fields to their email address.
+     * Sets _user_email
+     * @param string $_user_email Email of the user creating this order. Note - If the user's email is also their account ID in your system, set both the userId and userEmail fields to their email address.
      * @return $this
      */
-    public function setUserEmail($userEmail)
+    public function setUserEmail($_user_email)
     {
-        $this->container['userEmail'] = $userEmail;
+        $this->container['_user_email'] = $_user_email;
 
         return $this;
     }
 
     /**
-     * Gets customInfo
-     * @return \ai.thirdwatch\Model\CustomInfo
+     * Gets _custom_info
+     * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
-        return $this->container['customInfo'];
+        return $this->container['_custom_info'];
     }
 
     /**
-     * Sets customInfo
-     * @param \ai.thirdwatch\Model\CustomInfo $customInfo
+     * Sets _custom_info
+     * @param \ai\thirdwatch\Model\CustomInfo $_custom_info
      * @return $this
      */
-    public function setCustomInfo($customInfo)
+    public function setCustomInfo($_custom_info)
     {
-        $this->container['customInfo'] = $customInfo;
+        $this->container['_custom_info'] = $_custom_info;
 
         return $this;
     }
@@ -394,10 +394,10 @@ class ReportItem implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

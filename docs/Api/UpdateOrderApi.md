@@ -1,4 +1,4 @@
-# ai.thirdwatch\UpdateOrderApi
+# ai\thirdwatch\UpdateOrderApi
 
 All URIs are relative to *https://localhost/event*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **updateOrder**
-> \ai.thirdwatch\Model\EventResponse updateOrder($jSON)
+> \ai\thirdwatch\Model\EventResponse updateOrder($json)
 
 Update details of an existing order.
 
@@ -20,15 +20,15 @@ Update details of an existing order.
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
+ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
+// ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
-$api_instance = new ai.thirdwatch\Api\UpdateOrderApi();
-$jSON = new \ai.thirdwatch\Model\UpdateOrder(); // \ai.thirdwatch\Model\UpdateOrder | Update details of an existing order. Only `_userID` is required field. But this should contain existing order info.
+$api_instance = new ai\thirdwatch\Api\UpdateOrderApi();
+$json = new \ai\thirdwatch\Model\UpdateOrder(); // \ai\thirdwatch\Model\UpdateOrder | Update details of an existing order. Only `_userID` is required field. But this should contain existing order info.
 
 try {
-    $result = $api_instance->updateOrder($jSON);
+    $result = $api_instance->updateOrder($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UpdateOrderApi->updateOrder: ', $e->getMessage(), PHP_EOL;
@@ -40,11 +40,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai.thirdwatch\Model\UpdateOrder**](../Model/UpdateOrder.md)| Update details of an existing order. Only &#x60;_userID&#x60; is required field. But this should contain existing order info. |
+ **json** | [**\ai\thirdwatch\Model\UpdateOrder**](../Model/UpdateOrder.md)| Update details of an existing order. Only &#x60;_userID&#x60; is required field. But this should contain existing order info. |
 
 ### Return type
 
-[**\ai.thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
+[**\ai\thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
 
 ### Authorization
 

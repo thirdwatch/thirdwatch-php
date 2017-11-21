@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * SendMessage Class Doc Comment
  *
  * @category    Class
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -54,14 +54,14 @@ class SendMessage implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userId' => 'string',
-        'sessionId' => 'string',
-        'deviceIp' => 'string',
-        'originTimestamp' => 'string',
-        'recipientUserId' => 'string',
-        'subject' => 'string',
-        'content' => 'string',
-        'customInfo' => '\ai.thirdwatch\Model\CustomInfo'
+        '_user_id' => 'string',
+        '_session_id' => 'string',
+        '_device_ip' => 'string',
+        '_origin_timestamp' => 'string',
+        '_recipient_user_id' => 'string',
+        '_subject' => 'string',
+        '_content' => 'string',
+        '_custom_info' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -69,14 +69,14 @@ class SendMessage implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userId' => null,
-        'sessionId' => null,
-        'deviceIp' => null,
-        'originTimestamp' => null,
-        'recipientUserId' => null,
-        'subject' => null,
-        'content' => null,
-        'customInfo' => null
+        '_user_id' => null,
+        '_session_id' => null,
+        '_device_ip' => null,
+        '_origin_timestamp' => null,
+        '_recipient_user_id' => null,
+        '_subject' => null,
+        '_content' => null,
+        '_custom_info' => null
     ];
 
     public static function swaggerTypes()
@@ -94,14 +94,14 @@ class SendMessage implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userId' => '_userId',
-        'sessionId' => '_sessionId',
-        'deviceIp' => '_deviceIp',
-        'originTimestamp' => '_originTimestamp',
-        'recipientUserId' => '_recipientUserId',
-        'subject' => '_subject',
-        'content' => '_content',
-        'customInfo' => '_customInfo'
+        '_user_id' => '_userId',
+        '_session_id' => '_sessionId',
+        '_device_ip' => '_deviceIp',
+        '_origin_timestamp' => '_originTimestamp',
+        '_recipient_user_id' => '_recipientUserId',
+        '_subject' => '_subject',
+        '_content' => '_content',
+        '_custom_info' => '_customInfo'
     ];
 
 
@@ -110,14 +110,14 @@ class SendMessage implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userId' => 'setUserId',
-        'sessionId' => 'setSessionId',
-        'deviceIp' => 'setDeviceIp',
-        'originTimestamp' => 'setOriginTimestamp',
-        'recipientUserId' => 'setRecipientUserId',
-        'subject' => 'setSubject',
-        'content' => 'setContent',
-        'customInfo' => 'setCustomInfo'
+        '_user_id' => 'setUserId',
+        '_session_id' => 'setSessionId',
+        '_device_ip' => 'setDeviceIp',
+        '_origin_timestamp' => 'setOriginTimestamp',
+        '_recipient_user_id' => 'setRecipientUserId',
+        '_subject' => 'setSubject',
+        '_content' => 'setContent',
+        '_custom_info' => 'setCustomInfo'
     ];
 
 
@@ -126,14 +126,14 @@ class SendMessage implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userId' => 'getUserId',
-        'sessionId' => 'getSessionId',
-        'deviceIp' => 'getDeviceIp',
-        'originTimestamp' => 'getOriginTimestamp',
-        'recipientUserId' => 'getRecipientUserId',
-        'subject' => 'getSubject',
-        'content' => 'getContent',
-        'customInfo' => 'getCustomInfo'
+        '_user_id' => 'getUserId',
+        '_session_id' => 'getSessionId',
+        '_device_ip' => 'getDeviceIp',
+        '_origin_timestamp' => 'getOriginTimestamp',
+        '_recipient_user_id' => 'getRecipientUserId',
+        '_subject' => 'getSubject',
+        '_content' => 'getContent',
+        '_custom_info' => 'getCustomInfo'
     ];
 
     public static function attributeMap()
@@ -167,14 +167,14 @@ class SendMessage implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
-        $this->container['sessionId'] = isset($data['sessionId']) ? $data['sessionId'] : null;
-        $this->container['deviceIp'] = isset($data['deviceIp']) ? $data['deviceIp'] : null;
-        $this->container['originTimestamp'] = isset($data['originTimestamp']) ? $data['originTimestamp'] : null;
-        $this->container['recipientUserId'] = isset($data['recipientUserId']) ? $data['recipientUserId'] : null;
-        $this->container['subject'] = isset($data['subject']) ? $data['subject'] : null;
-        $this->container['content'] = isset($data['content']) ? $data['content'] : null;
-        $this->container['customInfo'] = isset($data['customInfo']) ? $data['customInfo'] : null;
+        $this->container['_user_id'] = isset($data['_user_id']) ? $data['_user_id'] : null;
+        $this->container['_session_id'] = isset($data['_session_id']) ? $data['_session_id'] : null;
+        $this->container['_device_ip'] = isset($data['_device_ip']) ? $data['_device_ip'] : null;
+        $this->container['_origin_timestamp'] = isset($data['_origin_timestamp']) ? $data['_origin_timestamp'] : null;
+        $this->container['_recipient_user_id'] = isset($data['_recipient_user_id']) ? $data['_recipient_user_id'] : null;
+        $this->container['_subject'] = isset($data['_subject']) ? $data['_subject'] : null;
+        $this->container['_content'] = isset($data['_content']) ? $data['_content'] : null;
+        $this->container['_custom_info'] = isset($data['_custom_info']) ? $data['_custom_info'] : null;
     }
 
     /**
@@ -203,169 +203,169 @@ class SendMessage implements ArrayAccess
 
 
     /**
-     * Gets userId
+     * Gets _user_id
      * @return string
      */
     public function getUserId()
     {
-        return $this->container['userId'];
+        return $this->container['_user_id'];
     }
 
     /**
-     * Sets userId
-     * @param string $userId The user's account ID according to your systems. Note that user IDs are case sensitive.
+     * Sets _user_id
+     * @param string $_user_id The user's account ID according to your systems. Note that user IDs are case sensitive.
      * @return $this
      */
-    public function setUserId($userId)
+    public function setUserId($_user_id)
     {
-        $this->container['userId'] = $userId;
+        $this->container['_user_id'] = $_user_id;
 
         return $this;
     }
 
     /**
-     * Gets sessionId
+     * Gets _session_id
      * @return string
      */
     public function getSessionId()
     {
-        return $this->container['sessionId'];
+        return $this->container['_session_id'];
     }
 
     /**
-     * Sets sessionId
-     * @param string $sessionId The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
+     * Sets _session_id
+     * @param string $_session_id The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
      * @return $this
      */
-    public function setSessionId($sessionId)
+    public function setSessionId($_session_id)
     {
-        $this->container['sessionId'] = $sessionId;
+        $this->container['_session_id'] = $_session_id;
 
         return $this;
     }
 
     /**
-     * Gets deviceIp
+     * Gets _device_ip
      * @return string
      */
     public function getDeviceIp()
     {
-        return $this->container['deviceIp'];
+        return $this->container['_device_ip'];
     }
 
     /**
-     * Sets deviceIp
-     * @param string $deviceIp IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
+     * Sets _device_ip
+     * @param string $_device_ip IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
      * @return $this
      */
-    public function setDeviceIp($deviceIp)
+    public function setDeviceIp($_device_ip)
     {
-        $this->container['deviceIp'] = $deviceIp;
+        $this->container['_device_ip'] = $_device_ip;
 
         return $this;
     }
 
     /**
-     * Gets originTimestamp
+     * Gets _origin_timestamp
      * @return string
      */
     public function getOriginTimestamp()
     {
-        return $this->container['originTimestamp'];
+        return $this->container['_origin_timestamp'];
     }
 
     /**
-     * Sets originTimestamp
-     * @param string $originTimestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
+     * Sets _origin_timestamp
+     * @param string $_origin_timestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
      * @return $this
      */
-    public function setOriginTimestamp($originTimestamp)
+    public function setOriginTimestamp($_origin_timestamp)
     {
-        $this->container['originTimestamp'] = $originTimestamp;
+        $this->container['_origin_timestamp'] = $_origin_timestamp;
 
         return $this;
     }
 
     /**
-     * Gets recipientUserId
+     * Gets _recipient_user_id
      * @return string
      */
     public function getRecipientUserId()
     {
-        return $this->container['recipientUserId'];
+        return $this->container['_recipient_user_id'];
     }
 
     /**
-     * Sets recipientUserId
-     * @param string $recipientUserId _userID of the receiving user by default Store.
+     * Sets _recipient_user_id
+     * @param string $_recipient_user_id _userID of the receiving user by default Store.
      * @return $this
      */
-    public function setRecipientUserId($recipientUserId)
+    public function setRecipientUserId($_recipient_user_id)
     {
-        $this->container['recipientUserId'] = $recipientUserId;
+        $this->container['_recipient_user_id'] = $_recipient_user_id;
 
         return $this;
     }
 
     /**
-     * Gets subject
+     * Gets _subject
      * @return string
      */
     public function getSubject()
     {
-        return $this->container['subject'];
+        return $this->container['_subject'];
     }
 
     /**
-     * Sets subject
-     * @param string $subject The subject of the message.
+     * Sets _subject
+     * @param string $_subject The subject of the message.
      * @return $this
      */
-    public function setSubject($subject)
+    public function setSubject($_subject)
     {
-        $this->container['subject'] = $subject;
+        $this->container['_subject'] = $_subject;
 
         return $this;
     }
 
     /**
-     * Gets content
+     * Gets _content
      * @return string
      */
     public function getContent()
     {
-        return $this->container['content'];
+        return $this->container['_content'];
     }
 
     /**
-     * Sets content
-     * @param string $content The text content of the message.
+     * Sets _content
+     * @param string $_content The text content of the message.
      * @return $this
      */
-    public function setContent($content)
+    public function setContent($_content)
     {
-        $this->container['content'] = $content;
+        $this->container['_content'] = $_content;
 
         return $this;
     }
 
     /**
-     * Gets customInfo
-     * @return \ai.thirdwatch\Model\CustomInfo
+     * Gets _custom_info
+     * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
-        return $this->container['customInfo'];
+        return $this->container['_custom_info'];
     }
 
     /**
-     * Sets customInfo
-     * @param \ai.thirdwatch\Model\CustomInfo $customInfo
+     * Sets _custom_info
+     * @param \ai\thirdwatch\Model\CustomInfo $_custom_info
      * @return $this
      */
-    public function setCustomInfo($customInfo)
+    public function setCustomInfo($_custom_info)
     {
-        $this->container['customInfo'] = $customInfo;
+        $this->container['_custom_info'] = $_custom_info;
 
         return $this;
     }
@@ -421,10 +421,10 @@ class SendMessage implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

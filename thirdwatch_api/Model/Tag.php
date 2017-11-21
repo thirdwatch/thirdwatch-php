@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * Tag Class Doc Comment
  *
  * @category    Class
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -54,13 +54,13 @@ class Tag implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userId' => 'string',
-        'isBad' => 'bool',
-        'abuseType' => 'string',
-        'description' => 'string',
-        'source' => 'string',
-        'analyst' => 'string',
-        'customInfo' => '\ai.thirdwatch\Model\CustomInfo'
+        '_user_id' => 'string',
+        '_is_bad' => 'bool',
+        '_abuse_type' => 'string',
+        '_description' => 'string',
+        '_source' => 'string',
+        '_analyst' => 'string',
+        '_custom_info' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -68,13 +68,13 @@ class Tag implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userId' => null,
-        'isBad' => null,
-        'abuseType' => null,
-        'description' => null,
-        'source' => null,
-        'analyst' => null,
-        'customInfo' => null
+        '_user_id' => null,
+        '_is_bad' => null,
+        '_abuse_type' => null,
+        '_description' => null,
+        '_source' => null,
+        '_analyst' => null,
+        '_custom_info' => null
     ];
 
     public static function swaggerTypes()
@@ -92,13 +92,13 @@ class Tag implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userId' => '_userId',
-        'isBad' => '_isBad',
-        'abuseType' => '_abuseType',
-        'description' => '_description',
-        'source' => '_source',
-        'analyst' => '_analyst',
-        'customInfo' => '_customInfo'
+        '_user_id' => '_userId',
+        '_is_bad' => '_isBad',
+        '_abuse_type' => '_abuseType',
+        '_description' => '_description',
+        '_source' => '_source',
+        '_analyst' => '_analyst',
+        '_custom_info' => '_customInfo'
     ];
 
 
@@ -107,13 +107,13 @@ class Tag implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userId' => 'setUserId',
-        'isBad' => 'setIsBad',
-        'abuseType' => 'setAbuseType',
-        'description' => 'setDescription',
-        'source' => 'setSource',
-        'analyst' => 'setAnalyst',
-        'customInfo' => 'setCustomInfo'
+        '_user_id' => 'setUserId',
+        '_is_bad' => 'setIsBad',
+        '_abuse_type' => 'setAbuseType',
+        '_description' => 'setDescription',
+        '_source' => 'setSource',
+        '_analyst' => 'setAnalyst',
+        '_custom_info' => 'setCustomInfo'
     ];
 
 
@@ -122,13 +122,13 @@ class Tag implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userId' => 'getUserId',
-        'isBad' => 'getIsBad',
-        'abuseType' => 'getAbuseType',
-        'description' => 'getDescription',
-        'source' => 'getSource',
-        'analyst' => 'getAnalyst',
-        'customInfo' => 'getCustomInfo'
+        '_user_id' => 'getUserId',
+        '_is_bad' => 'getIsBad',
+        '_abuse_type' => 'getAbuseType',
+        '_description' => 'getDescription',
+        '_source' => 'getSource',
+        '_analyst' => 'getAnalyst',
+        '_custom_info' => 'getCustomInfo'
     ];
 
     public static function attributeMap()
@@ -162,13 +162,13 @@ class Tag implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
-        $this->container['isBad'] = isset($data['isBad']) ? $data['isBad'] : null;
-        $this->container['abuseType'] = isset($data['abuseType']) ? $data['abuseType'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['source'] = isset($data['source']) ? $data['source'] : null;
-        $this->container['analyst'] = isset($data['analyst']) ? $data['analyst'] : null;
-        $this->container['customInfo'] = isset($data['customInfo']) ? $data['customInfo'] : null;
+        $this->container['_user_id'] = isset($data['_user_id']) ? $data['_user_id'] : null;
+        $this->container['_is_bad'] = isset($data['_is_bad']) ? $data['_is_bad'] : null;
+        $this->container['_abuse_type'] = isset($data['_abuse_type']) ? $data['_abuse_type'] : null;
+        $this->container['_description'] = isset($data['_description']) ? $data['_description'] : null;
+        $this->container['_source'] = isset($data['_source']) ? $data['_source'] : null;
+        $this->container['_analyst'] = isset($data['_analyst']) ? $data['_analyst'] : null;
+        $this->container['_custom_info'] = isset($data['_custom_info']) ? $data['_custom_info'] : null;
     }
 
     /**
@@ -197,148 +197,148 @@ class Tag implements ArrayAccess
 
 
     /**
-     * Gets userId
+     * Gets _user_id
      * @return string
      */
     public function getUserId()
     {
-        return $this->container['userId'];
+        return $this->container['_user_id'];
     }
 
     /**
-     * Sets userId
-     * @param string $userId The user's account ID according to your systems. Note that user IDs are case sensitive.
+     * Sets _user_id
+     * @param string $_user_id The user's account ID according to your systems. Note that user IDs are case sensitive.
      * @return $this
      */
-    public function setUserId($userId)
+    public function setUserId($_user_id)
     {
-        $this->container['userId'] = $userId;
+        $this->container['_user_id'] = $_user_id;
 
         return $this;
     }
 
     /**
-     * Gets isBad
+     * Gets _is_bad
      * @return bool
      */
     public function getIsBad()
     {
-        return $this->container['isBad'];
+        return $this->container['_is_bad'];
     }
 
     /**
-     * Sets isBad
-     * @param bool $isBad Indicates whether a user is engaging in behavior deemed harmful to your business. Set to true if the user is engaging in abusive activity. Set to false if the user is engaging in valid activity.
+     * Sets _is_bad
+     * @param bool $_is_bad Indicates whether a user is engaging in behavior deemed harmful to your business. Set to true if the user is engaging in abusive activity. Set to false if the user is engaging in valid activity.
      * @return $this
      */
-    public function setIsBad($isBad)
+    public function setIsBad($_is_bad)
     {
-        $this->container['isBad'] = $isBad;
+        $this->container['_is_bad'] = $_is_bad;
 
         return $this;
     }
 
     /**
-     * Gets abuseType
+     * Gets _abuse_type
      * @return string
      */
     public function getAbuseType()
     {
-        return $this->container['abuseType'];
+        return $this->container['_abuse_type'];
     }
 
     /**
-     * Sets abuseType
-     * @param string $abuseType The type of abuse for which you want to send a tag. It's important to send a tag specific to the type of abuse the user is committing so that thirdwatch can learn about specific patterns of behavior. You'll end up with more accurate results this way. e.g. _paymentAbuse, _contentAbuse, _promotionAbuse, _accountAbuse
+     * Sets _abuse_type
+     * @param string $_abuse_type The type of abuse for which you want to send a tag. It's important to send a tag specific to the type of abuse the user is committing so that thirdwatch can learn about specific patterns of behavior. You'll end up with more accurate results this way. e.g. _paymentAbuse, _contentAbuse, _promotionAbuse, _accountAbuse
      * @return $this
      */
-    public function setAbuseType($abuseType)
+    public function setAbuseType($_abuse_type)
     {
-        $this->container['abuseType'] = $abuseType;
+        $this->container['_abuse_type'] = $_abuse_type;
 
         return $this;
     }
 
     /**
-     * Gets description
+     * Gets _description
      * @return string
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return $this->container['_description'];
     }
 
     /**
-     * Sets description
-     * @param string $description The text content of the tag.Useful as annotation on why the label was added.
+     * Sets _description
+     * @param string $_description The text content of the tag.Useful as annotation on why the label was added.
      * @return $this
      */
-    public function setDescription($description)
+    public function setDescription($_description)
     {
-        $this->container['description'] = $description;
+        $this->container['_description'] = $_description;
 
         return $this;
     }
 
     /**
-     * Gets source
+     * Gets _source
      * @return string
      */
     public function getSource()
     {
-        return $this->container['source'];
+        return $this->container['_source'];
     }
 
     /**
-     * Sets source
-     * @param string $source String describing the original source of the tag information (e.g. payment gateway, manual review, etc.).
+     * Sets _source
+     * @param string $_source String describing the original source of the tag information (e.g. payment gateway, manual review, etc.).
      * @return $this
      */
-    public function setSource($source)
+    public function setSource($_source)
     {
-        $this->container['source'] = $source;
+        $this->container['_source'] = $_source;
 
         return $this;
     }
 
     /**
-     * Gets analyst
+     * Gets _analyst
      * @return string
      */
     public function getAnalyst()
     {
-        return $this->container['analyst'];
+        return $this->container['_analyst'];
     }
 
     /**
-     * Sets analyst
-     * @param string $analyst Unique identifier (e.g. email address) of the analyst who applied the label. Useful for tracking purposes after the fact.
+     * Sets _analyst
+     * @param string $_analyst Unique identifier (e.g. email address) of the analyst who applied the label. Useful for tracking purposes after the fact.
      * @return $this
      */
-    public function setAnalyst($analyst)
+    public function setAnalyst($_analyst)
     {
-        $this->container['analyst'] = $analyst;
+        $this->container['_analyst'] = $_analyst;
 
         return $this;
     }
 
     /**
-     * Gets customInfo
-     * @return \ai.thirdwatch\Model\CustomInfo
+     * Gets _custom_info
+     * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
-        return $this->container['customInfo'];
+        return $this->container['_custom_info'];
     }
 
     /**
-     * Sets customInfo
-     * @param \ai.thirdwatch\Model\CustomInfo $customInfo
+     * Sets _custom_info
+     * @param \ai\thirdwatch\Model\CustomInfo $_custom_info
      * @return $this
      */
-    public function setCustomInfo($customInfo)
+    public function setCustomInfo($_custom_info)
     {
-        $this->container['customInfo'] = $customInfo;
+        $this->container['_custom_info'] = $_custom_info;
 
         return $this;
     }
@@ -394,10 +394,10 @@ class Tag implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

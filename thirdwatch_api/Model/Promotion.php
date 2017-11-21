@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -36,7 +36,7 @@ use \ArrayAccess;
  *
  * @category    Class
  * @description The Promotion field type generically models different kinds of promotions such as referrals, coupons, free trials, etc. The value must be a nested JSON object which you populate with the appropriate information to describe the promotion. Not all sub-fields will likely apply to a given promotion. Populate only those that apply.  A promotion can be added when creating or updating an account, creating or updating an order, or on its own using the add_promotion event. The promotion object supports both monetary (e.g. 500 coupon on first order) and non-monetary (e.g. \&quot;100 in points to refer a friend\&quot;).
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -55,16 +55,16 @@ class Promotion implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'promotionId' => 'string',
-        'status' => 'string',
-        'description' => 'string',
-        'amount' => 'string',
-        'minPurchaseAmount' => 'string',
-        'referrerUserId' => 'string',
-        'failureReason' => 'string',
-        'percentageOff' => 'string',
-        'currencyCode' => 'string',
-        'type' => 'string'
+        '_promotion_id' => 'string',
+        '_status' => 'string',
+        '_description' => 'string',
+        '_amount' => 'string',
+        '_min_purchase_amount' => 'string',
+        '_referrer_user_id' => 'string',
+        '_failure_reason' => 'string',
+        '_percentage_off' => 'string',
+        '_currency_code' => 'string',
+        '_type' => 'string'
     ];
 
     /**
@@ -72,16 +72,16 @@ class Promotion implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'promotionId' => null,
-        'status' => null,
-        'description' => null,
-        'amount' => null,
-        'minPurchaseAmount' => null,
-        'referrerUserId' => null,
-        'failureReason' => null,
-        'percentageOff' => null,
-        'currencyCode' => null,
-        'type' => null
+        '_promotion_id' => null,
+        '_status' => null,
+        '_description' => null,
+        '_amount' => null,
+        '_min_purchase_amount' => null,
+        '_referrer_user_id' => null,
+        '_failure_reason' => null,
+        '_percentage_off' => null,
+        '_currency_code' => null,
+        '_type' => null
     ];
 
     public static function swaggerTypes()
@@ -99,16 +99,16 @@ class Promotion implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'promotionId' => '_promotionId',
-        'status' => '_status',
-        'description' => '_description',
-        'amount' => '_amount',
-        'minPurchaseAmount' => '_minPurchaseAmount',
-        'referrerUserId' => '_referrerUserId',
-        'failureReason' => '_failureReason',
-        'percentageOff' => '_percentageOff',
-        'currencyCode' => '_currencyCode',
-        'type' => '_type'
+        '_promotion_id' => '_promotionId',
+        '_status' => '_status',
+        '_description' => '_description',
+        '_amount' => '_amount',
+        '_min_purchase_amount' => '_minPurchaseAmount',
+        '_referrer_user_id' => '_referrerUserId',
+        '_failure_reason' => '_failureReason',
+        '_percentage_off' => '_percentageOff',
+        '_currency_code' => '_currencyCode',
+        '_type' => '_type'
     ];
 
 
@@ -117,16 +117,16 @@ class Promotion implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'promotionId' => 'setPromotionId',
-        'status' => 'setStatus',
-        'description' => 'setDescription',
-        'amount' => 'setAmount',
-        'minPurchaseAmount' => 'setMinPurchaseAmount',
-        'referrerUserId' => 'setReferrerUserId',
-        'failureReason' => 'setFailureReason',
-        'percentageOff' => 'setPercentageOff',
-        'currencyCode' => 'setCurrencyCode',
-        'type' => 'setType'
+        '_promotion_id' => 'setPromotionId',
+        '_status' => 'setStatus',
+        '_description' => 'setDescription',
+        '_amount' => 'setAmount',
+        '_min_purchase_amount' => 'setMinPurchaseAmount',
+        '_referrer_user_id' => 'setReferrerUserId',
+        '_failure_reason' => 'setFailureReason',
+        '_percentage_off' => 'setPercentageOff',
+        '_currency_code' => 'setCurrencyCode',
+        '_type' => 'setType'
     ];
 
 
@@ -135,16 +135,16 @@ class Promotion implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'promotionId' => 'getPromotionId',
-        'status' => 'getStatus',
-        'description' => 'getDescription',
-        'amount' => 'getAmount',
-        'minPurchaseAmount' => 'getMinPurchaseAmount',
-        'referrerUserId' => 'getReferrerUserId',
-        'failureReason' => 'getFailureReason',
-        'percentageOff' => 'getPercentageOff',
-        'currencyCode' => 'getCurrencyCode',
-        'type' => 'getType'
+        '_promotion_id' => 'getPromotionId',
+        '_status' => 'getStatus',
+        '_description' => 'getDescription',
+        '_amount' => 'getAmount',
+        '_min_purchase_amount' => 'getMinPurchaseAmount',
+        '_referrer_user_id' => 'getReferrerUserId',
+        '_failure_reason' => 'getFailureReason',
+        '_percentage_off' => 'getPercentageOff',
+        '_currency_code' => 'getCurrencyCode',
+        '_type' => 'getType'
     ];
 
     public static function attributeMap()
@@ -178,16 +178,16 @@ class Promotion implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['promotionId'] = isset($data['promotionId']) ? $data['promotionId'] : null;
-        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
-        $this->container['minPurchaseAmount'] = isset($data['minPurchaseAmount']) ? $data['minPurchaseAmount'] : null;
-        $this->container['referrerUserId'] = isset($data['referrerUserId']) ? $data['referrerUserId'] : null;
-        $this->container['failureReason'] = isset($data['failureReason']) ? $data['failureReason'] : null;
-        $this->container['percentageOff'] = isset($data['percentageOff']) ? $data['percentageOff'] : null;
-        $this->container['currencyCode'] = isset($data['currencyCode']) ? $data['currencyCode'] : null;
-        $this->container['type'] = isset($data['type']) ? $data['type'] : null;
+        $this->container['_promotion_id'] = isset($data['_promotion_id']) ? $data['_promotion_id'] : null;
+        $this->container['_status'] = isset($data['_status']) ? $data['_status'] : null;
+        $this->container['_description'] = isset($data['_description']) ? $data['_description'] : null;
+        $this->container['_amount'] = isset($data['_amount']) ? $data['_amount'] : null;
+        $this->container['_min_purchase_amount'] = isset($data['_min_purchase_amount']) ? $data['_min_purchase_amount'] : null;
+        $this->container['_referrer_user_id'] = isset($data['_referrer_user_id']) ? $data['_referrer_user_id'] : null;
+        $this->container['_failure_reason'] = isset($data['_failure_reason']) ? $data['_failure_reason'] : null;
+        $this->container['_percentage_off'] = isset($data['_percentage_off']) ? $data['_percentage_off'] : null;
+        $this->container['_currency_code'] = isset($data['_currency_code']) ? $data['_currency_code'] : null;
+        $this->container['_type'] = isset($data['_type']) ? $data['_type'] : null;
     }
 
     /**
@@ -216,211 +216,211 @@ class Promotion implements ArrayAccess
 
 
     /**
-     * Gets promotionId
+     * Gets _promotion_id
      * @return string
      */
     public function getPromotionId()
     {
-        return $this->container['promotionId'];
+        return $this->container['_promotion_id'];
     }
 
     /**
-     * Sets promotionId
-     * @param string $promotionId The ID/Coupon Code within your system that you use to represent this promotion. This ID is ideally unique to the promotion across users (e.g. \"Welcome\").
+     * Sets _promotion_id
+     * @param string $_promotion_id The ID/Coupon Code within your system that you use to represent this promotion. This ID is ideally unique to the promotion across users (e.g. \"Welcome\").
      * @return $this
      */
-    public function setPromotionId($promotionId)
+    public function setPromotionId($_promotion_id)
     {
-        $this->container['promotionId'] = $promotionId;
+        $this->container['_promotion_id'] = $_promotion_id;
 
         return $this;
     }
 
     /**
-     * Gets status
+     * Gets _status
      * @return string
      */
     public function getStatus()
     {
-        return $this->container['status'];
+        return $this->container['_status'];
     }
 
     /**
-     * Sets status
-     * @param string $status The status of the addition of promotion to an account. Best used with the add_promotion event. This way you can pass to Thirdwatch both successful and failed attempts when using a promotion. May be useful in spotting potential abuse. e.g. _success, _Failed
+     * Sets _status
+     * @param string $_status The status of the addition of promotion to an account. Best used with the add_promotion event. This way you can pass to Thirdwatch both successful and failed attempts when using a promotion. May be useful in spotting potential abuse. e.g. _success, _Failed
      * @return $this
      */
-    public function setStatus($status)
+    public function setStatus($_status)
     {
-        $this->container['status'] = $status;
+        $this->container['_status'] = $_status;
 
         return $this;
     }
 
     /**
-     * Gets description
+     * Gets _description
      * @return string
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return $this->container['_description'];
     }
 
     /**
-     * Sets description
-     * @param string $description Describe promotion here.
+     * Sets _description
+     * @param string $_description Describe promotion here.
      * @return $this
      */
-    public function setDescription($description)
+    public function setDescription($_description)
     {
-        $this->container['description'] = $description;
+        $this->container['_description'] = $_description;
 
         return $this;
     }
 
     /**
-     * Gets amount
+     * Gets _amount
      * @return string
      */
     public function getAmount()
     {
-        return $this->container['amount'];
+        return $this->container['_amount'];
     }
 
     /**
-     * Sets amount
-     * @param string $amount The amount or credits the promotion is worth.
+     * Sets _amount
+     * @param string $_amount The amount or credits the promotion is worth.
      * @return $this
      */
-    public function setAmount($amount)
+    public function setAmount($_amount)
     {
-        $this->container['amount'] = $amount;
+        $this->container['_amount'] = $_amount;
 
         return $this;
     }
 
     /**
-     * Gets minPurchaseAmount
+     * Gets _min_purchase_amount
      * @return string
      */
     public function getMinPurchaseAmount()
     {
-        return $this->container['minPurchaseAmount'];
+        return $this->container['_min_purchase_amount'];
     }
 
     /**
-     * Sets minPurchaseAmount
-     * @param string $minPurchaseAmount The minimum amount someone must spend in order for the promotion to be applied.
+     * Sets _min_purchase_amount
+     * @param string $_min_purchase_amount The minimum amount someone must spend in order for the promotion to be applied.
      * @return $this
      */
-    public function setMinPurchaseAmount($minPurchaseAmount)
+    public function setMinPurchaseAmount($_min_purchase_amount)
     {
-        $this->container['minPurchaseAmount'] = $minPurchaseAmount;
+        $this->container['_min_purchase_amount'] = $_min_purchase_amount;
 
         return $this;
     }
 
     /**
-     * Gets referrerUserId
+     * Gets _referrer_user_id
      * @return string
      */
     public function getReferrerUserId()
     {
-        return $this->container['referrerUserId'];
+        return $this->container['_referrer_user_id'];
     }
 
     /**
-     * Sets referrerUserId
-     * @param string $referrerUserId The unique user ID of the user who referred the user to this promotion.
+     * Sets _referrer_user_id
+     * @param string $_referrer_user_id The unique user ID of the user who referred the user to this promotion.
      * @return $this
      */
-    public function setReferrerUserId($referrerUserId)
+    public function setReferrerUserId($_referrer_user_id)
     {
-        $this->container['referrerUserId'] = $referrerUserId;
+        $this->container['_referrer_user_id'] = $_referrer_user_id;
 
         return $this;
     }
 
     /**
-     * Gets failureReason
+     * Gets _failure_reason
      * @return string
      */
     public function getFailureReason()
     {
-        return $this->container['failureReason'];
+        return $this->container['_failure_reason'];
     }
 
     /**
-     * Sets failureReason
-     * @param string $failureReason When adding a promotion fails, use this to describe why it failed.e.g. _alreadyUsed, _invalidCode, _notApplicable, _expired
+     * Sets _failure_reason
+     * @param string $_failure_reason When adding a promotion fails, use this to describe why it failed.e.g. _alreadyUsed, _invalidCode, _notApplicable, _expired
      * @return $this
      */
-    public function setFailureReason($failureReason)
+    public function setFailureReason($_failure_reason)
     {
-        $this->container['failureReason'] = $failureReason;
+        $this->container['_failure_reason'] = $_failure_reason;
 
         return $this;
     }
 
     /**
-     * Gets percentageOff
+     * Gets _percentage_off
      * @return string
      */
     public function getPercentageOff()
     {
-        return $this->container['percentageOff'];
+        return $this->container['_percentage_off'];
     }
 
     /**
-     * Sets percentageOff
-     * @param string $percentageOff The percentage discount. If the discount is 10% off, you would send \"10\".
+     * Sets _percentage_off
+     * @param string $_percentage_off The percentage discount. If the discount is 10% off, you would send \"10\".
      * @return $this
      */
-    public function setPercentageOff($percentageOff)
+    public function setPercentageOff($_percentage_off)
     {
-        $this->container['percentageOff'] = $percentageOff;
+        $this->container['_percentage_off'] = $_percentage_off;
 
         return $this;
     }
 
     /**
-     * Gets currencyCode
+     * Gets _currency_code
      * @return string
      */
     public function getCurrencyCode()
     {
-        return $this->container['currencyCode'];
+        return $this->container['_currency_code'];
     }
 
     /**
-     * Sets currencyCode
-     * @param string $currencyCode The [ISO-4217](http://en.wikipedia.org/wiki/ISO_4217) currency code for the amount. e.g., USD, INR alternative currencies, like bitcoin or points systems.
+     * Sets _currency_code
+     * @param string $_currency_code The [ISO-4217](http://en.wikipedia.org/wiki/ISO_4217) currency code for the amount. e.g., USD, INR alternative currencies, like bitcoin or points systems.
      * @return $this
      */
-    public function setCurrencyCode($currencyCode)
+    public function setCurrencyCode($_currency_code)
     {
-        $this->container['currencyCode'] = $currencyCode;
+        $this->container['_currency_code'] = $_currency_code;
 
         return $this;
     }
 
     /**
-     * Gets type
+     * Gets _type
      * @return string
      */
     public function getType()
     {
-        return $this->container['type'];
+        return $this->container['_type'];
     }
 
     /**
-     * Sets type
-     * @param string $type Type of the promotion e.g., First Time, Refer, Diwali
+     * Sets _type
+     * @param string $_type Type of the promotion e.g., First Time, Refer, Diwali
      * @return $this
      */
-    public function setType($type)
+    public function setType($_type)
     {
-        $this->container['type'] = $type;
+        $this->container['_type'] = $_type;
 
         return $this;
     }
@@ -476,10 +476,10 @@ class Promotion implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

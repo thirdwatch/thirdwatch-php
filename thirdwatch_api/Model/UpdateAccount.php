@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * UpdateAccount Class Doc Comment
  *
  * @category    Class
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -54,31 +54,31 @@ class UpdateAccount implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userId' => 'string',
-        'sessionId' => 'string',
-        'deviceIp' => 'string',
-        'originTimestamp' => 'string',
-        'userEmail' => 'string',
-        'firstName' => 'string',
-        'lastName' => 'string',
-        'phone' => 'string',
-        'age' => 'string',
-        'gender' => 'string',
-        'referralCode' => 'string',
-        'referrerUserId' => 'string',
-        'billingAddress' => '\ai.thirdwatch\Model\BillingAddress',
-        'shippingAddress' => '\ai.thirdwatch\Model\ShippingAddress',
-        'paymentMethods' => '\ai.thirdwatch\Model\PaymentMethod[]',
-        'promotions' => '\ai.thirdwatch\Model\Promotion[]',
-        'socialSignOnType' => 'string',
-        'emailConfirmedStatus' => 'string',
-        'phoneConfirmedStatus' => 'string',
-        'isNewsletterSubscribed' => 'bool',
-        'accountStatus' => 'string',
-        'facebookId' => 'string',
-        'googleId' => 'string',
-        'twitterId' => 'string',
-        'customInfo' => '\ai.thirdwatch\Model\CustomInfo'
+        '_user_id' => 'string',
+        '_session_id' => 'string',
+        '_device_ip' => 'string',
+        '_origin_timestamp' => 'string',
+        '_user_email' => 'string',
+        '_first_name' => 'string',
+        '_last_name' => 'string',
+        '_phone' => 'string',
+        '_age' => 'string',
+        '_gender' => 'string',
+        '_referral_code' => 'string',
+        '_referrer_user_id' => 'string',
+        '_billing_address' => '\ai\thirdwatch\Model\BillingAddress',
+        '_shipping_address' => '\ai\thirdwatch\Model\ShippingAddress',
+        '_payment_methods' => '\ai\thirdwatch\Model\PaymentMethod[]',
+        '_promotions' => '\ai\thirdwatch\Model\Promotion[]',
+        '_social_sign_on_type' => 'string',
+        '_email_confirmed_status' => 'string',
+        '_phone_confirmed_status' => 'string',
+        '_is_newsletter_subscribed' => 'bool',
+        '_account_status' => 'string',
+        '_facebook_id' => 'string',
+        '_google_id' => 'string',
+        '_twitter_id' => 'string',
+        '_custom_info' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -86,31 +86,31 @@ class UpdateAccount implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userId' => null,
-        'sessionId' => null,
-        'deviceIp' => null,
-        'originTimestamp' => null,
-        'userEmail' => null,
-        'firstName' => null,
-        'lastName' => null,
-        'phone' => null,
-        'age' => null,
-        'gender' => null,
-        'referralCode' => null,
-        'referrerUserId' => null,
-        'billingAddress' => null,
-        'shippingAddress' => null,
-        'paymentMethods' => null,
-        'promotions' => null,
-        'socialSignOnType' => null,
-        'emailConfirmedStatus' => null,
-        'phoneConfirmedStatus' => null,
-        'isNewsletterSubscribed' => null,
-        'accountStatus' => null,
-        'facebookId' => null,
-        'googleId' => null,
-        'twitterId' => null,
-        'customInfo' => null
+        '_user_id' => null,
+        '_session_id' => null,
+        '_device_ip' => null,
+        '_origin_timestamp' => null,
+        '_user_email' => null,
+        '_first_name' => null,
+        '_last_name' => null,
+        '_phone' => null,
+        '_age' => null,
+        '_gender' => null,
+        '_referral_code' => null,
+        '_referrer_user_id' => null,
+        '_billing_address' => null,
+        '_shipping_address' => null,
+        '_payment_methods' => null,
+        '_promotions' => null,
+        '_social_sign_on_type' => null,
+        '_email_confirmed_status' => null,
+        '_phone_confirmed_status' => null,
+        '_is_newsletter_subscribed' => null,
+        '_account_status' => null,
+        '_facebook_id' => null,
+        '_google_id' => null,
+        '_twitter_id' => null,
+        '_custom_info' => null
     ];
 
     public static function swaggerTypes()
@@ -128,31 +128,31 @@ class UpdateAccount implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userId' => '_userId',
-        'sessionId' => '_sessionId',
-        'deviceIp' => '_deviceIp',
-        'originTimestamp' => '_originTimestamp',
-        'userEmail' => '_userEmail',
-        'firstName' => '_firstName',
-        'lastName' => '_lastName',
-        'phone' => '_phone',
-        'age' => '_age',
-        'gender' => '_gender',
-        'referralCode' => '_referralCode',
-        'referrerUserId' => '_referrerUserId',
-        'billingAddress' => '_billingAddress',
-        'shippingAddress' => '_shippingAddress',
-        'paymentMethods' => '_paymentMethods',
-        'promotions' => '_promotions',
-        'socialSignOnType' => '_socialSignOnType',
-        'emailConfirmedStatus' => '_emailConfirmedStatus',
-        'phoneConfirmedStatus' => '_phoneConfirmedStatus',
-        'isNewsletterSubscribed' => '_isNewsletterSubscribed',
-        'accountStatus' => '_accountStatus',
-        'facebookId' => '_facebookId',
-        'googleId' => '_googleId',
-        'twitterId' => '_twitterId',
-        'customInfo' => '_customInfo'
+        '_user_id' => '_userId',
+        '_session_id' => '_sessionId',
+        '_device_ip' => '_deviceIp',
+        '_origin_timestamp' => '_originTimestamp',
+        '_user_email' => '_userEmail',
+        '_first_name' => '_firstName',
+        '_last_name' => '_lastName',
+        '_phone' => '_phone',
+        '_age' => '_age',
+        '_gender' => '_gender',
+        '_referral_code' => '_referralCode',
+        '_referrer_user_id' => '_referrerUserId',
+        '_billing_address' => '_billingAddress',
+        '_shipping_address' => '_shippingAddress',
+        '_payment_methods' => '_paymentMethods',
+        '_promotions' => '_promotions',
+        '_social_sign_on_type' => '_socialSignOnType',
+        '_email_confirmed_status' => '_emailConfirmedStatus',
+        '_phone_confirmed_status' => '_phoneConfirmedStatus',
+        '_is_newsletter_subscribed' => '_isNewsletterSubscribed',
+        '_account_status' => '_accountStatus',
+        '_facebook_id' => '_facebookId',
+        '_google_id' => '_googleId',
+        '_twitter_id' => '_twitterId',
+        '_custom_info' => '_customInfo'
     ];
 
 
@@ -161,31 +161,31 @@ class UpdateAccount implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userId' => 'setUserId',
-        'sessionId' => 'setSessionId',
-        'deviceIp' => 'setDeviceIp',
-        'originTimestamp' => 'setOriginTimestamp',
-        'userEmail' => 'setUserEmail',
-        'firstName' => 'setFirstName',
-        'lastName' => 'setLastName',
-        'phone' => 'setPhone',
-        'age' => 'setAge',
-        'gender' => 'setGender',
-        'referralCode' => 'setReferralCode',
-        'referrerUserId' => 'setReferrerUserId',
-        'billingAddress' => 'setBillingAddress',
-        'shippingAddress' => 'setShippingAddress',
-        'paymentMethods' => 'setPaymentMethods',
-        'promotions' => 'setPromotions',
-        'socialSignOnType' => 'setSocialSignOnType',
-        'emailConfirmedStatus' => 'setEmailConfirmedStatus',
-        'phoneConfirmedStatus' => 'setPhoneConfirmedStatus',
-        'isNewsletterSubscribed' => 'setIsNewsletterSubscribed',
-        'accountStatus' => 'setAccountStatus',
-        'facebookId' => 'setFacebookId',
-        'googleId' => 'setGoogleId',
-        'twitterId' => 'setTwitterId',
-        'customInfo' => 'setCustomInfo'
+        '_user_id' => 'setUserId',
+        '_session_id' => 'setSessionId',
+        '_device_ip' => 'setDeviceIp',
+        '_origin_timestamp' => 'setOriginTimestamp',
+        '_user_email' => 'setUserEmail',
+        '_first_name' => 'setFirstName',
+        '_last_name' => 'setLastName',
+        '_phone' => 'setPhone',
+        '_age' => 'setAge',
+        '_gender' => 'setGender',
+        '_referral_code' => 'setReferralCode',
+        '_referrer_user_id' => 'setReferrerUserId',
+        '_billing_address' => 'setBillingAddress',
+        '_shipping_address' => 'setShippingAddress',
+        '_payment_methods' => 'setPaymentMethods',
+        '_promotions' => 'setPromotions',
+        '_social_sign_on_type' => 'setSocialSignOnType',
+        '_email_confirmed_status' => 'setEmailConfirmedStatus',
+        '_phone_confirmed_status' => 'setPhoneConfirmedStatus',
+        '_is_newsletter_subscribed' => 'setIsNewsletterSubscribed',
+        '_account_status' => 'setAccountStatus',
+        '_facebook_id' => 'setFacebookId',
+        '_google_id' => 'setGoogleId',
+        '_twitter_id' => 'setTwitterId',
+        '_custom_info' => 'setCustomInfo'
     ];
 
 
@@ -194,31 +194,31 @@ class UpdateAccount implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userId' => 'getUserId',
-        'sessionId' => 'getSessionId',
-        'deviceIp' => 'getDeviceIp',
-        'originTimestamp' => 'getOriginTimestamp',
-        'userEmail' => 'getUserEmail',
-        'firstName' => 'getFirstName',
-        'lastName' => 'getLastName',
-        'phone' => 'getPhone',
-        'age' => 'getAge',
-        'gender' => 'getGender',
-        'referralCode' => 'getReferralCode',
-        'referrerUserId' => 'getReferrerUserId',
-        'billingAddress' => 'getBillingAddress',
-        'shippingAddress' => 'getShippingAddress',
-        'paymentMethods' => 'getPaymentMethods',
-        'promotions' => 'getPromotions',
-        'socialSignOnType' => 'getSocialSignOnType',
-        'emailConfirmedStatus' => 'getEmailConfirmedStatus',
-        'phoneConfirmedStatus' => 'getPhoneConfirmedStatus',
-        'isNewsletterSubscribed' => 'getIsNewsletterSubscribed',
-        'accountStatus' => 'getAccountStatus',
-        'facebookId' => 'getFacebookId',
-        'googleId' => 'getGoogleId',
-        'twitterId' => 'getTwitterId',
-        'customInfo' => 'getCustomInfo'
+        '_user_id' => 'getUserId',
+        '_session_id' => 'getSessionId',
+        '_device_ip' => 'getDeviceIp',
+        '_origin_timestamp' => 'getOriginTimestamp',
+        '_user_email' => 'getUserEmail',
+        '_first_name' => 'getFirstName',
+        '_last_name' => 'getLastName',
+        '_phone' => 'getPhone',
+        '_age' => 'getAge',
+        '_gender' => 'getGender',
+        '_referral_code' => 'getReferralCode',
+        '_referrer_user_id' => 'getReferrerUserId',
+        '_billing_address' => 'getBillingAddress',
+        '_shipping_address' => 'getShippingAddress',
+        '_payment_methods' => 'getPaymentMethods',
+        '_promotions' => 'getPromotions',
+        '_social_sign_on_type' => 'getSocialSignOnType',
+        '_email_confirmed_status' => 'getEmailConfirmedStatus',
+        '_phone_confirmed_status' => 'getPhoneConfirmedStatus',
+        '_is_newsletter_subscribed' => 'getIsNewsletterSubscribed',
+        '_account_status' => 'getAccountStatus',
+        '_facebook_id' => 'getFacebookId',
+        '_google_id' => 'getGoogleId',
+        '_twitter_id' => 'getTwitterId',
+        '_custom_info' => 'getCustomInfo'
     ];
 
     public static function attributeMap()
@@ -252,31 +252,31 @@ class UpdateAccount implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
-        $this->container['sessionId'] = isset($data['sessionId']) ? $data['sessionId'] : null;
-        $this->container['deviceIp'] = isset($data['deviceIp']) ? $data['deviceIp'] : null;
-        $this->container['originTimestamp'] = isset($data['originTimestamp']) ? $data['originTimestamp'] : null;
-        $this->container['userEmail'] = isset($data['userEmail']) ? $data['userEmail'] : null;
-        $this->container['firstName'] = isset($data['firstName']) ? $data['firstName'] : null;
-        $this->container['lastName'] = isset($data['lastName']) ? $data['lastName'] : null;
-        $this->container['phone'] = isset($data['phone']) ? $data['phone'] : null;
-        $this->container['age'] = isset($data['age']) ? $data['age'] : null;
-        $this->container['gender'] = isset($data['gender']) ? $data['gender'] : null;
-        $this->container['referralCode'] = isset($data['referralCode']) ? $data['referralCode'] : null;
-        $this->container['referrerUserId'] = isset($data['referrerUserId']) ? $data['referrerUserId'] : null;
-        $this->container['billingAddress'] = isset($data['billingAddress']) ? $data['billingAddress'] : null;
-        $this->container['shippingAddress'] = isset($data['shippingAddress']) ? $data['shippingAddress'] : null;
-        $this->container['paymentMethods'] = isset($data['paymentMethods']) ? $data['paymentMethods'] : null;
-        $this->container['promotions'] = isset($data['promotions']) ? $data['promotions'] : null;
-        $this->container['socialSignOnType'] = isset($data['socialSignOnType']) ? $data['socialSignOnType'] : null;
-        $this->container['emailConfirmedStatus'] = isset($data['emailConfirmedStatus']) ? $data['emailConfirmedStatus'] : null;
-        $this->container['phoneConfirmedStatus'] = isset($data['phoneConfirmedStatus']) ? $data['phoneConfirmedStatus'] : null;
-        $this->container['isNewsletterSubscribed'] = isset($data['isNewsletterSubscribed']) ? $data['isNewsletterSubscribed'] : null;
-        $this->container['accountStatus'] = isset($data['accountStatus']) ? $data['accountStatus'] : null;
-        $this->container['facebookId'] = isset($data['facebookId']) ? $data['facebookId'] : null;
-        $this->container['googleId'] = isset($data['googleId']) ? $data['googleId'] : null;
-        $this->container['twitterId'] = isset($data['twitterId']) ? $data['twitterId'] : null;
-        $this->container['customInfo'] = isset($data['customInfo']) ? $data['customInfo'] : null;
+        $this->container['_user_id'] = isset($data['_user_id']) ? $data['_user_id'] : null;
+        $this->container['_session_id'] = isset($data['_session_id']) ? $data['_session_id'] : null;
+        $this->container['_device_ip'] = isset($data['_device_ip']) ? $data['_device_ip'] : null;
+        $this->container['_origin_timestamp'] = isset($data['_origin_timestamp']) ? $data['_origin_timestamp'] : null;
+        $this->container['_user_email'] = isset($data['_user_email']) ? $data['_user_email'] : null;
+        $this->container['_first_name'] = isset($data['_first_name']) ? $data['_first_name'] : null;
+        $this->container['_last_name'] = isset($data['_last_name']) ? $data['_last_name'] : null;
+        $this->container['_phone'] = isset($data['_phone']) ? $data['_phone'] : null;
+        $this->container['_age'] = isset($data['_age']) ? $data['_age'] : null;
+        $this->container['_gender'] = isset($data['_gender']) ? $data['_gender'] : null;
+        $this->container['_referral_code'] = isset($data['_referral_code']) ? $data['_referral_code'] : null;
+        $this->container['_referrer_user_id'] = isset($data['_referrer_user_id']) ? $data['_referrer_user_id'] : null;
+        $this->container['_billing_address'] = isset($data['_billing_address']) ? $data['_billing_address'] : null;
+        $this->container['_shipping_address'] = isset($data['_shipping_address']) ? $data['_shipping_address'] : null;
+        $this->container['_payment_methods'] = isset($data['_payment_methods']) ? $data['_payment_methods'] : null;
+        $this->container['_promotions'] = isset($data['_promotions']) ? $data['_promotions'] : null;
+        $this->container['_social_sign_on_type'] = isset($data['_social_sign_on_type']) ? $data['_social_sign_on_type'] : null;
+        $this->container['_email_confirmed_status'] = isset($data['_email_confirmed_status']) ? $data['_email_confirmed_status'] : null;
+        $this->container['_phone_confirmed_status'] = isset($data['_phone_confirmed_status']) ? $data['_phone_confirmed_status'] : null;
+        $this->container['_is_newsletter_subscribed'] = isset($data['_is_newsletter_subscribed']) ? $data['_is_newsletter_subscribed'] : null;
+        $this->container['_account_status'] = isset($data['_account_status']) ? $data['_account_status'] : null;
+        $this->container['_facebook_id'] = isset($data['_facebook_id']) ? $data['_facebook_id'] : null;
+        $this->container['_google_id'] = isset($data['_google_id']) ? $data['_google_id'] : null;
+        $this->container['_twitter_id'] = isset($data['_twitter_id']) ? $data['_twitter_id'] : null;
+        $this->container['_custom_info'] = isset($data['_custom_info']) ? $data['_custom_info'] : null;
     }
 
     /**
@@ -305,526 +305,526 @@ class UpdateAccount implements ArrayAccess
 
 
     /**
-     * Gets userId
+     * Gets _user_id
      * @return string
      */
     public function getUserId()
     {
-        return $this->container['userId'];
+        return $this->container['_user_id'];
     }
 
     /**
-     * Sets userId
-     * @param string $userId The user's account ID according to your systems. Note that user IDs are case sensitive.
+     * Sets _user_id
+     * @param string $_user_id The user's account ID according to your systems. Note that user IDs are case sensitive.
      * @return $this
      */
-    public function setUserId($userId)
+    public function setUserId($_user_id)
     {
-        $this->container['userId'] = $userId;
+        $this->container['_user_id'] = $_user_id;
 
         return $this;
     }
 
     /**
-     * Gets sessionId
+     * Gets _session_id
      * @return string
      */
     public function getSessionId()
     {
-        return $this->container['sessionId'];
+        return $this->container['_session_id'];
     }
 
     /**
-     * Sets sessionId
-     * @param string $sessionId The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
+     * Sets _session_id
+     * @param string $_session_id The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
      * @return $this
      */
-    public function setSessionId($sessionId)
+    public function setSessionId($_session_id)
     {
-        $this->container['sessionId'] = $sessionId;
+        $this->container['_session_id'] = $_session_id;
 
         return $this;
     }
 
     /**
-     * Gets deviceIp
+     * Gets _device_ip
      * @return string
      */
     public function getDeviceIp()
     {
-        return $this->container['deviceIp'];
+        return $this->container['_device_ip'];
     }
 
     /**
-     * Sets deviceIp
-     * @param string $deviceIp IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
+     * Sets _device_ip
+     * @param string $_device_ip IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
      * @return $this
      */
-    public function setDeviceIp($deviceIp)
+    public function setDeviceIp($_device_ip)
     {
-        $this->container['deviceIp'] = $deviceIp;
+        $this->container['_device_ip'] = $_device_ip;
 
         return $this;
     }
 
     /**
-     * Gets originTimestamp
+     * Gets _origin_timestamp
      * @return string
      */
     public function getOriginTimestamp()
     {
-        return $this->container['originTimestamp'];
+        return $this->container['_origin_timestamp'];
     }
 
     /**
-     * Sets originTimestamp
-     * @param string $originTimestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
+     * Sets _origin_timestamp
+     * @param string $_origin_timestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
      * @return $this
      */
-    public function setOriginTimestamp($originTimestamp)
+    public function setOriginTimestamp($_origin_timestamp)
     {
-        $this->container['originTimestamp'] = $originTimestamp;
+        $this->container['_origin_timestamp'] = $_origin_timestamp;
 
         return $this;
     }
 
     /**
-     * Gets userEmail
+     * Gets _user_email
      * @return string
      */
     public function getUserEmail()
     {
-        return $this->container['userEmail'];
+        return $this->container['_user_email'];
     }
 
     /**
-     * Sets userEmail
-     * @param string $userEmail Email of the user creating this order. Note - If the user's email is also their account ID in your system, set both the userId and userEmail fields to their email address.
+     * Sets _user_email
+     * @param string $_user_email Email of the user creating this order. Note - If the user's email is also their account ID in your system, set both the userId and userEmail fields to their email address.
      * @return $this
      */
-    public function setUserEmail($userEmail)
+    public function setUserEmail($_user_email)
     {
-        $this->container['userEmail'] = $userEmail;
+        $this->container['_user_email'] = $_user_email;
 
         return $this;
     }
 
     /**
-     * Gets firstName
+     * Gets _first_name
      * @return string
      */
     public function getFirstName()
     {
-        return $this->container['firstName'];
+        return $this->container['_first_name'];
     }
 
     /**
-     * Sets firstName
-     * @param string $firstName Provide the first name associated with the user here.
+     * Sets _first_name
+     * @param string $_first_name Provide the first name associated with the user here.
      * @return $this
      */
-    public function setFirstName($firstName)
+    public function setFirstName($_first_name)
     {
-        $this->container['firstName'] = $firstName;
+        $this->container['_first_name'] = $_first_name;
 
         return $this;
     }
 
     /**
-     * Gets lastName
+     * Gets _last_name
      * @return string
      */
     public function getLastName()
     {
-        return $this->container['lastName'];
+        return $this->container['_last_name'];
     }
 
     /**
-     * Sets lastName
-     * @param string $lastName Provide the last name associated with the user here.
+     * Sets _last_name
+     * @param string $_last_name Provide the last name associated with the user here.
      * @return $this
      */
-    public function setLastName($lastName)
+    public function setLastName($_last_name)
     {
-        $this->container['lastName'] = $lastName;
+        $this->container['_last_name'] = $_last_name;
 
         return $this;
     }
 
     /**
-     * Gets phone
+     * Gets _phone
      * @return string
      */
     public function getPhone()
     {
-        return $this->container['phone'];
+        return $this->container['_phone'];
     }
 
     /**
-     * Sets phone
-     * @param string $phone The primary phone number of the user associated with this account. Provide the phone number as a string.
+     * Sets _phone
+     * @param string $_phone The primary phone number of the user associated with this account. Provide the phone number as a string.
      * @return $this
      */
-    public function setPhone($phone)
+    public function setPhone($_phone)
     {
-        $this->container['phone'] = $phone;
+        $this->container['_phone'] = $_phone;
 
         return $this;
     }
 
     /**
-     * Gets age
+     * Gets _age
      * @return string
      */
     public function getAge()
     {
-        return $this->container['age'];
+        return $this->container['_age'];
     }
 
     /**
-     * Sets age
-     * @param string $age Age of the user e.g. \"25\"
+     * Sets _age
+     * @param string $_age Age of the user e.g. \"25\"
      * @return $this
      */
-    public function setAge($age)
+    public function setAge($_age)
     {
-        $this->container['age'] = $age;
+        $this->container['_age'] = $_age;
 
         return $this;
     }
 
     /**
-     * Gets gender
+     * Gets _gender
      * @return string
      */
     public function getGender()
     {
-        return $this->container['gender'];
+        return $this->container['_gender'];
     }
 
     /**
-     * Sets gender
-     * @param string $gender Gender of the user e.g. \"_male\", \"_female\" or \"_trans\"
+     * Sets _gender
+     * @param string $_gender Gender of the user e.g. \"_male\", \"_female\" or \"_trans\"
      * @return $this
      */
-    public function setGender($gender)
+    public function setGender($_gender)
     {
-        $this->container['gender'] = $gender;
+        $this->container['_gender'] = $_gender;
 
         return $this;
     }
 
     /**
-     * Gets referralCode
+     * Gets _referral_code
      * @return string
      */
     public function getReferralCode()
     {
-        return $this->container['referralCode'];
+        return $this->container['_referral_code'];
     }
 
     /**
-     * Sets referralCode
-     * @param string $referralCode Code or promotion used by the user while creating account.
+     * Sets _referral_code
+     * @param string $_referral_code Code or promotion used by the user while creating account.
      * @return $this
      */
-    public function setReferralCode($referralCode)
+    public function setReferralCode($_referral_code)
     {
-        $this->container['referralCode'] = $referralCode;
+        $this->container['_referral_code'] = $_referral_code;
 
         return $this;
     }
 
     /**
-     * Gets referrerUserId
+     * Gets _referrer_user_id
      * @return string
      */
     public function getReferrerUserId()
     {
-        return $this->container['referrerUserId'];
+        return $this->container['_referrer_user_id'];
     }
 
     /**
-     * Sets referrerUserId
-     * @param string $referrerUserId The ID of the user that referred the current user to your business. This field is required for detecting referral fraud.
+     * Sets _referrer_user_id
+     * @param string $_referrer_user_id The ID of the user that referred the current user to your business. This field is required for detecting referral fraud.
      * @return $this
      */
-    public function setReferrerUserId($referrerUserId)
+    public function setReferrerUserId($_referrer_user_id)
     {
-        $this->container['referrerUserId'] = $referrerUserId;
+        $this->container['_referrer_user_id'] = $_referrer_user_id;
 
         return $this;
     }
 
     /**
-     * Gets billingAddress
-     * @return \ai.thirdwatch\Model\BillingAddress
+     * Gets _billing_address
+     * @return \ai\thirdwatch\Model\BillingAddress
      */
     public function getBillingAddress()
     {
-        return $this->container['billingAddress'];
+        return $this->container['_billing_address'];
     }
 
     /**
-     * Sets billingAddress
-     * @param \ai.thirdwatch\Model\BillingAddress $billingAddress
+     * Sets _billing_address
+     * @param \ai\thirdwatch\Model\BillingAddress $_billing_address
      * @return $this
      */
-    public function setBillingAddress($billingAddress)
+    public function setBillingAddress($_billing_address)
     {
-        $this->container['billingAddress'] = $billingAddress;
+        $this->container['_billing_address'] = $_billing_address;
 
         return $this;
     }
 
     /**
-     * Gets shippingAddress
-     * @return \ai.thirdwatch\Model\ShippingAddress
+     * Gets _shipping_address
+     * @return \ai\thirdwatch\Model\ShippingAddress
      */
     public function getShippingAddress()
     {
-        return $this->container['shippingAddress'];
+        return $this->container['_shipping_address'];
     }
 
     /**
-     * Sets shippingAddress
-     * @param \ai.thirdwatch\Model\ShippingAddress $shippingAddress
+     * Sets _shipping_address
+     * @param \ai\thirdwatch\Model\ShippingAddress $_shipping_address
      * @return $this
      */
-    public function setShippingAddress($shippingAddress)
+    public function setShippingAddress($_shipping_address)
     {
-        $this->container['shippingAddress'] = $shippingAddress;
+        $this->container['_shipping_address'] = $_shipping_address;
 
         return $this;
     }
 
     /**
-     * Gets paymentMethods
-     * @return \ai.thirdwatch\Model\PaymentMethod[]
+     * Gets _payment_methods
+     * @return \ai\thirdwatch\Model\PaymentMethod[]
      */
     public function getPaymentMethods()
     {
-        return $this->container['paymentMethods'];
+        return $this->container['_payment_methods'];
     }
 
     /**
-     * Sets paymentMethods
-     * @param \ai.thirdwatch\Model\PaymentMethod[] $paymentMethods The payment information associated with this account. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc.
+     * Sets _payment_methods
+     * @param \ai\thirdwatch\Model\PaymentMethod[] $_payment_methods The payment information associated with this account. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc.
      * @return $this
      */
-    public function setPaymentMethods($paymentMethods)
+    public function setPaymentMethods($_payment_methods)
     {
-        $this->container['paymentMethods'] = $paymentMethods;
+        $this->container['_payment_methods'] = $_payment_methods;
 
         return $this;
     }
 
     /**
-     * Gets promotions
-     * @return \ai.thirdwatch\Model\Promotion[]
+     * Gets _promotions
+     * @return \ai\thirdwatch\Model\Promotion[]
      */
     public function getPromotions()
     {
-        return $this->container['promotions'];
+        return $this->container['_promotions'];
     }
 
     /**
-     * Sets promotions
-     * @param \ai.thirdwatch\Model\Promotion[] $promotions The list of promotions that apply to this account. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event.
+     * Sets _promotions
+     * @param \ai\thirdwatch\Model\Promotion[] $_promotions The list of promotions that apply to this account. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event.
      * @return $this
      */
-    public function setPromotions($promotions)
+    public function setPromotions($_promotions)
     {
-        $this->container['promotions'] = $promotions;
+        $this->container['_promotions'] = $_promotions;
 
         return $this;
     }
 
     /**
-     * Gets socialSignOnType
+     * Gets _social_sign_on_type
      * @return string
      */
     public function getSocialSignOnType()
     {
-        return $this->container['socialSignOnType'];
+        return $this->container['_social_sign_on_type'];
     }
 
     /**
-     * Sets socialSignOnType
-     * @param string $socialSignOnType If the user logged in with a social identify provider, give the name here. e.g. _google, _facebook, _twitter, _linkedin, _other
+     * Sets _social_sign_on_type
+     * @param string $_social_sign_on_type If the user logged in with a social identify provider, give the name here. e.g. _google, _facebook, _twitter, _linkedin, _other
      * @return $this
      */
-    public function setSocialSignOnType($socialSignOnType)
+    public function setSocialSignOnType($_social_sign_on_type)
     {
-        $this->container['socialSignOnType'] = $socialSignOnType;
+        $this->container['_social_sign_on_type'] = $_social_sign_on_type;
 
         return $this;
     }
 
     /**
-     * Gets emailConfirmedStatus
+     * Gets _email_confirmed_status
      * @return string
      */
     public function getEmailConfirmedStatus()
     {
-        return $this->container['emailConfirmedStatus'];
+        return $this->container['_email_confirmed_status'];
     }
 
     /**
-     * Sets emailConfirmedStatus
-     * @param string $emailConfirmedStatus Status of email verification. e.g. _success, _failure, _pending
+     * Sets _email_confirmed_status
+     * @param string $_email_confirmed_status Status of email verification. e.g. _success, _failure, _pending
      * @return $this
      */
-    public function setEmailConfirmedStatus($emailConfirmedStatus)
+    public function setEmailConfirmedStatus($_email_confirmed_status)
     {
-        $this->container['emailConfirmedStatus'] = $emailConfirmedStatus;
+        $this->container['_email_confirmed_status'] = $_email_confirmed_status;
 
         return $this;
     }
 
     /**
-     * Gets phoneConfirmedStatus
+     * Gets _phone_confirmed_status
      * @return string
      */
     public function getPhoneConfirmedStatus()
     {
-        return $this->container['phoneConfirmedStatus'];
+        return $this->container['_phone_confirmed_status'];
     }
 
     /**
-     * Sets phoneConfirmedStatus
-     * @param string $phoneConfirmedStatus Status of phone verification. e.g. _success, _failure, _pending
+     * Sets _phone_confirmed_status
+     * @param string $_phone_confirmed_status Status of phone verification. e.g. _success, _failure, _pending
      * @return $this
      */
-    public function setPhoneConfirmedStatus($phoneConfirmedStatus)
+    public function setPhoneConfirmedStatus($_phone_confirmed_status)
     {
-        $this->container['phoneConfirmedStatus'] = $phoneConfirmedStatus;
+        $this->container['_phone_confirmed_status'] = $_phone_confirmed_status;
 
         return $this;
     }
 
     /**
-     * Gets isNewsletterSubscribed
+     * Gets _is_newsletter_subscribed
      * @return bool
      */
     public function getIsNewsletterSubscribed()
     {
-        return $this->container['isNewsletterSubscribed'];
+        return $this->container['_is_newsletter_subscribed'];
     }
 
     /**
-     * Sets isNewsletterSubscribed
-     * @param bool $isNewsletterSubscribed Is user subscribed for newsletter. e.g. true, false
+     * Sets _is_newsletter_subscribed
+     * @param bool $_is_newsletter_subscribed Is user subscribed for newsletter. e.g. true, false
      * @return $this
      */
-    public function setIsNewsletterSubscribed($isNewsletterSubscribed)
+    public function setIsNewsletterSubscribed($_is_newsletter_subscribed)
     {
-        $this->container['isNewsletterSubscribed'] = $isNewsletterSubscribed;
+        $this->container['_is_newsletter_subscribed'] = $_is_newsletter_subscribed;
 
         return $this;
     }
 
     /**
-     * Gets accountStatus
+     * Gets _account_status
      * @return string
      */
     public function getAccountStatus()
     {
-        return $this->container['accountStatus'];
+        return $this->container['_account_status'];
     }
 
     /**
-     * Sets accountStatus
-     * @param string $accountStatus Current status of account, e.g. _active, _inactive
+     * Sets _account_status
+     * @param string $_account_status Current status of account, e.g. _active, _inactive
      * @return $this
      */
-    public function setAccountStatus($accountStatus)
+    public function setAccountStatus($_account_status)
     {
-        $this->container['accountStatus'] = $accountStatus;
+        $this->container['_account_status'] = $_account_status;
 
         return $this;
     }
 
     /**
-     * Gets facebookId
+     * Gets _facebook_id
      * @return string
      */
     public function getFacebookId()
     {
-        return $this->container['facebookId'];
+        return $this->container['_facebook_id'];
     }
 
     /**
-     * Sets facebookId
-     * @param string $facebookId Facebook user id or token of the user. This can help to varify his social identity.
+     * Sets _facebook_id
+     * @param string $_facebook_id Facebook user id or token of the user. This can help to varify his social identity.
      * @return $this
      */
-    public function setFacebookId($facebookId)
+    public function setFacebookId($_facebook_id)
     {
-        $this->container['facebookId'] = $facebookId;
+        $this->container['_facebook_id'] = $_facebook_id;
 
         return $this;
     }
 
     /**
-     * Gets googleId
+     * Gets _google_id
      * @return string
      */
     public function getGoogleId()
     {
-        return $this->container['googleId'];
+        return $this->container['_google_id'];
     }
 
     /**
-     * Sets googleId
-     * @param string $googleId Google user id or token of the user. This can help to varify his social identity.
+     * Sets _google_id
+     * @param string $_google_id Google user id or token of the user. This can help to varify his social identity.
      * @return $this
      */
-    public function setGoogleId($googleId)
+    public function setGoogleId($_google_id)
     {
-        $this->container['googleId'] = $googleId;
+        $this->container['_google_id'] = $_google_id;
 
         return $this;
     }
 
     /**
-     * Gets twitterId
+     * Gets _twitter_id
      * @return string
      */
     public function getTwitterId()
     {
-        return $this->container['twitterId'];
+        return $this->container['_twitter_id'];
     }
 
     /**
-     * Sets twitterId
-     * @param string $twitterId Twitter handle or token of the user. This can help to varify his social identity.
+     * Sets _twitter_id
+     * @param string $_twitter_id Twitter handle or token of the user. This can help to varify his social identity.
      * @return $this
      */
-    public function setTwitterId($twitterId)
+    public function setTwitterId($_twitter_id)
     {
-        $this->container['twitterId'] = $twitterId;
+        $this->container['_twitter_id'] = $_twitter_id;
 
         return $this;
     }
 
     /**
-     * Gets customInfo
-     * @return \ai.thirdwatch\Model\CustomInfo
+     * Gets _custom_info
+     * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
-        return $this->container['customInfo'];
+        return $this->container['_custom_info'];
     }
 
     /**
-     * Sets customInfo
-     * @param \ai.thirdwatch\Model\CustomInfo $customInfo
+     * Sets _custom_info
+     * @param \ai\thirdwatch\Model\CustomInfo $_custom_info
      * @return $this
      */
-    public function setCustomInfo($customInfo)
+    public function setCustomInfo($_custom_info)
     {
-        $this->container['customInfo'] = $customInfo;
+        $this->container['_custom_info'] = $_custom_info;
 
         return $this;
     }
@@ -880,10 +880,10 @@ class UpdateAccount implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 

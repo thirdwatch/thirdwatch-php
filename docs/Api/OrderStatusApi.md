@@ -1,4 +1,4 @@
-# ai.thirdwatch\OrderStatusApi
+# ai\thirdwatch\OrderStatusApi
 
 All URIs are relative to *https://localhost/event*
 
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **orderStatus**
-> \ai.thirdwatch\Model\EventResponse orderStatus($jSON)
+> \ai\thirdwatch\Model\EventResponse orderStatus($json)
 
 Use order_status to track the order processing workflow of a previously submitted order.
 
@@ -20,15 +20,15 @@ For example, order_status can be used to indicate that an order has been held fo
 require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: api_key
-ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
+ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
 // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ai.thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
+// ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
-$api_instance = new ai.thirdwatch\Api\OrderStatusApi();
-$jSON = new \ai.thirdwatch\Model\OrderStatus(); // \ai.thirdwatch\Model\OrderStatus | Pass order status to thirdwatch. Only `_userID` is required field. But this should contain order info.
+$api_instance = new ai\thirdwatch\Api\OrderStatusApi();
+$json = new \ai\thirdwatch\Model\OrderStatus(); // \ai\thirdwatch\Model\OrderStatus | Pass order status to thirdwatch. Only `_userID` is required field. But this should contain order info.
 
 try {
-    $result = $api_instance->orderStatus($jSON);
+    $result = $api_instance->orderStatus($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling OrderStatusApi->orderStatus: ', $e->getMessage(), PHP_EOL;
@@ -40,11 +40,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai.thirdwatch\Model\OrderStatus**](../Model/OrderStatus.md)| Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain order info. |
+ **json** | [**\ai\thirdwatch\Model\OrderStatus**](../Model/OrderStatus.md)| Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain order info. |
 
 ### Return type
 
-[**\ai.thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
+[**\ai\thirdwatch\Model\EventResponse**](../Model/EventResponse.md)
 
 ### Authorization
 

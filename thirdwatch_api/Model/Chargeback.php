@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  ai.thirdwatch
+ * @package  ai\thirdwatch
  * @author   Swaagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace ai.thirdwatch\Model;
+namespace ai\thirdwatch\Model;
 
 use \ArrayAccess;
 
@@ -35,7 +35,7 @@ use \ArrayAccess;
  * Chargeback Class Doc Comment
  *
  * @category    Class
- * @package     ai.thirdwatch
+ * @package     ai\thirdwatch
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
@@ -54,13 +54,13 @@ class Chargeback implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userId' => 'string',
-        'sessionId' => 'string',
-        'orderId' => 'string',
-        'transactionId' => 'string',
-        'chargebackState' => 'string',
-        'chargebackReason' => 'string',
-        'customInfo' => '\ai.thirdwatch\Model\CustomInfo'
+        '_user_id' => 'string',
+        '_session_id' => 'string',
+        '_order_id' => 'string',
+        '_transaction_id' => 'string',
+        '_chargeback_state' => 'string',
+        '_chargeback_reason' => 'string',
+        '_custom_info' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -68,13 +68,13 @@ class Chargeback implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userId' => null,
-        'sessionId' => null,
-        'orderId' => null,
-        'transactionId' => null,
-        'chargebackState' => null,
-        'chargebackReason' => null,
-        'customInfo' => null
+        '_user_id' => null,
+        '_session_id' => null,
+        '_order_id' => null,
+        '_transaction_id' => null,
+        '_chargeback_state' => null,
+        '_chargeback_reason' => null,
+        '_custom_info' => null
     ];
 
     public static function swaggerTypes()
@@ -92,13 +92,13 @@ class Chargeback implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userId' => '_userId',
-        'sessionId' => '_sessionId',
-        'orderId' => '_orderId',
-        'transactionId' => '_transactionId',
-        'chargebackState' => '_chargebackState',
-        'chargebackReason' => '_chargebackReason',
-        'customInfo' => '_customInfo'
+        '_user_id' => '_userId',
+        '_session_id' => '_sessionId',
+        '_order_id' => '_orderId',
+        '_transaction_id' => '_transactionId',
+        '_chargeback_state' => '_chargebackState',
+        '_chargeback_reason' => '_chargebackReason',
+        '_custom_info' => '_customInfo'
     ];
 
 
@@ -107,13 +107,13 @@ class Chargeback implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userId' => 'setUserId',
-        'sessionId' => 'setSessionId',
-        'orderId' => 'setOrderId',
-        'transactionId' => 'setTransactionId',
-        'chargebackState' => 'setChargebackState',
-        'chargebackReason' => 'setChargebackReason',
-        'customInfo' => 'setCustomInfo'
+        '_user_id' => 'setUserId',
+        '_session_id' => 'setSessionId',
+        '_order_id' => 'setOrderId',
+        '_transaction_id' => 'setTransactionId',
+        '_chargeback_state' => 'setChargebackState',
+        '_chargeback_reason' => 'setChargebackReason',
+        '_custom_info' => 'setCustomInfo'
     ];
 
 
@@ -122,13 +122,13 @@ class Chargeback implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userId' => 'getUserId',
-        'sessionId' => 'getSessionId',
-        'orderId' => 'getOrderId',
-        'transactionId' => 'getTransactionId',
-        'chargebackState' => 'getChargebackState',
-        'chargebackReason' => 'getChargebackReason',
-        'customInfo' => 'getCustomInfo'
+        '_user_id' => 'getUserId',
+        '_session_id' => 'getSessionId',
+        '_order_id' => 'getOrderId',
+        '_transaction_id' => 'getTransactionId',
+        '_chargeback_state' => 'getChargebackState',
+        '_chargeback_reason' => 'getChargebackReason',
+        '_custom_info' => 'getCustomInfo'
     ];
 
     public static function attributeMap()
@@ -162,13 +162,13 @@ class Chargeback implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
-        $this->container['sessionId'] = isset($data['sessionId']) ? $data['sessionId'] : null;
-        $this->container['orderId'] = isset($data['orderId']) ? $data['orderId'] : null;
-        $this->container['transactionId'] = isset($data['transactionId']) ? $data['transactionId'] : null;
-        $this->container['chargebackState'] = isset($data['chargebackState']) ? $data['chargebackState'] : null;
-        $this->container['chargebackReason'] = isset($data['chargebackReason']) ? $data['chargebackReason'] : null;
-        $this->container['customInfo'] = isset($data['customInfo']) ? $data['customInfo'] : null;
+        $this->container['_user_id'] = isset($data['_user_id']) ? $data['_user_id'] : null;
+        $this->container['_session_id'] = isset($data['_session_id']) ? $data['_session_id'] : null;
+        $this->container['_order_id'] = isset($data['_order_id']) ? $data['_order_id'] : null;
+        $this->container['_transaction_id'] = isset($data['_transaction_id']) ? $data['_transaction_id'] : null;
+        $this->container['_chargeback_state'] = isset($data['_chargeback_state']) ? $data['_chargeback_state'] : null;
+        $this->container['_chargeback_reason'] = isset($data['_chargeback_reason']) ? $data['_chargeback_reason'] : null;
+        $this->container['_custom_info'] = isset($data['_custom_info']) ? $data['_custom_info'] : null;
     }
 
     /**
@@ -197,148 +197,148 @@ class Chargeback implements ArrayAccess
 
 
     /**
-     * Gets userId
+     * Gets _user_id
      * @return string
      */
     public function getUserId()
     {
-        return $this->container['userId'];
+        return $this->container['_user_id'];
     }
 
     /**
-     * Sets userId
-     * @param string $userId The user's account ID according to your systems. Note that user IDs are case sensitive.
+     * Sets _user_id
+     * @param string $_user_id The user's account ID according to your systems. Note that user IDs are case sensitive.
      * @return $this
      */
-    public function setUserId($userId)
+    public function setUserId($_user_id)
     {
-        $this->container['userId'] = $userId;
+        $this->container['_user_id'] = $_user_id;
 
         return $this;
     }
 
     /**
-     * Gets sessionId
+     * Gets _session_id
      * @return string
      */
     public function getSessionId()
     {
-        return $this->container['sessionId'];
+        return $this->container['_session_id'];
     }
 
     /**
-     * Sets sessionId
-     * @param string $sessionId The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
+     * Sets _session_id
+     * @param string $_session_id The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
      * @return $this
      */
-    public function setSessionId($sessionId)
+    public function setSessionId($_session_id)
     {
-        $this->container['sessionId'] = $sessionId;
+        $this->container['_session_id'] = $_session_id;
 
         return $this;
     }
 
     /**
-     * Gets orderId
+     * Gets _order_id
      * @return string
      */
     public function getOrderId()
     {
-        return $this->container['orderId'];
+        return $this->container['_order_id'];
     }
 
     /**
-     * Sets orderId
-     * @param string $orderId The ID for the order that this chargeback is filed against. This field is not required if this chargeback was filed against a transaction with no _orderId.
+     * Sets _order_id
+     * @param string $_order_id The ID for the order that this chargeback is filed against. This field is not required if this chargeback was filed against a transaction with no _orderId.
      * @return $this
      */
-    public function setOrderId($orderId)
+    public function setOrderId($_order_id)
     {
-        $this->container['orderId'] = $orderId;
+        $this->container['_order_id'] = $_order_id;
 
         return $this;
     }
 
     /**
-     * Gets transactionId
+     * Gets _transaction_id
      * @return string
      */
     public function getTransactionId()
     {
-        return $this->container['transactionId'];
+        return $this->container['_transaction_id'];
     }
 
     /**
-     * Sets transactionId
-     * @param string $transactionId The ID for the transaction that this chargeback is filed against.
+     * Sets _transaction_id
+     * @param string $_transaction_id The ID for the transaction that this chargeback is filed against.
      * @return $this
      */
-    public function setTransactionId($transactionId)
+    public function setTransactionId($_transaction_id)
     {
-        $this->container['transactionId'] = $transactionId;
+        $this->container['_transaction_id'] = $_transaction_id;
 
         return $this;
     }
 
     /**
-     * Gets chargebackState
+     * Gets _chargeback_state
      * @return string
      */
     public function getChargebackState()
     {
-        return $this->container['chargebackState'];
+        return $this->container['_chargeback_state'];
     }
 
     /**
-     * Sets chargebackState
-     * @param string $chargebackState The current state of the chargeback. e.g. _received, _accepted, _disputed, _won, _lost
+     * Sets _chargeback_state
+     * @param string $_chargeback_state The current state of the chargeback. e.g. _received, _accepted, _disputed, _won, _lost
      * @return $this
      */
-    public function setChargebackState($chargebackState)
+    public function setChargebackState($_chargeback_state)
     {
-        $this->container['chargebackState'] = $chargebackState;
+        $this->container['_chargeback_state'] = $_chargeback_state;
 
         return $this;
     }
 
     /**
-     * Gets chargebackReason
+     * Gets _chargeback_reason
      * @return string
      */
     public function getChargebackReason()
     {
-        return $this->container['chargebackReason'];
+        return $this->container['_chargeback_reason'];
     }
 
     /**
-     * Sets chargebackReason
-     * @param string $chargebackReason This field can be used to capture the reason given. e.g. _fraud, _duplicate, _product_not_received, _product_unacceptable, _other\"
+     * Sets _chargeback_reason
+     * @param string $_chargeback_reason This field can be used to capture the reason given. e.g. _fraud, _duplicate, _product_not_received, _product_unacceptable, _other\"
      * @return $this
      */
-    public function setChargebackReason($chargebackReason)
+    public function setChargebackReason($_chargeback_reason)
     {
-        $this->container['chargebackReason'] = $chargebackReason;
+        $this->container['_chargeback_reason'] = $_chargeback_reason;
 
         return $this;
     }
 
     /**
-     * Gets customInfo
-     * @return \ai.thirdwatch\Model\CustomInfo
+     * Gets _custom_info
+     * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
-        return $this->container['customInfo'];
+        return $this->container['_custom_info'];
     }
 
     /**
-     * Sets customInfo
-     * @param \ai.thirdwatch\Model\CustomInfo $customInfo
+     * Sets _custom_info
+     * @param \ai\thirdwatch\Model\CustomInfo $_custom_info
      * @return $this
      */
-    public function setCustomInfo($customInfo)
+    public function setCustomInfo($_custom_info)
     {
-        $this->container['customInfo'] = $customInfo;
+        $this->container['_custom_info'] = $_custom_info;
 
         return $this;
     }
@@ -394,10 +394,10 @@ class Chargeback implements ArrayAccess
     public function __toString()
     {
         if (defined('JSON_PRETTY_PRINT')) { // use JSON pretty print
-            return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
+            return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this), JSON_PRETTY_PRINT);
         }
 
-        return json_encode(\ai.thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
+        return json_encode(\ai\thirdwatch\ObjectSerializer::sanitizeForSerialization($this));
     }
 }
 
