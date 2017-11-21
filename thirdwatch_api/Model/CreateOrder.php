@@ -54,27 +54,27 @@ class CreateOrder implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userId' => 'string',
-        'sessionId' => 'string',
-        'orderId' => 'string',
-        'deviceIp' => 'string',
-        'originTimestamp' => 'string',
-        'userEmail' => 'string',
-        'amount' => 'string',
-        'currencyCode' => 'string',
-        'hasExpeditedShipping' => 'bool',
-        'shippingMethod' => 'string',
-        'orderReferrer' => 'string',
-        'isPrePaid' => 'bool',
-        'isGift' => 'bool',
-        'isReturn' => 'bool',
-        'isFirstTimeBuyer' => 'bool',
-        'billingAddress' => '\ai\thirdwatch\Model\BillingAddress',
-        'shippingAddress' => '\ai\thirdwatch\Model\ShippingAddress',
-        'paymentMethods' => '\ai\thirdwatch\Model\PaymentMethod[]',
-        'promotions' => '\ai\thirdwatch\Model\Promotion[]',
-        'items' => '\ai\thirdwatch\Model\Item[]',
-        'customInfo' => '\ai\thirdwatch\Model\CustomInfo'
+        '_user_id' => 'string',
+        '_session_id' => 'string',
+        '_order_id' => 'string',
+        '_device_ip' => 'string',
+        '_origin_timestamp' => 'string',
+        '_user_email' => 'string',
+        '_amount' => 'string',
+        '_currency_code' => 'string',
+        '_has_expedited_shipping' => 'bool',
+        '_shipping_method' => 'string',
+        '_order_referrer' => 'string',
+        '_is_pre_paid' => 'bool',
+        '_is_gift' => 'bool',
+        '_is_return' => 'bool',
+        '_is_first_time_buyer' => 'bool',
+        '_billing_address' => '\ai\thirdwatch\Model\BillingAddress',
+        '_shipping_address' => '\ai\thirdwatch\Model\ShippingAddress',
+        '_payment_methods' => '\ai\thirdwatch\Model\PaymentMethod[]',
+        '_promotions' => '\ai\thirdwatch\Model\Promotion[]',
+        '_items' => '\ai\thirdwatch\Model\Item[]',
+        '_custom_info' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -82,27 +82,27 @@ class CreateOrder implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userId' => null,
-        'sessionId' => null,
-        'orderId' => null,
-        'deviceIp' => null,
-        'originTimestamp' => null,
-        'userEmail' => null,
-        'amount' => null,
-        'currencyCode' => null,
-        'hasExpeditedShipping' => null,
-        'shippingMethod' => null,
-        'orderReferrer' => null,
-        'isPrePaid' => null,
-        'isGift' => null,
-        'isReturn' => null,
-        'isFirstTimeBuyer' => null,
-        'billingAddress' => null,
-        'shippingAddress' => null,
-        'paymentMethods' => null,
-        'promotions' => null,
-        'items' => null,
-        'customInfo' => null
+        '_user_id' => null,
+        '_session_id' => null,
+        '_order_id' => null,
+        '_device_ip' => null,
+        '_origin_timestamp' => null,
+        '_user_email' => null,
+        '_amount' => null,
+        '_currency_code' => null,
+        '_has_expedited_shipping' => null,
+        '_shipping_method' => null,
+        '_order_referrer' => null,
+        '_is_pre_paid' => null,
+        '_is_gift' => null,
+        '_is_return' => null,
+        '_is_first_time_buyer' => null,
+        '_billing_address' => null,
+        '_shipping_address' => null,
+        '_payment_methods' => null,
+        '_promotions' => null,
+        '_items' => null,
+        '_custom_info' => null
     ];
 
     public static function swaggerTypes()
@@ -120,27 +120,27 @@ class CreateOrder implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userId' => '_userId',
-        'sessionId' => '_sessionId',
-        'orderId' => '_orderId',
-        'deviceIp' => '_deviceIp',
-        'originTimestamp' => '_originTimestamp',
-        'userEmail' => '_userEmail',
-        'amount' => '_amount',
-        'currencyCode' => '_currencyCode',
-        'hasExpeditedShipping' => '_hasExpeditedShipping',
-        'shippingMethod' => '_shippingMethod',
-        'orderReferrer' => '_orderReferrer',
-        'isPrePaid' => '_isPrePaid',
-        'isGift' => '_isGift',
-        'isReturn' => '_isReturn',
-        'isFirstTimeBuyer' => '_isFirstTimeBuyer',
-        'billingAddress' => '_billingAddress',
-        'shippingAddress' => '_shippingAddress',
-        'paymentMethods' => '_paymentMethods',
-        'promotions' => '_promotions',
-        'items' => '_items',
-        'customInfo' => '_customInfo'
+        '_user_id' => '_userId',
+        '_session_id' => '_sessionId',
+        '_order_id' => '_orderId',
+        '_device_ip' => '_deviceIp',
+        '_origin_timestamp' => '_originTimestamp',
+        '_user_email' => '_userEmail',
+        '_amount' => '_amount',
+        '_currency_code' => '_currencyCode',
+        '_has_expedited_shipping' => '_hasExpeditedShipping',
+        '_shipping_method' => '_shippingMethod',
+        '_order_referrer' => '_orderReferrer',
+        '_is_pre_paid' => '_isPrePaid',
+        '_is_gift' => '_isGift',
+        '_is_return' => '_isReturn',
+        '_is_first_time_buyer' => '_isFirstTimeBuyer',
+        '_billing_address' => '_billingAddress',
+        '_shipping_address' => '_shippingAddress',
+        '_payment_methods' => '_paymentMethods',
+        '_promotions' => '_promotions',
+        '_items' => '_items',
+        '_custom_info' => '_customInfo'
     ];
 
 
@@ -149,27 +149,27 @@ class CreateOrder implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userId' => 'setUserId',
-        'sessionId' => 'setSessionId',
-        'orderId' => 'setOrderId',
-        'deviceIp' => 'setDeviceIp',
-        'originTimestamp' => 'setOriginTimestamp',
-        'userEmail' => 'setUserEmail',
-        'amount' => 'setAmount',
-        'currencyCode' => 'setCurrencyCode',
-        'hasExpeditedShipping' => 'setHasExpeditedShipping',
-        'shippingMethod' => 'setShippingMethod',
-        'orderReferrer' => 'setOrderReferrer',
-        'isPrePaid' => 'setIsPrePaid',
-        'isGift' => 'setIsGift',
-        'isReturn' => 'setIsReturn',
-        'isFirstTimeBuyer' => 'setIsFirstTimeBuyer',
-        'billingAddress' => 'setBillingAddress',
-        'shippingAddress' => 'setShippingAddress',
-        'paymentMethods' => 'setPaymentMethods',
-        'promotions' => 'setPromotions',
-        'items' => 'setItems',
-        'customInfo' => 'setCustomInfo'
+        '_user_id' => 'setUserId',
+        '_session_id' => 'setSessionId',
+        '_order_id' => 'setOrderId',
+        '_device_ip' => 'setDeviceIp',
+        '_origin_timestamp' => 'setOriginTimestamp',
+        '_user_email' => 'setUserEmail',
+        '_amount' => 'setAmount',
+        '_currency_code' => 'setCurrencyCode',
+        '_has_expedited_shipping' => 'setHasExpeditedShipping',
+        '_shipping_method' => 'setShippingMethod',
+        '_order_referrer' => 'setOrderReferrer',
+        '_is_pre_paid' => 'setIsPrePaid',
+        '_is_gift' => 'setIsGift',
+        '_is_return' => 'setIsReturn',
+        '_is_first_time_buyer' => 'setIsFirstTimeBuyer',
+        '_billing_address' => 'setBillingAddress',
+        '_shipping_address' => 'setShippingAddress',
+        '_payment_methods' => 'setPaymentMethods',
+        '_promotions' => 'setPromotions',
+        '_items' => 'setItems',
+        '_custom_info' => 'setCustomInfo'
     ];
 
 
@@ -178,27 +178,27 @@ class CreateOrder implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userId' => 'getUserId',
-        'sessionId' => 'getSessionId',
-        'orderId' => 'getOrderId',
-        'deviceIp' => 'getDeviceIp',
-        'originTimestamp' => 'getOriginTimestamp',
-        'userEmail' => 'getUserEmail',
-        'amount' => 'getAmount',
-        'currencyCode' => 'getCurrencyCode',
-        'hasExpeditedShipping' => 'getHasExpeditedShipping',
-        'shippingMethod' => 'getShippingMethod',
-        'orderReferrer' => 'getOrderReferrer',
-        'isPrePaid' => 'getIsPrePaid',
-        'isGift' => 'getIsGift',
-        'isReturn' => 'getIsReturn',
-        'isFirstTimeBuyer' => 'getIsFirstTimeBuyer',
-        'billingAddress' => 'getBillingAddress',
-        'shippingAddress' => 'getShippingAddress',
-        'paymentMethods' => 'getPaymentMethods',
-        'promotions' => 'getPromotions',
-        'items' => 'getItems',
-        'customInfo' => 'getCustomInfo'
+        '_user_id' => 'getUserId',
+        '_session_id' => 'getSessionId',
+        '_order_id' => 'getOrderId',
+        '_device_ip' => 'getDeviceIp',
+        '_origin_timestamp' => 'getOriginTimestamp',
+        '_user_email' => 'getUserEmail',
+        '_amount' => 'getAmount',
+        '_currency_code' => 'getCurrencyCode',
+        '_has_expedited_shipping' => 'getHasExpeditedShipping',
+        '_shipping_method' => 'getShippingMethod',
+        '_order_referrer' => 'getOrderReferrer',
+        '_is_pre_paid' => 'getIsPrePaid',
+        '_is_gift' => 'getIsGift',
+        '_is_return' => 'getIsReturn',
+        '_is_first_time_buyer' => 'getIsFirstTimeBuyer',
+        '_billing_address' => 'getBillingAddress',
+        '_shipping_address' => 'getShippingAddress',
+        '_payment_methods' => 'getPaymentMethods',
+        '_promotions' => 'getPromotions',
+        '_items' => 'getItems',
+        '_custom_info' => 'getCustomInfo'
     ];
 
     public static function attributeMap()
@@ -232,27 +232,27 @@ class CreateOrder implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
-        $this->container['sessionId'] = isset($data['sessionId']) ? $data['sessionId'] : null;
-        $this->container['orderId'] = isset($data['orderId']) ? $data['orderId'] : null;
-        $this->container['deviceIp'] = isset($data['deviceIp']) ? $data['deviceIp'] : null;
-        $this->container['originTimestamp'] = isset($data['originTimestamp']) ? $data['originTimestamp'] : null;
-        $this->container['userEmail'] = isset($data['userEmail']) ? $data['userEmail'] : null;
-        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
-        $this->container['currencyCode'] = isset($data['currencyCode']) ? $data['currencyCode'] : null;
-        $this->container['hasExpeditedShipping'] = isset($data['hasExpeditedShipping']) ? $data['hasExpeditedShipping'] : null;
-        $this->container['shippingMethod'] = isset($data['shippingMethod']) ? $data['shippingMethod'] : null;
-        $this->container['orderReferrer'] = isset($data['orderReferrer']) ? $data['orderReferrer'] : null;
-        $this->container['isPrePaid'] = isset($data['isPrePaid']) ? $data['isPrePaid'] : null;
-        $this->container['isGift'] = isset($data['isGift']) ? $data['isGift'] : null;
-        $this->container['isReturn'] = isset($data['isReturn']) ? $data['isReturn'] : null;
-        $this->container['isFirstTimeBuyer'] = isset($data['isFirstTimeBuyer']) ? $data['isFirstTimeBuyer'] : null;
-        $this->container['billingAddress'] = isset($data['billingAddress']) ? $data['billingAddress'] : null;
-        $this->container['shippingAddress'] = isset($data['shippingAddress']) ? $data['shippingAddress'] : null;
-        $this->container['paymentMethods'] = isset($data['paymentMethods']) ? $data['paymentMethods'] : null;
-        $this->container['promotions'] = isset($data['promotions']) ? $data['promotions'] : null;
-        $this->container['items'] = isset($data['items']) ? $data['items'] : null;
-        $this->container['customInfo'] = isset($data['customInfo']) ? $data['customInfo'] : null;
+        $this->container['_user_id'] = isset($data['_user_id']) ? $data['_user_id'] : null;
+        $this->container['_session_id'] = isset($data['_session_id']) ? $data['_session_id'] : null;
+        $this->container['_order_id'] = isset($data['_order_id']) ? $data['_order_id'] : null;
+        $this->container['_device_ip'] = isset($data['_device_ip']) ? $data['_device_ip'] : null;
+        $this->container['_origin_timestamp'] = isset($data['_origin_timestamp']) ? $data['_origin_timestamp'] : null;
+        $this->container['_user_email'] = isset($data['_user_email']) ? $data['_user_email'] : null;
+        $this->container['_amount'] = isset($data['_amount']) ? $data['_amount'] : null;
+        $this->container['_currency_code'] = isset($data['_currency_code']) ? $data['_currency_code'] : null;
+        $this->container['_has_expedited_shipping'] = isset($data['_has_expedited_shipping']) ? $data['_has_expedited_shipping'] : null;
+        $this->container['_shipping_method'] = isset($data['_shipping_method']) ? $data['_shipping_method'] : null;
+        $this->container['_order_referrer'] = isset($data['_order_referrer']) ? $data['_order_referrer'] : null;
+        $this->container['_is_pre_paid'] = isset($data['_is_pre_paid']) ? $data['_is_pre_paid'] : null;
+        $this->container['_is_gift'] = isset($data['_is_gift']) ? $data['_is_gift'] : null;
+        $this->container['_is_return'] = isset($data['_is_return']) ? $data['_is_return'] : null;
+        $this->container['_is_first_time_buyer'] = isset($data['_is_first_time_buyer']) ? $data['_is_first_time_buyer'] : null;
+        $this->container['_billing_address'] = isset($data['_billing_address']) ? $data['_billing_address'] : null;
+        $this->container['_shipping_address'] = isset($data['_shipping_address']) ? $data['_shipping_address'] : null;
+        $this->container['_payment_methods'] = isset($data['_payment_methods']) ? $data['_payment_methods'] : null;
+        $this->container['_promotions'] = isset($data['_promotions']) ? $data['_promotions'] : null;
+        $this->container['_items'] = isset($data['_items']) ? $data['_items'] : null;
+        $this->container['_custom_info'] = isset($data['_custom_info']) ? $data['_custom_info'] : null;
     }
 
     /**
@@ -264,8 +264,8 @@ class CreateOrder implements ArrayAccess
     {
         $invalid_properties = [];
 
-        if ($this->container['orderId'] === null) {
-            $invalid_properties[] = "'orderId' can't be null";
+        if ($this->container['_order_id'] === null) {
+            $invalid_properties[] = "'_order_id' can't be null";
         }
         return $invalid_properties;
     }
@@ -279,7 +279,7 @@ class CreateOrder implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['orderId'] === null) {
+        if ($this->container['_order_id'] === null) {
             return false;
         }
         return true;
@@ -287,442 +287,442 @@ class CreateOrder implements ArrayAccess
 
 
     /**
-     * Gets userId
+     * Gets _user_id
      * @return string
      */
     public function getUserId()
     {
-        return $this->container['userId'];
+        return $this->container['_user_id'];
     }
 
     /**
-     * Sets userId
-     * @param string $userId The user's account ID according to your systems. Note that user IDs are case sensitive.
+     * Sets _user_id
+     * @param string $_user_id The user's account ID according to your systems. Note that user IDs are case sensitive.
      * @return $this
      */
-    public function setUserId($userId)
+    public function setUserId($_user_id)
     {
-        $this->container['userId'] = $userId;
+        $this->container['_user_id'] = $_user_id;
 
         return $this;
     }
 
     /**
-     * Gets sessionId
+     * Gets _session_id
      * @return string
      */
     public function getSessionId()
     {
-        return $this->container['sessionId'];
+        return $this->container['_session_id'];
     }
 
     /**
-     * Sets sessionId
-     * @param string $sessionId The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
+     * Sets _session_id
+     * @param string $_session_id The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
      * @return $this
      */
-    public function setSessionId($sessionId)
+    public function setSessionId($_session_id)
     {
-        $this->container['sessionId'] = $sessionId;
+        $this->container['_session_id'] = $_session_id;
 
         return $this;
     }
 
     /**
-     * Gets orderId
+     * Gets _order_id
      * @return string
      */
     public function getOrderId()
     {
-        return $this->container['orderId'];
+        return $this->container['_order_id'];
     }
 
     /**
-     * Sets orderId
-     * @param string $orderId The ID for tracking this order in your system.
+     * Sets _order_id
+     * @param string $_order_id The ID for tracking this order in your system.
      * @return $this
      */
-    public function setOrderId($orderId)
+    public function setOrderId($_order_id)
     {
-        $this->container['orderId'] = $orderId;
+        $this->container['_order_id'] = $_order_id;
 
         return $this;
     }
 
     /**
-     * Gets deviceIp
+     * Gets _device_ip
      * @return string
      */
     public function getDeviceIp()
     {
-        return $this->container['deviceIp'];
+        return $this->container['_device_ip'];
     }
 
     /**
-     * Sets deviceIp
-     * @param string $deviceIp IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
+     * Sets _device_ip
+     * @param string $_device_ip IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
      * @return $this
      */
-    public function setDeviceIp($deviceIp)
+    public function setDeviceIp($_device_ip)
     {
-        $this->container['deviceIp'] = $deviceIp;
+        $this->container['_device_ip'] = $_device_ip;
 
         return $this;
     }
 
     /**
-     * Gets originTimestamp
+     * Gets _origin_timestamp
      * @return string
      */
     public function getOriginTimestamp()
     {
-        return $this->container['originTimestamp'];
+        return $this->container['_origin_timestamp'];
     }
 
     /**
-     * Sets originTimestamp
-     * @param string $originTimestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
+     * Sets _origin_timestamp
+     * @param string $_origin_timestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
      * @return $this
      */
-    public function setOriginTimestamp($originTimestamp)
+    public function setOriginTimestamp($_origin_timestamp)
     {
-        $this->container['originTimestamp'] = $originTimestamp;
+        $this->container['_origin_timestamp'] = $_origin_timestamp;
 
         return $this;
     }
 
     /**
-     * Gets userEmail
+     * Gets _user_email
      * @return string
      */
     public function getUserEmail()
     {
-        return $this->container['userEmail'];
+        return $this->container['_user_email'];
     }
 
     /**
-     * Sets userEmail
-     * @param string $userEmail Email of the user creating this order. Note - If the user's email is also their account ID in your system, set both the userId and userEmail fields to their email address.
+     * Sets _user_email
+     * @param string $_user_email Email of the user creating this order. Note - If the user's email is also their account ID in your system, set both the userId and userEmail fields to their email address.
      * @return $this
      */
-    public function setUserEmail($userEmail)
+    public function setUserEmail($_user_email)
     {
-        $this->container['userEmail'] = $userEmail;
+        $this->container['_user_email'] = $_user_email;
 
         return $this;
     }
 
     /**
-     * Gets amount
+     * Gets _amount
      * @return string
      */
     public function getAmount()
     {
-        return $this->container['amount'];
+        return $this->container['_amount'];
     }
 
     /**
-     * Sets amount
-     * @param string $amount The item unit price in numbers, in the base unit of the currency_code.e.g. \"2500\"
+     * Sets _amount
+     * @param string $_amount The item unit price in numbers, in the base unit of the currency_code.e.g. \"2500\"
      * @return $this
      */
-    public function setAmount($amount)
+    public function setAmount($_amount)
     {
-        $this->container['amount'] = $amount;
+        $this->container['_amount'] = $_amount;
 
         return $this;
     }
 
     /**
-     * Gets currencyCode
+     * Gets _currency_code
      * @return string
      */
     public function getCurrencyCode()
     {
-        return $this->container['currencyCode'];
+        return $this->container['_currency_code'];
     }
 
     /**
-     * Sets currencyCode
-     * @param string $currencyCode The [ISO-4217](http://en.wikipedia.org/wiki/ISO_4217) currency code for the amount. e.g., USD, INR alternative currencies, like bitcoin or points systems.
+     * Sets _currency_code
+     * @param string $_currency_code The [ISO-4217](http://en.wikipedia.org/wiki/ISO_4217) currency code for the amount. e.g., USD, INR alternative currencies, like bitcoin or points systems.
      * @return $this
      */
-    public function setCurrencyCode($currencyCode)
+    public function setCurrencyCode($_currency_code)
     {
-        $this->container['currencyCode'] = $currencyCode;
+        $this->container['_currency_code'] = $_currency_code;
 
         return $this;
     }
 
     /**
-     * Gets hasExpeditedShipping
+     * Gets _has_expedited_shipping
      * @return bool
      */
     public function getHasExpeditedShipping()
     {
-        return $this->container['hasExpeditedShipping'];
+        return $this->container['_has_expedited_shipping'];
     }
 
     /**
-     * Sets hasExpeditedShipping
-     * @param bool $hasExpeditedShipping Whether the user requested priority/expedited shipping on their order.
+     * Sets _has_expedited_shipping
+     * @param bool $_has_expedited_shipping Whether the user requested priority/expedited shipping on their order.
      * @return $this
      */
-    public function setHasExpeditedShipping($hasExpeditedShipping)
+    public function setHasExpeditedShipping($_has_expedited_shipping)
     {
-        $this->container['hasExpeditedShipping'] = $hasExpeditedShipping;
+        $this->container['_has_expedited_shipping'] = $_has_expedited_shipping;
 
         return $this;
     }
 
     /**
-     * Gets shippingMethod
+     * Gets _shipping_method
      * @return string
      */
     public function getShippingMethod()
     {
-        return $this->container['shippingMethod'];
+        return $this->container['_shipping_method'];
     }
 
     /**
-     * Sets shippingMethod
-     * @param string $shippingMethod Indicates the method of delivery to the user. e.g. _electronic, _physical
+     * Sets _shipping_method
+     * @param string $_shipping_method Indicates the method of delivery to the user. e.g. _electronic, _physical
      * @return $this
      */
-    public function setShippingMethod($shippingMethod)
+    public function setShippingMethod($_shipping_method)
     {
-        $this->container['shippingMethod'] = $shippingMethod;
+        $this->container['_shipping_method'] = $_shipping_method;
 
         return $this;
     }
 
     /**
-     * Gets orderReferrer
+     * Gets _order_referrer
      * @return string
      */
     public function getOrderReferrer()
     {
-        return $this->container['orderReferrer'];
+        return $this->container['_order_referrer'];
     }
 
     /**
-     * Sets orderReferrer
-     * @param string $orderReferrer Referer website or user name.
+     * Sets _order_referrer
+     * @param string $_order_referrer Referer website or user name.
      * @return $this
      */
-    public function setOrderReferrer($orderReferrer)
+    public function setOrderReferrer($_order_referrer)
     {
-        $this->container['orderReferrer'] = $orderReferrer;
+        $this->container['_order_referrer'] = $_order_referrer;
 
         return $this;
     }
 
     /**
-     * Gets isPrePaid
+     * Gets _is_pre_paid
      * @return bool
      */
     public function getIsPrePaid()
     {
-        return $this->container['isPrePaid'];
+        return $this->container['_is_pre_paid'];
     }
 
     /**
-     * Sets isPrePaid
-     * @param bool $isPrePaid is order is prepaid.
+     * Sets _is_pre_paid
+     * @param bool $_is_pre_paid is order is prepaid.
      * @return $this
      */
-    public function setIsPrePaid($isPrePaid)
+    public function setIsPrePaid($_is_pre_paid)
     {
-        $this->container['isPrePaid'] = $isPrePaid;
+        $this->container['_is_pre_paid'] = $_is_pre_paid;
 
         return $this;
     }
 
     /**
-     * Gets isGift
+     * Gets _is_gift
      * @return bool
      */
     public function getIsGift()
     {
-        return $this->container['isGift'];
+        return $this->container['_is_gift'];
     }
 
     /**
-     * Sets isGift
-     * @param bool $isGift Is user chosen gift pack.
+     * Sets _is_gift
+     * @param bool $_is_gift Is user chosen gift pack.
      * @return $this
      */
-    public function setIsGift($isGift)
+    public function setIsGift($_is_gift)
     {
-        $this->container['isGift'] = $isGift;
+        $this->container['_is_gift'] = $_is_gift;
 
         return $this;
     }
 
     /**
-     * Gets isReturn
+     * Gets _is_return
      * @return bool
      */
     public function getIsReturn()
     {
-        return $this->container['isReturn'];
+        return $this->container['_is_return'];
     }
 
     /**
-     * Sets isReturn
-     * @param bool $isReturn Is this return order.
+     * Sets _is_return
+     * @param bool $_is_return Is this return order.
      * @return $this
      */
-    public function setIsReturn($isReturn)
+    public function setIsReturn($_is_return)
     {
-        $this->container['isReturn'] = $isReturn;
+        $this->container['_is_return'] = $_is_return;
 
         return $this;
     }
 
     /**
-     * Gets isFirstTimeBuyer
+     * Gets _is_first_time_buyer
      * @return bool
      */
     public function getIsFirstTimeBuyer()
     {
-        return $this->container['isFirstTimeBuyer'];
+        return $this->container['_is_first_time_buyer'];
     }
 
     /**
-     * Sets isFirstTimeBuyer
-     * @param bool $isFirstTimeBuyer Is user first time buyer.
+     * Sets _is_first_time_buyer
+     * @param bool $_is_first_time_buyer Is user first time buyer.
      * @return $this
      */
-    public function setIsFirstTimeBuyer($isFirstTimeBuyer)
+    public function setIsFirstTimeBuyer($_is_first_time_buyer)
     {
-        $this->container['isFirstTimeBuyer'] = $isFirstTimeBuyer;
+        $this->container['_is_first_time_buyer'] = $_is_first_time_buyer;
 
         return $this;
     }
 
     /**
-     * Gets billingAddress
+     * Gets _billing_address
      * @return \ai\thirdwatch\Model\BillingAddress
      */
     public function getBillingAddress()
     {
-        return $this->container['billingAddress'];
+        return $this->container['_billing_address'];
     }
 
     /**
-     * Sets billingAddress
-     * @param \ai\thirdwatch\Model\BillingAddress $billingAddress
+     * Sets _billing_address
+     * @param \ai\thirdwatch\Model\BillingAddress $_billing_address
      * @return $this
      */
-    public function setBillingAddress($billingAddress)
+    public function setBillingAddress($_billing_address)
     {
-        $this->container['billingAddress'] = $billingAddress;
+        $this->container['_billing_address'] = $_billing_address;
 
         return $this;
     }
 
     /**
-     * Gets shippingAddress
+     * Gets _shipping_address
      * @return \ai\thirdwatch\Model\ShippingAddress
      */
     public function getShippingAddress()
     {
-        return $this->container['shippingAddress'];
+        return $this->container['_shipping_address'];
     }
 
     /**
-     * Sets shippingAddress
-     * @param \ai\thirdwatch\Model\ShippingAddress $shippingAddress
+     * Sets _shipping_address
+     * @param \ai\thirdwatch\Model\ShippingAddress $_shipping_address
      * @return $this
      */
-    public function setShippingAddress($shippingAddress)
+    public function setShippingAddress($_shipping_address)
     {
-        $this->container['shippingAddress'] = $shippingAddress;
+        $this->container['_shipping_address'] = $_shipping_address;
 
         return $this;
     }
 
     /**
-     * Gets paymentMethods
+     * Gets _payment_methods
      * @return \ai\thirdwatch\Model\PaymentMethod[]
      */
     public function getPaymentMethods()
     {
-        return $this->container['paymentMethods'];
+        return $this->container['_payment_methods'];
     }
 
     /**
-     * Sets paymentMethods
-     * @param \ai\thirdwatch\Model\PaymentMethod[] $paymentMethods The payment information associated with this order. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc.
+     * Sets _payment_methods
+     * @param \ai\thirdwatch\Model\PaymentMethod[] $_payment_methods The payment information associated with this order. Represented as an array of nested payment_method objects containing payment type, payment gateway, credit card bin, etc.
      * @return $this
      */
-    public function setPaymentMethods($paymentMethods)
+    public function setPaymentMethods($_payment_methods)
     {
-        $this->container['paymentMethods'] = $paymentMethods;
+        $this->container['_payment_methods'] = $_payment_methods;
 
         return $this;
     }
 
     /**
-     * Gets promotions
+     * Gets _promotions
      * @return \ai\thirdwatch\Model\Promotion[]
      */
     public function getPromotions()
     {
-        return $this->container['promotions'];
+        return $this->container['_promotions'];
     }
 
     /**
-     * Sets promotions
-     * @param \ai\thirdwatch\Model\Promotion[] $promotions The list of promotions that apply to this order. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event.
+     * Sets _promotions
+     * @param \ai\thirdwatch\Model\Promotion[] $_promotions The list of promotions that apply to this order. You can add one or more promotions when creating or updating an order. Represented as a JSON array of promotion objects. You can also separately add promotions to the account via the addPromotion event.
      * @return $this
      */
-    public function setPromotions($promotions)
+    public function setPromotions($_promotions)
     {
-        $this->container['promotions'] = $promotions;
+        $this->container['_promotions'] = $_promotions;
 
         return $this;
     }
 
     /**
-     * Gets items
+     * Gets _items
      * @return \ai\thirdwatch\Model\Item[]
      */
     public function getItems()
     {
-        return $this->container['items'];
+        return $this->container['_items'];
     }
 
     /**
-     * Sets items
-     * @param \ai\thirdwatch\Model\Item[] $items The list of items ordered. Represented as a JSON array of item
+     * Sets _items
+     * @param \ai\thirdwatch\Model\Item[] $_items The list of items ordered. Represented as a JSON array of item
      * @return $this
      */
-    public function setItems($items)
+    public function setItems($_items)
     {
-        $this->container['items'] = $items;
+        $this->container['_items'] = $_items;
 
         return $this;
     }
 
     /**
-     * Gets customInfo
+     * Gets _custom_info
      * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
-        return $this->container['customInfo'];
+        return $this->container['_custom_info'];
     }
 
     /**
-     * Sets customInfo
-     * @param \ai\thirdwatch\Model\CustomInfo $customInfo
+     * Sets _custom_info
+     * @param \ai\thirdwatch\Model\CustomInfo $_custom_info
      * @return $this
      */
-    public function setCustomInfo($customInfo)
+    public function setCustomInfo($_custom_info)
     {
-        $this->container['customInfo'] = $customInfo;
+        $this->container['_custom_info'] = $_custom_info;
 
         return $this;
     }

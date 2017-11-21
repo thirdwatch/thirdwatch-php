@@ -73,10 +73,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\AddPromotionApi();
-$jSON = new \ai\thirdwatch\Model\AddPromotion(); // \ai\thirdwatch\Model\AddPromotion | Pass added promotion info to thirdwatch. Only `_userID` is required field. But this should contain promotion info.
+$json = new \ai\thirdwatch\Model\AddPromotion(); // \ai\thirdwatch\Model\AddPromotion | Pass added promotion info to thirdwatch. Only `_userID` is required field. But this should contain promotion info.
 
 try {
-    $result = $api_instance->addPromotion($jSON);
+    $result = $api_instance->addPromotion($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AddPromotionApi->addPromotion: ', $e->getMessage(), PHP_EOL;

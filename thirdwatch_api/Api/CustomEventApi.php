@@ -92,13 +92,13 @@ class CustomEventApi
      *
      * Use order_status to track the order processing workflow of a previously submitted order.
      *
-     * @param \ai\thirdwatch\Model\Custom $jSON Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain custom info. (required)
+     * @param \ai\thirdwatch\Model\Custom $json Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain custom info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function customEvent($jSON)
+    public function customEvent($json)
     {
-        list($response) = $this->customEventWithHttpInfo($jSON);
+        list($response) = $this->customEventWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class CustomEventApi
      *
      * Use order_status to track the order processing workflow of a previously submitted order.
      *
-     * @param \ai\thirdwatch\Model\Custom $jSON Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain custom info. (required)
+     * @param \ai\thirdwatch\Model\Custom $json Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain custom info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function customEventWithHttpInfo($jSON)
+    public function customEventWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling customEvent');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling customEvent');
         }
         // parse inputs
         $resourcePath = "/v1/custom_event";
@@ -131,8 +131,8 @@ class CustomEventApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

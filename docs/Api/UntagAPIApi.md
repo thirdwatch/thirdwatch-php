@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **unTagUser**
-> \ai\thirdwatch\Model\EventResponse unTagUser($jSON)
+> \ai\thirdwatch\Model\EventResponse unTagUser($json)
 
 If you are unsure whether a user is bad or good, you can always remove tag and leave the user in a neutral state.
 
@@ -25,10 +25,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\UntagAPIApi();
-$jSON = new \ai\thirdwatch\Model\UnTag(); // \ai\thirdwatch\Model\UnTag | Pass user and it's info to thirdwatch. Only `_userID` is required field. But this should contain untag info.
+$json = new \ai\thirdwatch\Model\UnTag(); // \ai\thirdwatch\Model\UnTag | Pass user and it's info to thirdwatch. Only `_userID` is required field. But this should contain untag info.
 
 try {
-    $result = $api_instance->unTagUser($jSON);
+    $result = $api_instance->unTagUser($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UntagAPIApi->unTagUser: ', $e->getMessage(), PHP_EOL;
@@ -40,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai\thirdwatch\Model\UnTag**](../Model/UnTag.md)| Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain untag info. |
+ **json** | [**\ai\thirdwatch\Model\UnTag**](../Model/UnTag.md)| Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain untag info. |
 
 ### Return type
 

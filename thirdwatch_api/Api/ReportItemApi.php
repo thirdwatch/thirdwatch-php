@@ -92,13 +92,13 @@ class ReportItemApi
      *
      * Use report_item to let us know when another user reports that this item may violate your company’s policies.
      *
-     * @param \ai\thirdwatch\Model\ReportItem $jSON Pass report item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item id. (required)
+     * @param \ai\thirdwatch\Model\ReportItem $json Pass report item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item id. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function reportItem($jSON)
+    public function reportItem($json)
     {
-        list($response) = $this->reportItemWithHttpInfo($jSON);
+        list($response) = $this->reportItemWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class ReportItemApi
      *
      * Use report_item to let us know when another user reports that this item may violate your company’s policies.
      *
-     * @param \ai\thirdwatch\Model\ReportItem $jSON Pass report item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item id. (required)
+     * @param \ai\thirdwatch\Model\ReportItem $json Pass report item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item id. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function reportItemWithHttpInfo($jSON)
+    public function reportItemWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling reportItem');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling reportItem');
         }
         // parse inputs
         $resourcePath = "/v1/report_item";
@@ -131,8 +131,8 @@ class ReportItemApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

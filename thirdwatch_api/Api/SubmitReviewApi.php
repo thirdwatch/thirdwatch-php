@@ -92,13 +92,13 @@ class SubmitReviewApi
      *
      * Use submit_review when a user-submitted review of a product or seller.
      *
-     * @param \ai\thirdwatch\Model\SubmitReview $jSON Pass review to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain review info. (required)
+     * @param \ai\thirdwatch\Model\SubmitReview $json Pass review to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain review info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function submitReview($jSON)
+    public function submitReview($json)
     {
-        list($response) = $this->submitReviewWithHttpInfo($jSON);
+        list($response) = $this->submitReviewWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class SubmitReviewApi
      *
      * Use submit_review when a user-submitted review of a product or seller.
      *
-     * @param \ai\thirdwatch\Model\SubmitReview $jSON Pass review to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain review info. (required)
+     * @param \ai\thirdwatch\Model\SubmitReview $json Pass review to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain review info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function submitReviewWithHttpInfo($jSON)
+    public function submitReviewWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling submitReview');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling submitReview');
         }
         // parse inputs
         $resourcePath = "/v1/submit_review";
@@ -131,8 +131,8 @@ class SubmitReviewApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

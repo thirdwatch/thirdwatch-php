@@ -54,18 +54,18 @@ class OrderStatus implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userId' => 'string',
-        'sessionId' => 'string',
-        'orderId' => 'string',
-        'orderStatus' => 'string',
-        'reason' => 'string',
-        'shippingCost' => 'string',
-        'trackingNumber' => 'string',
-        'trackingMethod' => 'string',
-        'source' => 'string',
-        'analyst' => 'string',
-        'description' => 'string',
-        'customInfo' => '\ai\thirdwatch\Model\CustomInfo'
+        '_user_id' => 'string',
+        '_session_id' => 'string',
+        '_order_id' => 'string',
+        '_order_status' => 'string',
+        '_reason' => 'string',
+        '_shipping_cost' => 'string',
+        '_tracking_number' => 'string',
+        '_tracking_method' => 'string',
+        '_source' => 'string',
+        '_analyst' => 'string',
+        '_description' => 'string',
+        '_custom_info' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -73,18 +73,18 @@ class OrderStatus implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userId' => null,
-        'sessionId' => null,
-        'orderId' => null,
-        'orderStatus' => null,
-        'reason' => null,
-        'shippingCost' => null,
-        'trackingNumber' => null,
-        'trackingMethod' => null,
-        'source' => null,
-        'analyst' => null,
-        'description' => null,
-        'customInfo' => null
+        '_user_id' => null,
+        '_session_id' => null,
+        '_order_id' => null,
+        '_order_status' => null,
+        '_reason' => null,
+        '_shipping_cost' => null,
+        '_tracking_number' => null,
+        '_tracking_method' => null,
+        '_source' => null,
+        '_analyst' => null,
+        '_description' => null,
+        '_custom_info' => null
     ];
 
     public static function swaggerTypes()
@@ -102,18 +102,18 @@ class OrderStatus implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userId' => '_userId',
-        'sessionId' => '_sessionId',
-        'orderId' => '_orderId',
-        'orderStatus' => '_orderStatus',
-        'reason' => '_reason',
-        'shippingCost' => '_shippingCost',
-        'trackingNumber' => '_trackingNumber',
-        'trackingMethod' => '_trackingMethod',
-        'source' => '_source',
-        'analyst' => '_analyst',
-        'description' => '_description',
-        'customInfo' => '_customInfo'
+        '_user_id' => '_userId',
+        '_session_id' => '_sessionId',
+        '_order_id' => '_orderId',
+        '_order_status' => '_orderStatus',
+        '_reason' => '_reason',
+        '_shipping_cost' => '_shippingCost',
+        '_tracking_number' => '_trackingNumber',
+        '_tracking_method' => '_trackingMethod',
+        '_source' => '_source',
+        '_analyst' => '_analyst',
+        '_description' => '_description',
+        '_custom_info' => '_customInfo'
     ];
 
 
@@ -122,18 +122,18 @@ class OrderStatus implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userId' => 'setUserId',
-        'sessionId' => 'setSessionId',
-        'orderId' => 'setOrderId',
-        'orderStatus' => 'setOrderStatus',
-        'reason' => 'setReason',
-        'shippingCost' => 'setShippingCost',
-        'trackingNumber' => 'setTrackingNumber',
-        'trackingMethod' => 'setTrackingMethod',
-        'source' => 'setSource',
-        'analyst' => 'setAnalyst',
-        'description' => 'setDescription',
-        'customInfo' => 'setCustomInfo'
+        '_user_id' => 'setUserId',
+        '_session_id' => 'setSessionId',
+        '_order_id' => 'setOrderId',
+        '_order_status' => 'setOrderStatus',
+        '_reason' => 'setReason',
+        '_shipping_cost' => 'setShippingCost',
+        '_tracking_number' => 'setTrackingNumber',
+        '_tracking_method' => 'setTrackingMethod',
+        '_source' => 'setSource',
+        '_analyst' => 'setAnalyst',
+        '_description' => 'setDescription',
+        '_custom_info' => 'setCustomInfo'
     ];
 
 
@@ -142,18 +142,18 @@ class OrderStatus implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userId' => 'getUserId',
-        'sessionId' => 'getSessionId',
-        'orderId' => 'getOrderId',
-        'orderStatus' => 'getOrderStatus',
-        'reason' => 'getReason',
-        'shippingCost' => 'getShippingCost',
-        'trackingNumber' => 'getTrackingNumber',
-        'trackingMethod' => 'getTrackingMethod',
-        'source' => 'getSource',
-        'analyst' => 'getAnalyst',
-        'description' => 'getDescription',
-        'customInfo' => 'getCustomInfo'
+        '_user_id' => 'getUserId',
+        '_session_id' => 'getSessionId',
+        '_order_id' => 'getOrderId',
+        '_order_status' => 'getOrderStatus',
+        '_reason' => 'getReason',
+        '_shipping_cost' => 'getShippingCost',
+        '_tracking_number' => 'getTrackingNumber',
+        '_tracking_method' => 'getTrackingMethod',
+        '_source' => 'getSource',
+        '_analyst' => 'getAnalyst',
+        '_description' => 'getDescription',
+        '_custom_info' => 'getCustomInfo'
     ];
 
     public static function attributeMap()
@@ -187,18 +187,18 @@ class OrderStatus implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
-        $this->container['sessionId'] = isset($data['sessionId']) ? $data['sessionId'] : null;
-        $this->container['orderId'] = isset($data['orderId']) ? $data['orderId'] : null;
-        $this->container['orderStatus'] = isset($data['orderStatus']) ? $data['orderStatus'] : null;
-        $this->container['reason'] = isset($data['reason']) ? $data['reason'] : null;
-        $this->container['shippingCost'] = isset($data['shippingCost']) ? $data['shippingCost'] : null;
-        $this->container['trackingNumber'] = isset($data['trackingNumber']) ? $data['trackingNumber'] : null;
-        $this->container['trackingMethod'] = isset($data['trackingMethod']) ? $data['trackingMethod'] : null;
-        $this->container['source'] = isset($data['source']) ? $data['source'] : null;
-        $this->container['analyst'] = isset($data['analyst']) ? $data['analyst'] : null;
-        $this->container['description'] = isset($data['description']) ? $data['description'] : null;
-        $this->container['customInfo'] = isset($data['customInfo']) ? $data['customInfo'] : null;
+        $this->container['_user_id'] = isset($data['_user_id']) ? $data['_user_id'] : null;
+        $this->container['_session_id'] = isset($data['_session_id']) ? $data['_session_id'] : null;
+        $this->container['_order_id'] = isset($data['_order_id']) ? $data['_order_id'] : null;
+        $this->container['_order_status'] = isset($data['_order_status']) ? $data['_order_status'] : null;
+        $this->container['_reason'] = isset($data['_reason']) ? $data['_reason'] : null;
+        $this->container['_shipping_cost'] = isset($data['_shipping_cost']) ? $data['_shipping_cost'] : null;
+        $this->container['_tracking_number'] = isset($data['_tracking_number']) ? $data['_tracking_number'] : null;
+        $this->container['_tracking_method'] = isset($data['_tracking_method']) ? $data['_tracking_method'] : null;
+        $this->container['_source'] = isset($data['_source']) ? $data['_source'] : null;
+        $this->container['_analyst'] = isset($data['_analyst']) ? $data['_analyst'] : null;
+        $this->container['_description'] = isset($data['_description']) ? $data['_description'] : null;
+        $this->container['_custom_info'] = isset($data['_custom_info']) ? $data['_custom_info'] : null;
     }
 
     /**
@@ -227,253 +227,253 @@ class OrderStatus implements ArrayAccess
 
 
     /**
-     * Gets userId
+     * Gets _user_id
      * @return string
      */
     public function getUserId()
     {
-        return $this->container['userId'];
+        return $this->container['_user_id'];
     }
 
     /**
-     * Sets userId
-     * @param string $userId The user's account ID according to your systems. Note that user IDs are case sensitive.
+     * Sets _user_id
+     * @param string $_user_id The user's account ID according to your systems. Note that user IDs are case sensitive.
      * @return $this
      */
-    public function setUserId($userId)
+    public function setUserId($_user_id)
     {
-        $this->container['userId'] = $userId;
+        $this->container['_user_id'] = $_user_id;
 
         return $this;
     }
 
     /**
-     * Gets sessionId
+     * Gets _session_id
      * @return string
      */
     public function getSessionId()
     {
-        return $this->container['sessionId'];
+        return $this->container['_session_id'];
     }
 
     /**
-     * Sets sessionId
-     * @param string $sessionId The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
+     * Sets _session_id
+     * @param string $_session_id The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
      * @return $this
      */
-    public function setSessionId($sessionId)
+    public function setSessionId($_session_id)
     {
-        $this->container['sessionId'] = $sessionId;
+        $this->container['_session_id'] = $_session_id;
 
         return $this;
     }
 
     /**
-     * Gets orderId
+     * Gets _order_id
      * @return string
      */
     public function getOrderId()
     {
-        return $this->container['orderId'];
+        return $this->container['_order_id'];
     }
 
     /**
-     * Sets orderId
-     * @param string $orderId The ID for the order that this chargeback is filed against. This field is not required if this chargeback was filed against a transaction with no _orderId.
+     * Sets _order_id
+     * @param string $_order_id The ID for the order that this chargeback is filed against. This field is not required if this chargeback was filed against a transaction with no _orderId.
      * @return $this
      */
-    public function setOrderId($orderId)
+    public function setOrderId($_order_id)
     {
-        $this->container['orderId'] = $orderId;
+        $this->container['_order_id'] = $_order_id;
 
         return $this;
     }
 
     /**
-     * Gets orderStatus
+     * Gets _order_status
      * @return string
      */
     public function getOrderStatus()
     {
-        return $this->container['orderStatus'];
+        return $this->container['_order_status'];
     }
 
     /**
-     * Sets orderStatus
-     * @param string $orderStatus Indicates the high-level state of the order. e.g. _approved, _canceled, _held, _fulfilled, _returned, _rto
+     * Sets _order_status
+     * @param string $_order_status Indicates the high-level state of the order. e.g. _approved, _canceled, _held, _fulfilled, _returned, _rto
      * @return $this
      */
-    public function setOrderStatus($orderStatus)
+    public function setOrderStatus($_order_status)
     {
-        $this->container['orderStatus'] = $orderStatus;
+        $this->container['_order_status'] = $_order_status;
 
         return $this;
     }
 
     /**
-     * Gets reason
+     * Gets _reason
      * @return string
      */
     public function getReason()
     {
-        return $this->container['reason'];
+        return $this->container['_reason'];
     }
 
     /**
-     * Sets reason
-     * @param string $reason The reason for a cancellation. e.g. _paymentRisk, _abuse, _policy, _other
+     * Sets _reason
+     * @param string $_reason The reason for a cancellation. e.g. _paymentRisk, _abuse, _policy, _other
      * @return $this
      */
-    public function setReason($reason)
+    public function setReason($_reason)
     {
-        $this->container['reason'] = $reason;
+        $this->container['_reason'] = $_reason;
 
         return $this;
     }
 
     /**
-     * Gets shippingCost
+     * Gets _shipping_cost
      * @return string
      */
     public function getShippingCost()
     {
-        return $this->container['shippingCost'];
+        return $this->container['_shipping_cost'];
     }
 
     /**
-     * Sets shippingCost
-     * @param string $shippingCost if _approved or _fulfilled than pass the shipping cost. e.g. \"50\"
+     * Sets _shipping_cost
+     * @param string $_shipping_cost if _approved or _fulfilled than pass the shipping cost. e.g. \"50\"
      * @return $this
      */
-    public function setShippingCost($shippingCost)
+    public function setShippingCost($_shipping_cost)
     {
-        $this->container['shippingCost'] = $shippingCost;
+        $this->container['_shipping_cost'] = $_shipping_cost;
 
         return $this;
     }
 
     /**
-     * Gets trackingNumber
+     * Gets _tracking_number
      * @return string
      */
     public function getTrackingNumber()
     {
-        return $this->container['trackingNumber'];
+        return $this->container['_tracking_number'];
     }
 
     /**
-     * Sets trackingNumber
-     * @param string $trackingNumber if _approved or _fulfilled than pass the tracking number. e.g. \"55327470\"
+     * Sets _tracking_number
+     * @param string $_tracking_number if _approved or _fulfilled than pass the tracking number. e.g. \"55327470\"
      * @return $this
      */
-    public function setTrackingNumber($trackingNumber)
+    public function setTrackingNumber($_tracking_number)
     {
-        $this->container['trackingNumber'] = $trackingNumber;
+        $this->container['_tracking_number'] = $_tracking_number;
 
         return $this;
     }
 
     /**
-     * Gets trackingMethod
+     * Gets _tracking_method
      * @return string
      */
     public function getTrackingMethod()
     {
-        return $this->container['trackingMethod'];
+        return $this->container['_tracking_method'];
     }
 
     /**
-     * Sets trackingMethod
-     * @param string $trackingMethod if _approved or _fulfilled than pass the tracking url. e.g. \"http://fedex.com/track?q=abc123\"
+     * Sets _tracking_method
+     * @param string $_tracking_method if _approved or _fulfilled than pass the tracking url. e.g. \"http://fedex.com/track?q=abc123\"
      * @return $this
      */
-    public function setTrackingMethod($trackingMethod)
+    public function setTrackingMethod($_tracking_method)
     {
-        $this->container['trackingMethod'] = $trackingMethod;
+        $this->container['_tracking_method'] = $_tracking_method;
 
         return $this;
     }
 
     /**
-     * Gets source
+     * Gets _source
      * @return string
      */
     public function getSource()
     {
-        return $this->container['source'];
+        return $this->container['_source'];
     }
 
     /**
-     * Sets source
-     * @param string $source The source of a decision. e.g. _automated, _manualReview\"
+     * Sets _source
+     * @param string $_source The source of a decision. e.g. _automated, _manualReview\"
      * @return $this
      */
-    public function setSource($source)
+    public function setSource($_source)
     {
-        $this->container['source'] = $source;
+        $this->container['_source'] = $_source;
 
         return $this;
     }
 
     /**
-     * Gets analyst
+     * Gets _analyst
      * @return string
      */
     public function getAnalyst()
     {
-        return $this->container['analyst'];
+        return $this->container['_analyst'];
     }
 
     /**
-     * Sets analyst
-     * @param string $analyst The analyst who made the decision, if manual.
+     * Sets _analyst
+     * @param string $_analyst The analyst who made the decision, if manual.
      * @return $this
      */
-    public function setAnalyst($analyst)
+    public function setAnalyst($_analyst)
     {
-        $this->container['analyst'] = $analyst;
+        $this->container['_analyst'] = $_analyst;
 
         return $this;
     }
 
     /**
-     * Gets description
+     * Gets _description
      * @return string
      */
     public function getDescription()
     {
-        return $this->container['description'];
+        return $this->container['_description'];
     }
 
     /**
-     * Sets description
-     * @param string $description Any additional information about this order status change.
+     * Sets _description
+     * @param string $_description Any additional information about this order status change.
      * @return $this
      */
-    public function setDescription($description)
+    public function setDescription($_description)
     {
-        $this->container['description'] = $description;
+        $this->container['_description'] = $_description;
 
         return $this;
     }
 
     /**
-     * Gets customInfo
+     * Gets _custom_info
      * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
-        return $this->container['customInfo'];
+        return $this->container['_custom_info'];
     }
 
     /**
-     * Sets customInfo
-     * @param \ai\thirdwatch\Model\CustomInfo $customInfo
+     * Sets _custom_info
+     * @param \ai\thirdwatch\Model\CustomInfo $_custom_info
      * @return $this
      */
-    public function setCustomInfo($customInfo)
+    public function setCustomInfo($_custom_info)
     {
-        $this->container['customInfo'] = $customInfo;
+        $this->container['_custom_info'] = $_custom_info;
 
         return $this;
     }

@@ -92,13 +92,13 @@ class UpdateOrderApi
      *
      * Update details of an existing order.
      *
-     * @param \ai\thirdwatch\Model\UpdateOrder $jSON Update details of an existing order. Only &#x60;_userID&#x60; is required field. But this should contain existing order info. (required)
+     * @param \ai\thirdwatch\Model\UpdateOrder $json Update details of an existing order. Only &#x60;_userID&#x60; is required field. But this should contain existing order info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function updateOrder($jSON)
+    public function updateOrder($json)
     {
-        list($response) = $this->updateOrderWithHttpInfo($jSON);
+        list($response) = $this->updateOrderWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class UpdateOrderApi
      *
      * Update details of an existing order.
      *
-     * @param \ai\thirdwatch\Model\UpdateOrder $jSON Update details of an existing order. Only &#x60;_userID&#x60; is required field. But this should contain existing order info. (required)
+     * @param \ai\thirdwatch\Model\UpdateOrder $json Update details of an existing order. Only &#x60;_userID&#x60; is required field. But this should contain existing order info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function updateOrderWithHttpInfo($jSON)
+    public function updateOrderWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling updateOrder');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling updateOrder');
         }
         // parse inputs
         $resourcePath = "/v1/update_order";
@@ -131,8 +131,8 @@ class UpdateOrderApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

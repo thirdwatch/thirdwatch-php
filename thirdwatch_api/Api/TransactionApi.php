@@ -92,13 +92,13 @@ class TransactionApi
      *
      * Use transaction to record attempts results to Pay, Transfer money, Refund or other transactions.
      *
-     * @param \ai\thirdwatch\Model\Transaction $jSON Pass transaction results to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain transaction info. (required)
+     * @param \ai\thirdwatch\Model\Transaction $json Pass transaction results to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain transaction info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function transaction($jSON)
+    public function transaction($json)
     {
-        list($response) = $this->transactionWithHttpInfo($jSON);
+        list($response) = $this->transactionWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class TransactionApi
      *
      * Use transaction to record attempts results to Pay, Transfer money, Refund or other transactions.
      *
-     * @param \ai\thirdwatch\Model\Transaction $jSON Pass transaction results to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain transaction info. (required)
+     * @param \ai\thirdwatch\Model\Transaction $json Pass transaction results to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain transaction info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function transactionWithHttpInfo($jSON)
+    public function transactionWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling transaction');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling transaction');
         }
         // parse inputs
         $resourcePath = "/v1/transaction";
@@ -131,8 +131,8 @@ class TransactionApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

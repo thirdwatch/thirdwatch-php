@@ -92,13 +92,13 @@ class ItemStatusApi
      *
      * Use item_status to update the status of item that you’ve already pass to Thirdwatch.
      *
-     * @param \ai\thirdwatch\Model\ItemStatus $jSON Pass change item status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item status. (required)
+     * @param \ai\thirdwatch\Model\ItemStatus $json Pass change item status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item status. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function itemStatus($jSON)
+    public function itemStatus($json)
     {
-        list($response) = $this->itemStatusWithHttpInfo($jSON);
+        list($response) = $this->itemStatusWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class ItemStatusApi
      *
      * Use item_status to update the status of item that you’ve already pass to Thirdwatch.
      *
-     * @param \ai\thirdwatch\Model\ItemStatus $jSON Pass change item status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item status. (required)
+     * @param \ai\thirdwatch\Model\ItemStatus $json Pass change item status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item status. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function itemStatusWithHttpInfo($jSON)
+    public function itemStatusWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling itemStatus');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling itemStatus');
         }
         // parse inputs
         $resourcePath = "/v1/item_status";
@@ -131,8 +131,8 @@ class ItemStatusApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

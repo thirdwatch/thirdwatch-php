@@ -92,13 +92,13 @@ class AddPromotionApi
      *
      * Use add_promotion to record when a user adds one or more promotions to their account.
      *
-     * @param \ai\thirdwatch\Model\AddPromotion $jSON Pass added promotion info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain promotion info. (required)
+     * @param \ai\thirdwatch\Model\AddPromotion $json Pass added promotion info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain promotion info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function addPromotion($jSON)
+    public function addPromotion($json)
     {
-        list($response) = $this->addPromotionWithHttpInfo($jSON);
+        list($response) = $this->addPromotionWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class AddPromotionApi
      *
      * Use add_promotion to record when a user adds one or more promotions to their account.
      *
-     * @param \ai\thirdwatch\Model\AddPromotion $jSON Pass added promotion info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain promotion info. (required)
+     * @param \ai\thirdwatch\Model\AddPromotion $json Pass added promotion info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain promotion info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function addPromotionWithHttpInfo($jSON)
+    public function addPromotionWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling addPromotion');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling addPromotion');
         }
         // parse inputs
         $resourcePath = "/v1/add_promotion";
@@ -131,8 +131,8 @@ class AddPromotionApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

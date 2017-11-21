@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **removeFromCart**
-> \ai\thirdwatch\Model\EventResponse removeFromCart($jSON)
+> \ai\thirdwatch\Model\EventResponse removeFromCart($json)
 
 Use remove_from_cart when a user removes an item from their shopping cart or list.
 
@@ -23,10 +23,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\RemoveFromCartApi();
-$jSON = new \ai\thirdwatch\Model\RemoveFromCart(); // \ai\thirdwatch\Model\RemoveFromCart | Pass removed item info to thirdwatch. Only `_userID` is required field. But this should contain item info.
+$json = new \ai\thirdwatch\Model\RemoveFromCart(); // \ai\thirdwatch\Model\RemoveFromCart | Pass removed item info to thirdwatch. Only `_userID` is required field. But this should contain item info.
 
 try {
-    $result = $api_instance->removeFromCart($jSON);
+    $result = $api_instance->removeFromCart($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling RemoveFromCartApi->removeFromCart: ', $e->getMessage(), PHP_EOL;
@@ -38,7 +38,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai\thirdwatch\Model\RemoveFromCart**](../Model/RemoveFromCart.md)| Pass removed item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. |
+ **json** | [**\ai\thirdwatch\Model\RemoveFromCart**](../Model/RemoveFromCart.md)| Pass removed item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. |
 
 ### Return type
 

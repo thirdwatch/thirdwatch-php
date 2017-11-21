@@ -92,13 +92,13 @@ class ChargebackApi
      *
      * Use chargeback to capture a chargeback reported on a transaction. This event can be called multiple times to record changes to the chargeback state.
      *
-     * @param \ai\thirdwatch\Model\Chargeback $jSON Pass chargeback to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain chargeback info. (required)
+     * @param \ai\thirdwatch\Model\Chargeback $json Pass chargeback to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain chargeback info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function chargeback($jSON)
+    public function chargeback($json)
     {
-        list($response) = $this->chargebackWithHttpInfo($jSON);
+        list($response) = $this->chargebackWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class ChargebackApi
      *
      * Use chargeback to capture a chargeback reported on a transaction. This event can be called multiple times to record changes to the chargeback state.
      *
-     * @param \ai\thirdwatch\Model\Chargeback $jSON Pass chargeback to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain chargeback info. (required)
+     * @param \ai\thirdwatch\Model\Chargeback $json Pass chargeback to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain chargeback info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function chargebackWithHttpInfo($jSON)
+    public function chargebackWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling chargeback');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling chargeback');
         }
         // parse inputs
         $resourcePath = "/v1/chargeback";
@@ -131,8 +131,8 @@ class ChargebackApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

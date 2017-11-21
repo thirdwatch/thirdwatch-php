@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **updateAccount**
-> \ai\thirdwatch\Model\EventResponse updateAccount($jSON)
+> \ai\thirdwatch\Model\EventResponse updateAccount($json)
 
 Use update_account to record changes to the user's account information.
 
@@ -25,10 +25,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\UpdateAccountApi();
-$jSON = new \ai\thirdwatch\Model\UpdateAccount(); // \ai\thirdwatch\Model\UpdateAccount | Pass user details after update or change in user info. Only `_userID` is required field. But this should contain user info.
+$json = new \ai\thirdwatch\Model\UpdateAccount(); // \ai\thirdwatch\Model\UpdateAccount | Pass user details after update or change in user info. Only `_userID` is required field. But this should contain user info.
 
 try {
-    $result = $api_instance->updateAccount($jSON);
+    $result = $api_instance->updateAccount($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UpdateAccountApi->updateAccount: ', $e->getMessage(), PHP_EOL;
@@ -40,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai\thirdwatch\Model\UpdateAccount**](../Model/UpdateAccount.md)| Pass user details after update or change in user info. Only &#x60;_userID&#x60; is required field. But this should contain user info. |
+ **json** | [**\ai\thirdwatch\Model\UpdateAccount**](../Model/UpdateAccount.md)| Pass user details after update or change in user info. Only &#x60;_userID&#x60; is required field. But this should contain user info. |
 
 ### Return type
 

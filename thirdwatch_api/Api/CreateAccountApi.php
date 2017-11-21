@@ -92,13 +92,13 @@ class CreateAccountApi
      *
      * Use create_account to pass user details at user registration.
      *
-     * @param \ai\thirdwatch\Model\CreateAccount $jSON Pass user details after registration. Only &#x60;_userID&#x60; is required field. But this should contain user info. (required)
+     * @param \ai\thirdwatch\Model\CreateAccount $json Pass user details after registration. Only &#x60;_userID&#x60; is required field. But this should contain user info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function createAccount($jSON)
+    public function createAccount($json)
     {
-        list($response) = $this->createAccountWithHttpInfo($jSON);
+        list($response) = $this->createAccountWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class CreateAccountApi
      *
      * Use create_account to pass user details at user registration.
      *
-     * @param \ai\thirdwatch\Model\CreateAccount $jSON Pass user details after registration. Only &#x60;_userID&#x60; is required field. But this should contain user info. (required)
+     * @param \ai\thirdwatch\Model\CreateAccount $json Pass user details after registration. Only &#x60;_userID&#x60; is required field. But this should contain user info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function createAccountWithHttpInfo($jSON)
+    public function createAccountWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling createAccount');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling createAccount');
         }
         // parse inputs
         $resourcePath = "/v1/create_account";
@@ -131,8 +131,8 @@ class CreateAccountApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

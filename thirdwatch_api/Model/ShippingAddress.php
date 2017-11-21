@@ -55,16 +55,16 @@ class ShippingAddress implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'name' => 'string',
-        'phone' => 'string',
-        'address1' => 'string',
-        'address2' => 'string',
-        'city' => 'string',
-        'region' => 'string',
-        'country' => 'string',
-        'zipcode' => 'string',
-        'isOfficeAddress' => 'bool',
-        'isHomeAddress' => 'bool'
+        '_name' => 'string',
+        '_phone' => 'string',
+        '_address1' => 'string',
+        '_address2' => 'string',
+        '_city' => 'string',
+        '_region' => 'string',
+        '_country' => 'string',
+        '_zipcode' => 'string',
+        '_is_office_address' => 'bool',
+        '_is_home_address' => 'bool'
     ];
 
     /**
@@ -72,16 +72,16 @@ class ShippingAddress implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'name' => null,
-        'phone' => null,
-        'address1' => null,
-        'address2' => null,
-        'city' => null,
-        'region' => null,
-        'country' => null,
-        'zipcode' => null,
-        'isOfficeAddress' => null,
-        'isHomeAddress' => null
+        '_name' => null,
+        '_phone' => null,
+        '_address1' => null,
+        '_address2' => null,
+        '_city' => null,
+        '_region' => null,
+        '_country' => null,
+        '_zipcode' => null,
+        '_is_office_address' => null,
+        '_is_home_address' => null
     ];
 
     public static function swaggerTypes()
@@ -99,16 +99,16 @@ class ShippingAddress implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'name' => '_name',
-        'phone' => '_phone',
-        'address1' => '_address1',
-        'address2' => '_address2',
-        'city' => '_city',
-        'region' => '_region',
-        'country' => '_country',
-        'zipcode' => '_zipcode',
-        'isOfficeAddress' => '_isOfficeAddress',
-        'isHomeAddress' => '_isHomeAddress'
+        '_name' => '_name',
+        '_phone' => '_phone',
+        '_address1' => '_address1',
+        '_address2' => '_address2',
+        '_city' => '_city',
+        '_region' => '_region',
+        '_country' => '_country',
+        '_zipcode' => '_zipcode',
+        '_is_office_address' => '_isOfficeAddress',
+        '_is_home_address' => '_isHomeAddress'
     ];
 
 
@@ -117,16 +117,16 @@ class ShippingAddress implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'phone' => 'setPhone',
-        'address1' => 'setAddress1',
-        'address2' => 'setAddress2',
-        'city' => 'setCity',
-        'region' => 'setRegion',
-        'country' => 'setCountry',
-        'zipcode' => 'setZipcode',
-        'isOfficeAddress' => 'setIsOfficeAddress',
-        'isHomeAddress' => 'setIsHomeAddress'
+        '_name' => 'setName',
+        '_phone' => 'setPhone',
+        '_address1' => 'setAddress1',
+        '_address2' => 'setAddress2',
+        '_city' => 'setCity',
+        '_region' => 'setRegion',
+        '_country' => 'setCountry',
+        '_zipcode' => 'setZipcode',
+        '_is_office_address' => 'setIsOfficeAddress',
+        '_is_home_address' => 'setIsHomeAddress'
     ];
 
 
@@ -135,16 +135,16 @@ class ShippingAddress implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'phone' => 'getPhone',
-        'address1' => 'getAddress1',
-        'address2' => 'getAddress2',
-        'city' => 'getCity',
-        'region' => 'getRegion',
-        'country' => 'getCountry',
-        'zipcode' => 'getZipcode',
-        'isOfficeAddress' => 'getIsOfficeAddress',
-        'isHomeAddress' => 'getIsHomeAddress'
+        '_name' => 'getName',
+        '_phone' => 'getPhone',
+        '_address1' => 'getAddress1',
+        '_address2' => 'getAddress2',
+        '_city' => 'getCity',
+        '_region' => 'getRegion',
+        '_country' => 'getCountry',
+        '_zipcode' => 'getZipcode',
+        '_is_office_address' => 'getIsOfficeAddress',
+        '_is_home_address' => 'getIsHomeAddress'
     ];
 
     public static function attributeMap()
@@ -178,16 +178,16 @@ class ShippingAddress implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['name'] = isset($data['name']) ? $data['name'] : null;
-        $this->container['phone'] = isset($data['phone']) ? $data['phone'] : null;
-        $this->container['address1'] = isset($data['address1']) ? $data['address1'] : null;
-        $this->container['address2'] = isset($data['address2']) ? $data['address2'] : null;
-        $this->container['city'] = isset($data['city']) ? $data['city'] : null;
-        $this->container['region'] = isset($data['region']) ? $data['region'] : null;
-        $this->container['country'] = isset($data['country']) ? $data['country'] : null;
-        $this->container['zipcode'] = isset($data['zipcode']) ? $data['zipcode'] : null;
-        $this->container['isOfficeAddress'] = isset($data['isOfficeAddress']) ? $data['isOfficeAddress'] : null;
-        $this->container['isHomeAddress'] = isset($data['isHomeAddress']) ? $data['isHomeAddress'] : null;
+        $this->container['_name'] = isset($data['_name']) ? $data['_name'] : null;
+        $this->container['_phone'] = isset($data['_phone']) ? $data['_phone'] : null;
+        $this->container['_address1'] = isset($data['_address1']) ? $data['_address1'] : null;
+        $this->container['_address2'] = isset($data['_address2']) ? $data['_address2'] : null;
+        $this->container['_city'] = isset($data['_city']) ? $data['_city'] : null;
+        $this->container['_region'] = isset($data['_region']) ? $data['_region'] : null;
+        $this->container['_country'] = isset($data['_country']) ? $data['_country'] : null;
+        $this->container['_zipcode'] = isset($data['_zipcode']) ? $data['_zipcode'] : null;
+        $this->container['_is_office_address'] = isset($data['_is_office_address']) ? $data['_is_office_address'] : null;
+        $this->container['_is_home_address'] = isset($data['_is_home_address']) ? $data['_is_home_address'] : null;
     }
 
     /**
@@ -216,211 +216,211 @@ class ShippingAddress implements ArrayAccess
 
 
     /**
-     * Gets name
+     * Gets _name
      * @return string
      */
     public function getName()
     {
-        return $this->container['name'];
+        return $this->container['_name'];
     }
 
     /**
-     * Sets name
-     * @param string $name Provide the full name associated with the address here. Concatenate first name and last name together if you collect them separately in your system.
+     * Sets _name
+     * @param string $_name Provide the full name associated with the address here. Concatenate first name and last name together if you collect them separately in your system.
      * @return $this
      */
-    public function setName($name)
+    public function setName($_name)
     {
-        $this->container['name'] = $name;
+        $this->container['_name'] = $_name;
 
         return $this;
     }
 
     /**
-     * Gets phone
+     * Gets _phone
      * @return string
      */
     public function getPhone()
     {
-        return $this->container['phone'];
+        return $this->container['_phone'];
     }
 
     /**
-     * Sets phone
-     * @param string $phone The phone number associated with this address. Provide the phone number as a string starting with the country code. Use E.164 format or send in the standard national format of number's origin.
+     * Sets _phone
+     * @param string $_phone The phone number associated with this address. Provide the phone number as a string starting with the country code. Use E.164 format or send in the standard national format of number's origin.
      * @return $this
      */
-    public function setPhone($phone)
+    public function setPhone($_phone)
     {
-        $this->container['phone'] = $phone;
+        $this->container['_phone'] = $_phone;
 
         return $this;
     }
 
     /**
-     * Gets address1
+     * Gets _address1
      * @return string
      */
     public function getAddress1()
     {
-        return $this->container['address1'];
+        return $this->container['_address1'];
     }
 
     /**
-     * Sets address1
-     * @param string $address1 Address first line, e.g., \"C802 Nirvana Courtyard\".
+     * Sets _address1
+     * @param string $_address1 Address first line, e.g., \"C802 Nirvana Courtyard\".
      * @return $this
      */
-    public function setAddress1($address1)
+    public function setAddress1($_address1)
     {
-        $this->container['address1'] = $address1;
+        $this->container['_address1'] = $_address1;
 
         return $this;
     }
 
     /**
-     * Gets address2
+     * Gets _address2
      * @return string
      */
     public function getAddress2()
     {
-        return $this->container['address2'];
+        return $this->container['_address2'];
     }
 
     /**
-     * Sets address2
-     * @param string $address2 Address second line, e.g., \"Nirvana Country, Sector 50\".
+     * Sets _address2
+     * @param string $_address2 Address second line, e.g., \"Nirvana Country, Sector 50\".
      * @return $this
      */
-    public function setAddress2($address2)
+    public function setAddress2($_address2)
     {
-        $this->container['address2'] = $address2;
+        $this->container['_address2'] = $_address2;
 
         return $this;
     }
 
     /**
-     * Gets city
+     * Gets _city
      * @return string
      */
     public function getCity()
     {
-        return $this->container['city'];
+        return $this->container['_city'];
     }
 
     /**
-     * Sets city
-     * @param string $city The city or town name, e.g., \"Gurgaon\" .
+     * Sets _city
+     * @param string $_city The city or town name, e.g., \"Gurgaon\" .
      * @return $this
      */
-    public function setCity($city)
+    public function setCity($_city)
     {
-        $this->container['city'] = $city;
+        $this->container['_city'] = $_city;
 
         return $this;
     }
 
     /**
-     * Gets region
+     * Gets _region
      * @return string
      */
     public function getRegion()
     {
-        return $this->container['region'];
+        return $this->container['_region'];
     }
 
     /**
-     * Sets region
-     * @param string $region The region portion of the address. In the India, this corresponds to the state.
+     * Sets _region
+     * @param string $_region The region portion of the address. In the India, this corresponds to the state.
      * @return $this
      */
-    public function setRegion($region)
+    public function setRegion($_region)
     {
-        $this->container['region'] = $region;
+        $this->container['_region'] = $_region;
 
         return $this;
     }
 
     /**
-     * Gets country
+     * Gets _country
      * @return string
      */
     public function getCountry()
     {
-        return $this->container['country'];
+        return $this->container['_country'];
     }
 
     /**
-     * Sets country
-     * @param string $country The [ISO-3166](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code for the billing address, e.g., \"IN\" in case of India.
+     * Sets _country
+     * @param string $_country The [ISO-3166](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code for the billing address, e.g., \"IN\" in case of India.
      * @return $this
      */
-    public function setCountry($country)
+    public function setCountry($_country)
     {
-        $this->container['country'] = $country;
+        $this->container['_country'] = $_country;
 
         return $this;
     }
 
     /**
-     * Gets zipcode
+     * Gets _zipcode
      * @return string
      */
     public function getZipcode()
     {
-        return $this->container['zipcode'];
+        return $this->container['_zipcode'];
     }
 
     /**
-     * Sets zipcode
-     * @param string $zipcode The postal code associated with the address, e.g., \"122002\".
+     * Sets _zipcode
+     * @param string $_zipcode The postal code associated with the address, e.g., \"122002\".
      * @return $this
      */
-    public function setZipcode($zipcode)
+    public function setZipcode($_zipcode)
     {
-        $this->container['zipcode'] = $zipcode;
+        $this->container['_zipcode'] = $_zipcode;
 
         return $this;
     }
 
     /**
-     * Gets isOfficeAddress
+     * Gets _is_office_address
      * @return bool
      */
     public function getIsOfficeAddress()
     {
-        return $this->container['isOfficeAddress'];
+        return $this->container['_is_office_address'];
     }
 
     /**
-     * Sets isOfficeAddress
-     * @param bool $isOfficeAddress Is user chosen this address as office address.
+     * Sets _is_office_address
+     * @param bool $_is_office_address Is user chosen this address as office address.
      * @return $this
      */
-    public function setIsOfficeAddress($isOfficeAddress)
+    public function setIsOfficeAddress($_is_office_address)
     {
-        $this->container['isOfficeAddress'] = $isOfficeAddress;
+        $this->container['_is_office_address'] = $_is_office_address;
 
         return $this;
     }
 
     /**
-     * Gets isHomeAddress
+     * Gets _is_home_address
      * @return bool
      */
     public function getIsHomeAddress()
     {
-        return $this->container['isHomeAddress'];
+        return $this->container['_is_home_address'];
     }
 
     /**
-     * Sets isHomeAddress
-     * @param bool $isHomeAddress Is user chosen this address as home address.
+     * Sets _is_home_address
+     * @param bool $_is_home_address Is user chosen this address as home address.
      * @return $this
      */
-    public function setIsHomeAddress($isHomeAddress)
+    public function setIsHomeAddress($_is_home_address)
     {
-        $this->container['isHomeAddress'] = $isHomeAddress;
+        $this->container['_is_home_address'] = $_is_home_address;
 
         return $this;
     }

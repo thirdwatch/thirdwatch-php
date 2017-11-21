@@ -92,13 +92,13 @@ class RemoveFromCartApi
      *
      * Use remove_from_cart when a user removes an item from their shopping cart or list.
      *
-     * @param \ai\thirdwatch\Model\RemoveFromCart $jSON Pass removed item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. (required)
+     * @param \ai\thirdwatch\Model\RemoveFromCart $json Pass removed item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function removeFromCart($jSON)
+    public function removeFromCart($json)
     {
-        list($response) = $this->removeFromCartWithHttpInfo($jSON);
+        list($response) = $this->removeFromCartWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class RemoveFromCartApi
      *
      * Use remove_from_cart when a user removes an item from their shopping cart or list.
      *
-     * @param \ai\thirdwatch\Model\RemoveFromCart $jSON Pass removed item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. (required)
+     * @param \ai\thirdwatch\Model\RemoveFromCart $json Pass removed item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function removeFromCartWithHttpInfo($jSON)
+    public function removeFromCartWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling removeFromCart');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling removeFromCart');
         }
         // parse inputs
         $resourcePath = "/v1/remove_from_cart";
@@ -131,8 +131,8 @@ class RemoveFromCartApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)
