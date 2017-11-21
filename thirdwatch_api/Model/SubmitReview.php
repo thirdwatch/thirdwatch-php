@@ -54,16 +54,16 @@ class SubmitReview implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userId' => 'string',
-        'sessionId' => 'string',
-        'deviceIp' => 'string',
-        'originTimestamp' => 'string',
-        'reviewTitle' => 'string',
-        'reviewContent' => 'string',
-        'itemId' => 'string',
-        'submissionStatus' => 'string',
-        'rating' => 'string',
-        'customInfo' => '\ai\thirdwatch\Model\CustomInfo'
+        '_user_id' => 'string',
+        '_session_id' => 'string',
+        '_device_ip' => 'string',
+        '_origin_timestamp' => 'string',
+        '_review_title' => 'string',
+        '_review_content' => 'string',
+        '_item_id' => 'string',
+        '_submission_status' => 'string',
+        '_rating' => 'string',
+        '_custom_info' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -71,16 +71,16 @@ class SubmitReview implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userId' => null,
-        'sessionId' => null,
-        'deviceIp' => null,
-        'originTimestamp' => null,
-        'reviewTitle' => null,
-        'reviewContent' => null,
-        'itemId' => null,
-        'submissionStatus' => null,
-        'rating' => null,
-        'customInfo' => null
+        '_user_id' => null,
+        '_session_id' => null,
+        '_device_ip' => null,
+        '_origin_timestamp' => null,
+        '_review_title' => null,
+        '_review_content' => null,
+        '_item_id' => null,
+        '_submission_status' => null,
+        '_rating' => null,
+        '_custom_info' => null
     ];
 
     public static function swaggerTypes()
@@ -98,16 +98,16 @@ class SubmitReview implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userId' => '_userId',
-        'sessionId' => '_sessionId',
-        'deviceIp' => '_deviceIp',
-        'originTimestamp' => '_originTimestamp',
-        'reviewTitle' => '_reviewTitle',
-        'reviewContent' => '_reviewContent',
-        'itemId' => '_itemId',
-        'submissionStatus' => '_submissionStatus',
-        'rating' => '_rating',
-        'customInfo' => '_customInfo'
+        '_user_id' => '_userId',
+        '_session_id' => '_sessionId',
+        '_device_ip' => '_deviceIp',
+        '_origin_timestamp' => '_originTimestamp',
+        '_review_title' => '_reviewTitle',
+        '_review_content' => '_reviewContent',
+        '_item_id' => '_itemId',
+        '_submission_status' => '_submissionStatus',
+        '_rating' => '_rating',
+        '_custom_info' => '_customInfo'
     ];
 
 
@@ -116,16 +116,16 @@ class SubmitReview implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userId' => 'setUserId',
-        'sessionId' => 'setSessionId',
-        'deviceIp' => 'setDeviceIp',
-        'originTimestamp' => 'setOriginTimestamp',
-        'reviewTitle' => 'setReviewTitle',
-        'reviewContent' => 'setReviewContent',
-        'itemId' => 'setItemId',
-        'submissionStatus' => 'setSubmissionStatus',
-        'rating' => 'setRating',
-        'customInfo' => 'setCustomInfo'
+        '_user_id' => 'setUserId',
+        '_session_id' => 'setSessionId',
+        '_device_ip' => 'setDeviceIp',
+        '_origin_timestamp' => 'setOriginTimestamp',
+        '_review_title' => 'setReviewTitle',
+        '_review_content' => 'setReviewContent',
+        '_item_id' => 'setItemId',
+        '_submission_status' => 'setSubmissionStatus',
+        '_rating' => 'setRating',
+        '_custom_info' => 'setCustomInfo'
     ];
 
 
@@ -134,16 +134,16 @@ class SubmitReview implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userId' => 'getUserId',
-        'sessionId' => 'getSessionId',
-        'deviceIp' => 'getDeviceIp',
-        'originTimestamp' => 'getOriginTimestamp',
-        'reviewTitle' => 'getReviewTitle',
-        'reviewContent' => 'getReviewContent',
-        'itemId' => 'getItemId',
-        'submissionStatus' => 'getSubmissionStatus',
-        'rating' => 'getRating',
-        'customInfo' => 'getCustomInfo'
+        '_user_id' => 'getUserId',
+        '_session_id' => 'getSessionId',
+        '_device_ip' => 'getDeviceIp',
+        '_origin_timestamp' => 'getOriginTimestamp',
+        '_review_title' => 'getReviewTitle',
+        '_review_content' => 'getReviewContent',
+        '_item_id' => 'getItemId',
+        '_submission_status' => 'getSubmissionStatus',
+        '_rating' => 'getRating',
+        '_custom_info' => 'getCustomInfo'
     ];
 
     public static function attributeMap()
@@ -177,16 +177,16 @@ class SubmitReview implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
-        $this->container['sessionId'] = isset($data['sessionId']) ? $data['sessionId'] : null;
-        $this->container['deviceIp'] = isset($data['deviceIp']) ? $data['deviceIp'] : null;
-        $this->container['originTimestamp'] = isset($data['originTimestamp']) ? $data['originTimestamp'] : null;
-        $this->container['reviewTitle'] = isset($data['reviewTitle']) ? $data['reviewTitle'] : null;
-        $this->container['reviewContent'] = isset($data['reviewContent']) ? $data['reviewContent'] : null;
-        $this->container['itemId'] = isset($data['itemId']) ? $data['itemId'] : null;
-        $this->container['submissionStatus'] = isset($data['submissionStatus']) ? $data['submissionStatus'] : null;
-        $this->container['rating'] = isset($data['rating']) ? $data['rating'] : null;
-        $this->container['customInfo'] = isset($data['customInfo']) ? $data['customInfo'] : null;
+        $this->container['_user_id'] = isset($data['_user_id']) ? $data['_user_id'] : null;
+        $this->container['_session_id'] = isset($data['_session_id']) ? $data['_session_id'] : null;
+        $this->container['_device_ip'] = isset($data['_device_ip']) ? $data['_device_ip'] : null;
+        $this->container['_origin_timestamp'] = isset($data['_origin_timestamp']) ? $data['_origin_timestamp'] : null;
+        $this->container['_review_title'] = isset($data['_review_title']) ? $data['_review_title'] : null;
+        $this->container['_review_content'] = isset($data['_review_content']) ? $data['_review_content'] : null;
+        $this->container['_item_id'] = isset($data['_item_id']) ? $data['_item_id'] : null;
+        $this->container['_submission_status'] = isset($data['_submission_status']) ? $data['_submission_status'] : null;
+        $this->container['_rating'] = isset($data['_rating']) ? $data['_rating'] : null;
+        $this->container['_custom_info'] = isset($data['_custom_info']) ? $data['_custom_info'] : null;
     }
 
     /**
@@ -215,211 +215,211 @@ class SubmitReview implements ArrayAccess
 
 
     /**
-     * Gets userId
+     * Gets _user_id
      * @return string
      */
     public function getUserId()
     {
-        return $this->container['userId'];
+        return $this->container['_user_id'];
     }
 
     /**
-     * Sets userId
-     * @param string $userId The user's account ID according to your systems. Note that user IDs are case sensitive.
+     * Sets _user_id
+     * @param string $_user_id The user's account ID according to your systems. Note that user IDs are case sensitive.
      * @return $this
      */
-    public function setUserId($userId)
+    public function setUserId($_user_id)
     {
-        $this->container['userId'] = $userId;
+        $this->container['_user_id'] = $_user_id;
 
         return $this;
     }
 
     /**
-     * Gets sessionId
+     * Gets _session_id
      * @return string
      */
     public function getSessionId()
     {
-        return $this->container['sessionId'];
+        return $this->container['_session_id'];
     }
 
     /**
-     * Sets sessionId
-     * @param string $sessionId The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
+     * Sets _session_id
+     * @param string $_session_id The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
      * @return $this
      */
-    public function setSessionId($sessionId)
+    public function setSessionId($_session_id)
     {
-        $this->container['sessionId'] = $sessionId;
+        $this->container['_session_id'] = $_session_id;
 
         return $this;
     }
 
     /**
-     * Gets deviceIp
+     * Gets _device_ip
      * @return string
      */
     public function getDeviceIp()
     {
-        return $this->container['deviceIp'];
+        return $this->container['_device_ip'];
     }
 
     /**
-     * Sets deviceIp
-     * @param string $deviceIp IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
+     * Sets _device_ip
+     * @param string $_device_ip IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
      * @return $this
      */
-    public function setDeviceIp($deviceIp)
+    public function setDeviceIp($_device_ip)
     {
-        $this->container['deviceIp'] = $deviceIp;
+        $this->container['_device_ip'] = $_device_ip;
 
         return $this;
     }
 
     /**
-     * Gets originTimestamp
+     * Gets _origin_timestamp
      * @return string
      */
     public function getOriginTimestamp()
     {
-        return $this->container['originTimestamp'];
+        return $this->container['_origin_timestamp'];
     }
 
     /**
-     * Sets originTimestamp
-     * @param string $originTimestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
+     * Sets _origin_timestamp
+     * @param string $_origin_timestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
      * @return $this
      */
-    public function setOriginTimestamp($originTimestamp)
+    public function setOriginTimestamp($_origin_timestamp)
     {
-        $this->container['originTimestamp'] = $originTimestamp;
+        $this->container['_origin_timestamp'] = $_origin_timestamp;
 
         return $this;
     }
 
     /**
-     * Gets reviewTitle
+     * Gets _review_title
      * @return string
      */
     public function getReviewTitle()
     {
-        return $this->container['reviewTitle'];
+        return $this->container['_review_title'];
     }
 
     /**
-     * Sets reviewTitle
-     * @param string $reviewTitle The title of review submitted.
+     * Sets _review_title
+     * @param string $_review_title The title of review submitted.
      * @return $this
      */
-    public function setReviewTitle($reviewTitle)
+    public function setReviewTitle($_review_title)
     {
-        $this->container['reviewTitle'] = $reviewTitle;
+        $this->container['_review_title'] = $_review_title;
 
         return $this;
     }
 
     /**
-     * Gets reviewContent
+     * Gets _review_content
      * @return string
      */
     public function getReviewContent()
     {
-        return $this->container['reviewContent'];
+        return $this->container['_review_content'];
     }
 
     /**
-     * Sets reviewContent
-     * @param string $reviewContent The text content of review submitted.
+     * Sets _review_content
+     * @param string $_review_content The text content of review submitted.
      * @return $this
      */
-    public function setReviewContent($reviewContent)
+    public function setReviewContent($_review_content)
     {
-        $this->container['reviewContent'] = $reviewContent;
+        $this->container['_review_content'] = $_review_content;
 
         return $this;
     }
 
     /**
-     * Gets itemId
+     * Gets _item_id
      * @return string
      */
     public function getItemId()
     {
-        return $this->container['itemId'];
+        return $this->container['_item_id'];
     }
 
     /**
-     * Sets itemId
-     * @param string $itemId The ID of the product or service being reviewed.
+     * Sets _item_id
+     * @param string $_item_id The ID of the product or service being reviewed.
      * @return $this
      */
-    public function setItemId($itemId)
+    public function setItemId($_item_id)
     {
-        $this->container['itemId'] = $itemId;
+        $this->container['_item_id'] = $_item_id;
 
         return $this;
     }
 
     /**
-     * Gets submissionStatus
+     * Gets _submission_status
      * @return string
      */
     public function getSubmissionStatus()
     {
-        return $this->container['submissionStatus'];
+        return $this->container['_submission_status'];
     }
 
     /**
-     * Sets submissionStatus
-     * @param string $submissionStatus If reviews in your system must be approved, use _submissionStatus to represent the status of the review. e.g. _success, _failure, _pending
+     * Sets _submission_status
+     * @param string $_submission_status If reviews in your system must be approved, use _submissionStatus to represent the status of the review. e.g. _success, _failure, _pending
      * @return $this
      */
-    public function setSubmissionStatus($submissionStatus)
+    public function setSubmissionStatus($_submission_status)
     {
-        $this->container['submissionStatus'] = $submissionStatus;
+        $this->container['_submission_status'] = $_submission_status;
 
         return $this;
     }
 
     /**
-     * Gets rating
+     * Gets _rating
      * @return string
      */
     public function getRating()
     {
-        return $this->container['rating'];
+        return $this->container['_rating'];
     }
 
     /**
-     * Sets rating
-     * @param string $rating The rating provided by the user. e.g. \"4\"
+     * Sets _rating
+     * @param string $_rating The rating provided by the user. e.g. \"4\"
      * @return $this
      */
-    public function setRating($rating)
+    public function setRating($_rating)
     {
-        $this->container['rating'] = $rating;
+        $this->container['_rating'] = $_rating;
 
         return $this;
     }
 
     /**
-     * Gets customInfo
+     * Gets _custom_info
      * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
-        return $this->container['customInfo'];
+        return $this->container['_custom_info'];
     }
 
     /**
-     * Sets customInfo
-     * @param \ai\thirdwatch\Model\CustomInfo $customInfo
+     * Sets _custom_info
+     * @param \ai\thirdwatch\Model\CustomInfo $_custom_info
      * @return $this
      */
-    public function setCustomInfo($customInfo)
+    public function setCustomInfo($_custom_info)
     {
-        $this->container['customInfo'] = $customInfo;
+        $this->container['_custom_info'] = $_custom_info;
 
         return $this;
     }

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **sendMessage**
-> \ai\thirdwatch\Model\EventResponse sendMessage($jSON)
+> \ai\thirdwatch\Model\EventResponse sendMessage($json)
 
 Use send_message to record when a user sends a message to other i.e. seller, support.
 
@@ -23,10 +23,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\SendMessageApi();
-$jSON = new \ai\thirdwatch\Model\SendMessage(); // \ai\thirdwatch\Model\SendMessage | Pass message to thirdwatch. Only `_userID` is required field. But this should contain message info.
+$json = new \ai\thirdwatch\Model\SendMessage(); // \ai\thirdwatch\Model\SendMessage | Pass message to thirdwatch. Only `_userID` is required field. But this should contain message info.
 
 try {
-    $result = $api_instance->sendMessage($jSON);
+    $result = $api_instance->sendMessage($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling SendMessageApi->sendMessage: ', $e->getMessage(), PHP_EOL;
@@ -38,7 +38,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai\thirdwatch\Model\SendMessage**](../Model/SendMessage.md)| Pass message to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain message info. |
+ **json** | [**\ai\thirdwatch\Model\SendMessage**](../Model/SendMessage.md)| Pass message to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain message info. |
 
 ### Return type
 

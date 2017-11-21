@@ -54,22 +54,22 @@ class Transaction implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userId' => 'string',
-        'sessionId' => 'string',
-        'orderId' => 'string',
-        'transactionId' => 'string',
-        'deviceIp' => 'string',
-        'originTimestamp' => 'string',
-        'userEmail' => 'string',
-        'amount' => 'string',
-        'currencyCode' => 'string',
-        'transactionType' => 'string',
-        'transactionStatus' => 'string',
-        'isFirstTimeBuyer' => 'bool',
-        'billingAddress' => '\ai\thirdwatch\Model\BillingAddress',
-        'shippingAddress' => '\ai\thirdwatch\Model\ShippingAddress',
-        'paymentMethod' => '\ai\thirdwatch\Model\PaymentMethod',
-        'customInfo' => '\ai\thirdwatch\Model\CustomInfo'
+        '_user_id' => 'string',
+        '_session_id' => 'string',
+        '_order_id' => 'string',
+        '_transaction_id' => 'string',
+        '_device_ip' => 'string',
+        '_origin_timestamp' => 'string',
+        '_user_email' => 'string',
+        '_amount' => 'string',
+        '_currency_code' => 'string',
+        '_transaction_type' => 'string',
+        '_transaction_status' => 'string',
+        '_is_first_time_buyer' => 'bool',
+        '_billing_address' => '\ai\thirdwatch\Model\BillingAddress',
+        '_shipping_address' => '\ai\thirdwatch\Model\ShippingAddress',
+        '_payment_method' => '\ai\thirdwatch\Model\PaymentMethod',
+        '_custom_info' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -77,22 +77,22 @@ class Transaction implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userId' => null,
-        'sessionId' => null,
-        'orderId' => null,
-        'transactionId' => null,
-        'deviceIp' => null,
-        'originTimestamp' => null,
-        'userEmail' => null,
-        'amount' => null,
-        'currencyCode' => null,
-        'transactionType' => null,
-        'transactionStatus' => null,
-        'isFirstTimeBuyer' => null,
-        'billingAddress' => null,
-        'shippingAddress' => null,
-        'paymentMethod' => null,
-        'customInfo' => null
+        '_user_id' => null,
+        '_session_id' => null,
+        '_order_id' => null,
+        '_transaction_id' => null,
+        '_device_ip' => null,
+        '_origin_timestamp' => null,
+        '_user_email' => null,
+        '_amount' => null,
+        '_currency_code' => null,
+        '_transaction_type' => null,
+        '_transaction_status' => null,
+        '_is_first_time_buyer' => null,
+        '_billing_address' => null,
+        '_shipping_address' => null,
+        '_payment_method' => null,
+        '_custom_info' => null
     ];
 
     public static function swaggerTypes()
@@ -110,22 +110,22 @@ class Transaction implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userId' => '_userId',
-        'sessionId' => '_sessionId',
-        'orderId' => '_orderId',
-        'transactionId' => '_transactionId',
-        'deviceIp' => '_deviceIp',
-        'originTimestamp' => '_originTimestamp',
-        'userEmail' => '_userEmail',
-        'amount' => '_amount',
-        'currencyCode' => '_currencyCode',
-        'transactionType' => '_transactionType',
-        'transactionStatus' => '_transactionStatus',
-        'isFirstTimeBuyer' => '_isFirstTimeBuyer',
-        'billingAddress' => '_billingAddress',
-        'shippingAddress' => '_shippingAddress',
-        'paymentMethod' => '_paymentMethod',
-        'customInfo' => '_customInfo'
+        '_user_id' => '_userId',
+        '_session_id' => '_sessionId',
+        '_order_id' => '_orderId',
+        '_transaction_id' => '_transactionId',
+        '_device_ip' => '_deviceIp',
+        '_origin_timestamp' => '_originTimestamp',
+        '_user_email' => '_userEmail',
+        '_amount' => '_amount',
+        '_currency_code' => '_currencyCode',
+        '_transaction_type' => '_transactionType',
+        '_transaction_status' => '_transactionStatus',
+        '_is_first_time_buyer' => '_isFirstTimeBuyer',
+        '_billing_address' => '_billingAddress',
+        '_shipping_address' => '_shippingAddress',
+        '_payment_method' => '_paymentMethod',
+        '_custom_info' => '_customInfo'
     ];
 
 
@@ -134,22 +134,22 @@ class Transaction implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userId' => 'setUserId',
-        'sessionId' => 'setSessionId',
-        'orderId' => 'setOrderId',
-        'transactionId' => 'setTransactionId',
-        'deviceIp' => 'setDeviceIp',
-        'originTimestamp' => 'setOriginTimestamp',
-        'userEmail' => 'setUserEmail',
-        'amount' => 'setAmount',
-        'currencyCode' => 'setCurrencyCode',
-        'transactionType' => 'setTransactionType',
-        'transactionStatus' => 'setTransactionStatus',
-        'isFirstTimeBuyer' => 'setIsFirstTimeBuyer',
-        'billingAddress' => 'setBillingAddress',
-        'shippingAddress' => 'setShippingAddress',
-        'paymentMethod' => 'setPaymentMethod',
-        'customInfo' => 'setCustomInfo'
+        '_user_id' => 'setUserId',
+        '_session_id' => 'setSessionId',
+        '_order_id' => 'setOrderId',
+        '_transaction_id' => 'setTransactionId',
+        '_device_ip' => 'setDeviceIp',
+        '_origin_timestamp' => 'setOriginTimestamp',
+        '_user_email' => 'setUserEmail',
+        '_amount' => 'setAmount',
+        '_currency_code' => 'setCurrencyCode',
+        '_transaction_type' => 'setTransactionType',
+        '_transaction_status' => 'setTransactionStatus',
+        '_is_first_time_buyer' => 'setIsFirstTimeBuyer',
+        '_billing_address' => 'setBillingAddress',
+        '_shipping_address' => 'setShippingAddress',
+        '_payment_method' => 'setPaymentMethod',
+        '_custom_info' => 'setCustomInfo'
     ];
 
 
@@ -158,22 +158,22 @@ class Transaction implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userId' => 'getUserId',
-        'sessionId' => 'getSessionId',
-        'orderId' => 'getOrderId',
-        'transactionId' => 'getTransactionId',
-        'deviceIp' => 'getDeviceIp',
-        'originTimestamp' => 'getOriginTimestamp',
-        'userEmail' => 'getUserEmail',
-        'amount' => 'getAmount',
-        'currencyCode' => 'getCurrencyCode',
-        'transactionType' => 'getTransactionType',
-        'transactionStatus' => 'getTransactionStatus',
-        'isFirstTimeBuyer' => 'getIsFirstTimeBuyer',
-        'billingAddress' => 'getBillingAddress',
-        'shippingAddress' => 'getShippingAddress',
-        'paymentMethod' => 'getPaymentMethod',
-        'customInfo' => 'getCustomInfo'
+        '_user_id' => 'getUserId',
+        '_session_id' => 'getSessionId',
+        '_order_id' => 'getOrderId',
+        '_transaction_id' => 'getTransactionId',
+        '_device_ip' => 'getDeviceIp',
+        '_origin_timestamp' => 'getOriginTimestamp',
+        '_user_email' => 'getUserEmail',
+        '_amount' => 'getAmount',
+        '_currency_code' => 'getCurrencyCode',
+        '_transaction_type' => 'getTransactionType',
+        '_transaction_status' => 'getTransactionStatus',
+        '_is_first_time_buyer' => 'getIsFirstTimeBuyer',
+        '_billing_address' => 'getBillingAddress',
+        '_shipping_address' => 'getShippingAddress',
+        '_payment_method' => 'getPaymentMethod',
+        '_custom_info' => 'getCustomInfo'
     ];
 
     public static function attributeMap()
@@ -207,22 +207,22 @@ class Transaction implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
-        $this->container['sessionId'] = isset($data['sessionId']) ? $data['sessionId'] : null;
-        $this->container['orderId'] = isset($data['orderId']) ? $data['orderId'] : null;
-        $this->container['transactionId'] = isset($data['transactionId']) ? $data['transactionId'] : null;
-        $this->container['deviceIp'] = isset($data['deviceIp']) ? $data['deviceIp'] : null;
-        $this->container['originTimestamp'] = isset($data['originTimestamp']) ? $data['originTimestamp'] : null;
-        $this->container['userEmail'] = isset($data['userEmail']) ? $data['userEmail'] : null;
-        $this->container['amount'] = isset($data['amount']) ? $data['amount'] : null;
-        $this->container['currencyCode'] = isset($data['currencyCode']) ? $data['currencyCode'] : null;
-        $this->container['transactionType'] = isset($data['transactionType']) ? $data['transactionType'] : null;
-        $this->container['transactionStatus'] = isset($data['transactionStatus']) ? $data['transactionStatus'] : null;
-        $this->container['isFirstTimeBuyer'] = isset($data['isFirstTimeBuyer']) ? $data['isFirstTimeBuyer'] : null;
-        $this->container['billingAddress'] = isset($data['billingAddress']) ? $data['billingAddress'] : null;
-        $this->container['shippingAddress'] = isset($data['shippingAddress']) ? $data['shippingAddress'] : null;
-        $this->container['paymentMethod'] = isset($data['paymentMethod']) ? $data['paymentMethod'] : null;
-        $this->container['customInfo'] = isset($data['customInfo']) ? $data['customInfo'] : null;
+        $this->container['_user_id'] = isset($data['_user_id']) ? $data['_user_id'] : null;
+        $this->container['_session_id'] = isset($data['_session_id']) ? $data['_session_id'] : null;
+        $this->container['_order_id'] = isset($data['_order_id']) ? $data['_order_id'] : null;
+        $this->container['_transaction_id'] = isset($data['_transaction_id']) ? $data['_transaction_id'] : null;
+        $this->container['_device_ip'] = isset($data['_device_ip']) ? $data['_device_ip'] : null;
+        $this->container['_origin_timestamp'] = isset($data['_origin_timestamp']) ? $data['_origin_timestamp'] : null;
+        $this->container['_user_email'] = isset($data['_user_email']) ? $data['_user_email'] : null;
+        $this->container['_amount'] = isset($data['_amount']) ? $data['_amount'] : null;
+        $this->container['_currency_code'] = isset($data['_currency_code']) ? $data['_currency_code'] : null;
+        $this->container['_transaction_type'] = isset($data['_transaction_type']) ? $data['_transaction_type'] : null;
+        $this->container['_transaction_status'] = isset($data['_transaction_status']) ? $data['_transaction_status'] : null;
+        $this->container['_is_first_time_buyer'] = isset($data['_is_first_time_buyer']) ? $data['_is_first_time_buyer'] : null;
+        $this->container['_billing_address'] = isset($data['_billing_address']) ? $data['_billing_address'] : null;
+        $this->container['_shipping_address'] = isset($data['_shipping_address']) ? $data['_shipping_address'] : null;
+        $this->container['_payment_method'] = isset($data['_payment_method']) ? $data['_payment_method'] : null;
+        $this->container['_custom_info'] = isset($data['_custom_info']) ? $data['_custom_info'] : null;
     }
 
     /**
@@ -234,11 +234,11 @@ class Transaction implements ArrayAccess
     {
         $invalid_properties = [];
 
-        if ($this->container['orderId'] === null) {
-            $invalid_properties[] = "'orderId' can't be null";
+        if ($this->container['_order_id'] === null) {
+            $invalid_properties[] = "'_order_id' can't be null";
         }
-        if ($this->container['transactionStatus'] === null) {
-            $invalid_properties[] = "'transactionStatus' can't be null";
+        if ($this->container['_transaction_status'] === null) {
+            $invalid_properties[] = "'_transaction_status' can't be null";
         }
         return $invalid_properties;
     }
@@ -252,10 +252,10 @@ class Transaction implements ArrayAccess
     public function valid()
     {
 
-        if ($this->container['orderId'] === null) {
+        if ($this->container['_order_id'] === null) {
             return false;
         }
-        if ($this->container['transactionStatus'] === null) {
+        if ($this->container['_transaction_status'] === null) {
             return false;
         }
         return true;
@@ -263,337 +263,337 @@ class Transaction implements ArrayAccess
 
 
     /**
-     * Gets userId
+     * Gets _user_id
      * @return string
      */
     public function getUserId()
     {
-        return $this->container['userId'];
+        return $this->container['_user_id'];
     }
 
     /**
-     * Sets userId
-     * @param string $userId The user's account ID according to your systems. Note that user IDs are case sensitive.
+     * Sets _user_id
+     * @param string $_user_id The user's account ID according to your systems. Note that user IDs are case sensitive.
      * @return $this
      */
-    public function setUserId($userId)
+    public function setUserId($_user_id)
     {
-        $this->container['userId'] = $userId;
+        $this->container['_user_id'] = $_user_id;
 
         return $this;
     }
 
     /**
-     * Gets sessionId
+     * Gets _session_id
      * @return string
      */
     public function getSessionId()
     {
-        return $this->container['sessionId'];
+        return $this->container['_session_id'];
     }
 
     /**
-     * Sets sessionId
-     * @param string $sessionId The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
+     * Sets _session_id
+     * @param string $_session_id The user's current session ID, used to tie a user's action before and after login or account creation. Required if no user_id values is provided.
      * @return $this
      */
-    public function setSessionId($sessionId)
+    public function setSessionId($_session_id)
     {
-        $this->container['sessionId'] = $sessionId;
+        $this->container['_session_id'] = $_session_id;
 
         return $this;
     }
 
     /**
-     * Gets orderId
+     * Gets _order_id
      * @return string
      */
     public function getOrderId()
     {
-        return $this->container['orderId'];
+        return $this->container['_order_id'];
     }
 
     /**
-     * Sets orderId
-     * @param string $orderId The ID for tracking this order in your system.
+     * Sets _order_id
+     * @param string $_order_id The ID for tracking this order in your system.
      * @return $this
      */
-    public function setOrderId($orderId)
+    public function setOrderId($_order_id)
     {
-        $this->container['orderId'] = $orderId;
+        $this->container['_order_id'] = $_order_id;
 
         return $this;
     }
 
     /**
-     * Gets transactionId
+     * Gets _transaction_id
      * @return string
      */
     public function getTransactionId()
     {
-        return $this->container['transactionId'];
+        return $this->container['_transaction_id'];
     }
 
     /**
-     * Sets transactionId
-     * @param string $transactionId The ID for identifying this transaction. Important for tracking transactions, and linking different parts of the same transaction together, e.g., linking a refund to its original transaction.
+     * Sets _transaction_id
+     * @param string $_transaction_id The ID for identifying this transaction. Important for tracking transactions, and linking different parts of the same transaction together, e.g., linking a refund to its original transaction.
      * @return $this
      */
-    public function setTransactionId($transactionId)
+    public function setTransactionId($_transaction_id)
     {
-        $this->container['transactionId'] = $transactionId;
+        $this->container['_transaction_id'] = $_transaction_id;
 
         return $this;
     }
 
     /**
-     * Gets deviceIp
+     * Gets _device_ip
      * @return string
      */
     public function getDeviceIp()
     {
-        return $this->container['deviceIp'];
+        return $this->container['_device_ip'];
     }
 
     /**
-     * Sets deviceIp
-     * @param string $deviceIp IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
+     * Sets _device_ip
+     * @param string $_device_ip IP address of the request made by the user. Recommended for historical backfills and customers with mobile apps.
      * @return $this
      */
-    public function setDeviceIp($deviceIp)
+    public function setDeviceIp($_device_ip)
     {
-        $this->container['deviceIp'] = $deviceIp;
+        $this->container['_device_ip'] = $_device_ip;
 
         return $this;
     }
 
     /**
-     * Gets originTimestamp
+     * Gets _origin_timestamp
      * @return string
      */
     public function getOriginTimestamp()
     {
-        return $this->container['originTimestamp'];
+        return $this->container['_origin_timestamp'];
     }
 
     /**
-     * Sets originTimestamp
-     * @param string $originTimestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
+     * Sets _origin_timestamp
+     * @param string $_origin_timestamp Represents the time the event occured in your system. Send as a UNIX timestamp in milliseconds in string.
      * @return $this
      */
-    public function setOriginTimestamp($originTimestamp)
+    public function setOriginTimestamp($_origin_timestamp)
     {
-        $this->container['originTimestamp'] = $originTimestamp;
+        $this->container['_origin_timestamp'] = $_origin_timestamp;
 
         return $this;
     }
 
     /**
-     * Gets userEmail
+     * Gets _user_email
      * @return string
      */
     public function getUserEmail()
     {
-        return $this->container['userEmail'];
+        return $this->container['_user_email'];
     }
 
     /**
-     * Sets userEmail
-     * @param string $userEmail Email of the user creating this order. Note - If the user's email is also their account ID in your system, set both the userId and userEmail fields to their email address.
+     * Sets _user_email
+     * @param string $_user_email Email of the user creating this order. Note - If the user's email is also their account ID in your system, set both the userId and userEmail fields to their email address.
      * @return $this
      */
-    public function setUserEmail($userEmail)
+    public function setUserEmail($_user_email)
     {
-        $this->container['userEmail'] = $userEmail;
+        $this->container['_user_email'] = $_user_email;
 
         return $this;
     }
 
     /**
-     * Gets amount
+     * Gets _amount
      * @return string
      */
     public function getAmount()
     {
-        return $this->container['amount'];
+        return $this->container['_amount'];
     }
 
     /**
-     * Sets amount
-     * @param string $amount The item unit price in numbers, in the base unit of the currency_code.e.g. \"2500\"
+     * Sets _amount
+     * @param string $_amount The item unit price in numbers, in the base unit of the currency_code.e.g. \"2500\"
      * @return $this
      */
-    public function setAmount($amount)
+    public function setAmount($_amount)
     {
-        $this->container['amount'] = $amount;
+        $this->container['_amount'] = $_amount;
 
         return $this;
     }
 
     /**
-     * Gets currencyCode
+     * Gets _currency_code
      * @return string
      */
     public function getCurrencyCode()
     {
-        return $this->container['currencyCode'];
+        return $this->container['_currency_code'];
     }
 
     /**
-     * Sets currencyCode
-     * @param string $currencyCode The [ISO-4217](http://en.wikipedia.org/wiki/ISO_4217) currency code for the amount. e.g., USD, INR alternative currencies, like bitcoin or points systems.
+     * Sets _currency_code
+     * @param string $_currency_code The [ISO-4217](http://en.wikipedia.org/wiki/ISO_4217) currency code for the amount. e.g., USD, INR alternative currencies, like bitcoin or points systems.
      * @return $this
      */
-    public function setCurrencyCode($currencyCode)
+    public function setCurrencyCode($_currency_code)
     {
-        $this->container['currencyCode'] = $currencyCode;
+        $this->container['_currency_code'] = $_currency_code;
 
         return $this;
     }
 
     /**
-     * Gets transactionType
+     * Gets _transaction_type
      * @return string
      */
     public function getTransactionType()
     {
-        return $this->container['transactionType'];
+        return $this->container['_transaction_type'];
     }
 
     /**
-     * Sets transactionType
-     * @param string $transactionType The type of transaction being recorded. e.g. _sale, _authorize, _capture, _void, _refund, _deposit, _withdrawal, _transfer
+     * Sets _transaction_type
+     * @param string $_transaction_type The type of transaction being recorded. e.g. _sale, _authorize, _capture, _void, _refund, _deposit, _withdrawal, _transfer
      * @return $this
      */
-    public function setTransactionType($transactionType)
+    public function setTransactionType($_transaction_type)
     {
-        $this->container['transactionType'] = $transactionType;
+        $this->container['_transaction_type'] = $_transaction_type;
 
         return $this;
     }
 
     /**
-     * Gets transactionStatus
+     * Gets _transaction_status
      * @return string
      */
     public function getTransactionStatus()
     {
-        return $this->container['transactionStatus'];
+        return $this->container['_transaction_status'];
     }
 
     /**
-     * Sets transactionStatus
-     * @param string $transactionStatus Use _transactionStatus to indicate the status of the transaction. The value can be \"_success\" (default value), \"_failure\" or \"_pending\". For instance, If the transaction was rejected by the payment gateway, set the value to \"_failure\".
+     * Sets _transaction_status
+     * @param string $_transaction_status Use _transactionStatus to indicate the status of the transaction. The value can be \"_success\" (default value), \"_failure\" or \"_pending\". For instance, If the transaction was rejected by the payment gateway, set the value to \"_failure\".
      * @return $this
      */
-    public function setTransactionStatus($transactionStatus)
+    public function setTransactionStatus($_transaction_status)
     {
-        $this->container['transactionStatus'] = $transactionStatus;
+        $this->container['_transaction_status'] = $_transaction_status;
 
         return $this;
     }
 
     /**
-     * Gets isFirstTimeBuyer
+     * Gets _is_first_time_buyer
      * @return bool
      */
     public function getIsFirstTimeBuyer()
     {
-        return $this->container['isFirstTimeBuyer'];
+        return $this->container['_is_first_time_buyer'];
     }
 
     /**
-     * Sets isFirstTimeBuyer
-     * @param bool $isFirstTimeBuyer Is user first time buyer.
+     * Sets _is_first_time_buyer
+     * @param bool $_is_first_time_buyer Is user first time buyer.
      * @return $this
      */
-    public function setIsFirstTimeBuyer($isFirstTimeBuyer)
+    public function setIsFirstTimeBuyer($_is_first_time_buyer)
     {
-        $this->container['isFirstTimeBuyer'] = $isFirstTimeBuyer;
+        $this->container['_is_first_time_buyer'] = $_is_first_time_buyer;
 
         return $this;
     }
 
     /**
-     * Gets billingAddress
+     * Gets _billing_address
      * @return \ai\thirdwatch\Model\BillingAddress
      */
     public function getBillingAddress()
     {
-        return $this->container['billingAddress'];
+        return $this->container['_billing_address'];
     }
 
     /**
-     * Sets billingAddress
-     * @param \ai\thirdwatch\Model\BillingAddress $billingAddress
+     * Sets _billing_address
+     * @param \ai\thirdwatch\Model\BillingAddress $_billing_address
      * @return $this
      */
-    public function setBillingAddress($billingAddress)
+    public function setBillingAddress($_billing_address)
     {
-        $this->container['billingAddress'] = $billingAddress;
+        $this->container['_billing_address'] = $_billing_address;
 
         return $this;
     }
 
     /**
-     * Gets shippingAddress
+     * Gets _shipping_address
      * @return \ai\thirdwatch\Model\ShippingAddress
      */
     public function getShippingAddress()
     {
-        return $this->container['shippingAddress'];
+        return $this->container['_shipping_address'];
     }
 
     /**
-     * Sets shippingAddress
-     * @param \ai\thirdwatch\Model\ShippingAddress $shippingAddress
+     * Sets _shipping_address
+     * @param \ai\thirdwatch\Model\ShippingAddress $_shipping_address
      * @return $this
      */
-    public function setShippingAddress($shippingAddress)
+    public function setShippingAddress($_shipping_address)
     {
-        $this->container['shippingAddress'] = $shippingAddress;
+        $this->container['_shipping_address'] = $_shipping_address;
 
         return $this;
     }
 
     /**
-     * Gets paymentMethod
+     * Gets _payment_method
      * @return \ai\thirdwatch\Model\PaymentMethod
      */
     public function getPaymentMethod()
     {
-        return $this->container['paymentMethod'];
+        return $this->container['_payment_method'];
     }
 
     /**
-     * Sets paymentMethod
-     * @param \ai\thirdwatch\Model\PaymentMethod $paymentMethod
+     * Sets _payment_method
+     * @param \ai\thirdwatch\Model\PaymentMethod $_payment_method
      * @return $this
      */
-    public function setPaymentMethod($paymentMethod)
+    public function setPaymentMethod($_payment_method)
     {
-        $this->container['paymentMethod'] = $paymentMethod;
+        $this->container['_payment_method'] = $_payment_method;
 
         return $this;
     }
 
     /**
-     * Gets customInfo
+     * Gets _custom_info
      * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
-        return $this->container['customInfo'];
+        return $this->container['_custom_info'];
     }
 
     /**
-     * Sets customInfo
-     * @param \ai\thirdwatch\Model\CustomInfo $customInfo
+     * Sets _custom_info
+     * @param \ai\thirdwatch\Model\CustomInfo $_custom_info
      * @return $this
      */
-    public function setCustomInfo($customInfo)
+    public function setCustomInfo($_custom_info)
     {
-        $this->container['customInfo'] = $customInfo;
+        $this->container['_custom_info'] = $_custom_info;
 
         return $this;
     }

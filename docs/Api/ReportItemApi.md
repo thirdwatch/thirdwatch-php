@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **reportItem**
-> \ai\thirdwatch\Model\EventResponse reportItem($jSON)
+> \ai\thirdwatch\Model\EventResponse reportItem($json)
 
 Use report_item to let us know when another user reports that this item may violate your company’s policies.
 
@@ -25,10 +25,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\ReportItemApi();
-$jSON = new \ai\thirdwatch\Model\ReportItem(); // \ai\thirdwatch\Model\ReportItem | Pass report item info to thirdwatch. Only `_userID` is required field. But this should contain item id.
+$json = new \ai\thirdwatch\Model\ReportItem(); // \ai\thirdwatch\Model\ReportItem | Pass report item info to thirdwatch. Only `_userID` is required field. But this should contain item id.
 
 try {
-    $result = $api_instance->reportItem($jSON);
+    $result = $api_instance->reportItem($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ReportItemApi->reportItem: ', $e->getMessage(), PHP_EOL;
@@ -40,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai\thirdwatch\Model\ReportItem**](../Model/ReportItem.md)| Pass report item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item id. |
+ **json** | [**\ai\thirdwatch\Model\ReportItem**](../Model/ReportItem.md)| Pass report item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item id. |
 
 ### Return type
 

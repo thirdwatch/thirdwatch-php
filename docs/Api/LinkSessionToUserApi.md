@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **linkSessionToUser**
-> \ai\thirdwatch\Model\EventResponse linkSessionToUser($jSON)
+> \ai\thirdwatch\Model\EventResponse linkSessionToUser($json)
 
 Use link_session_to_user to associate specific session to a user. Generally used only in anonymous checkout workflows.
 
@@ -23,10 +23,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\LinkSessionToUserApi();
-$jSON = new \ai\thirdwatch\Model\LinkSessionToUser(); // \ai\thirdwatch\Model\LinkSessionToUser | Pass session and user to thirdwatch for link. Only `_userID` is required field. But this should contain session and user info.
+$json = new \ai\thirdwatch\Model\LinkSessionToUser(); // \ai\thirdwatch\Model\LinkSessionToUser | Pass session and user to thirdwatch for link. Only `_userID` is required field. But this should contain session and user info.
 
 try {
-    $result = $api_instance->linkSessionToUser($jSON);
+    $result = $api_instance->linkSessionToUser($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling LinkSessionToUserApi->linkSessionToUser: ', $e->getMessage(), PHP_EOL;
@@ -38,7 +38,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai\thirdwatch\Model\LinkSessionToUser**](../Model/LinkSessionToUser.md)| Pass session and user to thirdwatch for link. Only &#x60;_userID&#x60; is required field. But this should contain session and user info. |
+ **json** | [**\ai\thirdwatch\Model\LinkSessionToUser**](../Model/LinkSessionToUser.md)| Pass session and user to thirdwatch for link. Only &#x60;_userID&#x60; is required field. But this should contain session and user info. |
 
 ### Return type
 

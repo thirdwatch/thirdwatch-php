@@ -92,13 +92,13 @@ class OrderStatusApi
      *
      * Use order_status to track the order processing workflow of a previously submitted order.
      *
-     * @param \ai\thirdwatch\Model\OrderStatus $jSON Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain order info. (required)
+     * @param \ai\thirdwatch\Model\OrderStatus $json Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain order info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function orderStatus($jSON)
+    public function orderStatus($json)
     {
-        list($response) = $this->orderStatusWithHttpInfo($jSON);
+        list($response) = $this->orderStatusWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class OrderStatusApi
      *
      * Use order_status to track the order processing workflow of a previously submitted order.
      *
-     * @param \ai\thirdwatch\Model\OrderStatus $jSON Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain order info. (required)
+     * @param \ai\thirdwatch\Model\OrderStatus $json Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain order info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function orderStatusWithHttpInfo($jSON)
+    public function orderStatusWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling orderStatus');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling orderStatus');
         }
         // parse inputs
         $resourcePath = "/v1/order_status";
@@ -131,8 +131,8 @@ class OrderStatusApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

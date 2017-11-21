@@ -92,13 +92,13 @@ class LoginApi
      *
      * Use login to record when a user attempts to log in.
      *
-     * @param \ai\thirdwatch\Model\Login $jSON Pass login status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain login info. (required)
+     * @param \ai\thirdwatch\Model\Login $json Pass login status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain login info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function login($jSON)
+    public function login($json)
     {
-        list($response) = $this->loginWithHttpInfo($jSON);
+        list($response) = $this->loginWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class LoginApi
      *
      * Use login to record when a user attempts to log in.
      *
-     * @param \ai\thirdwatch\Model\Login $jSON Pass login status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain login info. (required)
+     * @param \ai\thirdwatch\Model\Login $json Pass login status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain login info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function loginWithHttpInfo($jSON)
+    public function loginWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling login');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling login');
         }
         // parse inputs
         $resourcePath = "/v1/login";
@@ -131,8 +131,8 @@ class LoginApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

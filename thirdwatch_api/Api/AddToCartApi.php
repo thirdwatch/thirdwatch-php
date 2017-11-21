@@ -92,13 +92,13 @@ class AddToCartApi
      *
      * Use add_to_cart when a user adds an item to their shopping cart or list.
      *
-     * @param \ai\thirdwatch\Model\AddToCart $jSON Pass added item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. (required)
+     * @param \ai\thirdwatch\Model\AddToCart $json Pass added item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function addToCart($jSON)
+    public function addToCart($json)
     {
-        list($response) = $this->addToCartWithHttpInfo($jSON);
+        list($response) = $this->addToCartWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class AddToCartApi
      *
      * Use add_to_cart when a user adds an item to their shopping cart or list.
      *
-     * @param \ai\thirdwatch\Model\AddToCart $jSON Pass added item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. (required)
+     * @param \ai\thirdwatch\Model\AddToCart $json Pass added item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function addToCartWithHttpInfo($jSON)
+    public function addToCartWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling addToCart');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling addToCart');
         }
         // parse inputs
         $resourcePath = "/v1/add_to_cart";
@@ -131,8 +131,8 @@ class AddToCartApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

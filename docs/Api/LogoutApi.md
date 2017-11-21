@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **logout**
-> \ai\thirdwatch\Model\EventResponse logout($jSON)
+> \ai\thirdwatch\Model\EventResponse logout($json)
 
 Use logout to record when a user logs out.
 
@@ -23,10 +23,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\LogoutApi();
-$jSON = new \ai\thirdwatch\Model\Logout(); // \ai\thirdwatch\Model\Logout | Pass logout status to thirdwatch. Only `_userID` is required field. But this should contain logout info.
+$json = new \ai\thirdwatch\Model\Logout(); // \ai\thirdwatch\Model\Logout | Pass logout status to thirdwatch. Only `_userID` is required field. But this should contain logout info.
 
 try {
-    $result = $api_instance->logout($jSON);
+    $result = $api_instance->logout($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling LogoutApi->logout: ', $e->getMessage(), PHP_EOL;
@@ -38,7 +38,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai\thirdwatch\Model\Logout**](../Model/Logout.md)| Pass logout status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain logout info. |
+ **json** | [**\ai\thirdwatch\Model\Logout**](../Model/Logout.md)| Pass logout status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain logout info. |
 
 ### Return type
 

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **addToCart**
-> \ai\thirdwatch\Model\EventResponse addToCart($jSON)
+> \ai\thirdwatch\Model\EventResponse addToCart($json)
 
 Use add_to_cart when a user adds an item to their shopping cart or list.
 
@@ -23,10 +23,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\AddToCartApi();
-$jSON = new \ai\thirdwatch\Model\AddToCart(); // \ai\thirdwatch\Model\AddToCart | Pass added item info to thirdwatch. Only `_userID` is required field. But this should contain item info.
+$json = new \ai\thirdwatch\Model\AddToCart(); // \ai\thirdwatch\Model\AddToCart | Pass added item info to thirdwatch. Only `_userID` is required field. But this should contain item info.
 
 try {
-    $result = $api_instance->addToCart($jSON);
+    $result = $api_instance->addToCart($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AddToCartApi->addToCart: ', $e->getMessage(), PHP_EOL;
@@ -38,7 +38,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai\thirdwatch\Model\AddToCart**](../Model/AddToCart.md)| Pass added item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. |
+ **json** | [**\ai\thirdwatch\Model\AddToCart**](../Model/AddToCart.md)| Pass added item info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain item info. |
 
 ### Return type
 

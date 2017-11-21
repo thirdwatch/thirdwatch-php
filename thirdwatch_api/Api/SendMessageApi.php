@@ -92,13 +92,13 @@ class SendMessageApi
      *
      * Use send_message to record when a user sends a message to other i.e. seller, support.
      *
-     * @param \ai\thirdwatch\Model\SendMessage $jSON Pass message to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain message info. (required)
+     * @param \ai\thirdwatch\Model\SendMessage $json Pass message to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain message info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function sendMessage($jSON)
+    public function sendMessage($json)
     {
-        list($response) = $this->sendMessageWithHttpInfo($jSON);
+        list($response) = $this->sendMessageWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class SendMessageApi
      *
      * Use send_message to record when a user sends a message to other i.e. seller, support.
      *
-     * @param \ai\thirdwatch\Model\SendMessage $jSON Pass message to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain message info. (required)
+     * @param \ai\thirdwatch\Model\SendMessage $json Pass message to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain message info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function sendMessageWithHttpInfo($jSON)
+    public function sendMessageWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling sendMessage');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling sendMessage');
         }
         // parse inputs
         $resourcePath = "/v1/send_message";
@@ -131,8 +131,8 @@ class SendMessageApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

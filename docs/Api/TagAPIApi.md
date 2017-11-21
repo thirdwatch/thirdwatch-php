@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **tagUser**
-> \ai\thirdwatch\Model\EventResponse tagUser($jSON)
+> \ai\thirdwatch\Model\EventResponse tagUser($json)
 
 The Tag API enables you to tell Thirdwatch which of your users are bad and which are good.
 
@@ -25,10 +25,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\TagAPIApi();
-$jSON = new \ai\thirdwatch\Model\Tag(); // \ai\thirdwatch\Model\Tag | Pass user and it's info to thirdwatch. Only `_userID` is required field. But this should contain tag info.
+$json = new \ai\thirdwatch\Model\Tag(); // \ai\thirdwatch\Model\Tag | Pass user and it's info to thirdwatch. Only `_userID` is required field. But this should contain tag info.
 
 try {
-    $result = $api_instance->tagUser($jSON);
+    $result = $api_instance->tagUser($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling TagAPIApi->tagUser: ', $e->getMessage(), PHP_EOL;
@@ -40,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai\thirdwatch\Model\Tag**](../Model/Tag.md)| Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain tag info. |
+ **json** | [**\ai\thirdwatch\Model\Tag**](../Model/Tag.md)| Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain tag info. |
 
 ### Return type
 

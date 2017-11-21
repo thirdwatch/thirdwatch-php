@@ -92,13 +92,13 @@ class UntagAPIApi
      *
      * If you are unsure whether a user is bad or good, you can always remove tag and leave the user in a neutral state.
      *
-     * @param \ai\thirdwatch\Model\UnTag $jSON Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain untag info. (required)
+     * @param \ai\thirdwatch\Model\UnTag $json Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain untag info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function unTagUser($jSON)
+    public function unTagUser($json)
     {
-        list($response) = $this->unTagUserWithHttpInfo($jSON);
+        list($response) = $this->unTagUserWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class UntagAPIApi
      *
      * If you are unsure whether a user is bad or good, you can always remove tag and leave the user in a neutral state.
      *
-     * @param \ai\thirdwatch\Model\UnTag $jSON Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain untag info. (required)
+     * @param \ai\thirdwatch\Model\UnTag $json Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain untag info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function unTagUserWithHttpInfo($jSON)
+    public function unTagUserWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling unTagUser');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling unTagUser');
         }
         // parse inputs
         $resourcePath = "/v1/untag";
@@ -131,8 +131,8 @@ class UntagAPIApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

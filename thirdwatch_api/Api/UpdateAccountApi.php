@@ -92,13 +92,13 @@ class UpdateAccountApi
      *
      * Use update_account to record changes to the user's account information.
      *
-     * @param \ai\thirdwatch\Model\UpdateAccount $jSON Pass user details after update or change in user info. Only &#x60;_userID&#x60; is required field. But this should contain user info. (required)
+     * @param \ai\thirdwatch\Model\UpdateAccount $json Pass user details after update or change in user info. Only &#x60;_userID&#x60; is required field. But this should contain user info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function updateAccount($jSON)
+    public function updateAccount($json)
     {
-        list($response) = $this->updateAccountWithHttpInfo($jSON);
+        list($response) = $this->updateAccountWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class UpdateAccountApi
      *
      * Use update_account to record changes to the user's account information.
      *
-     * @param \ai\thirdwatch\Model\UpdateAccount $jSON Pass user details after update or change in user info. Only &#x60;_userID&#x60; is required field. But this should contain user info. (required)
+     * @param \ai\thirdwatch\Model\UpdateAccount $json Pass user details after update or change in user info. Only &#x60;_userID&#x60; is required field. But this should contain user info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function updateAccountWithHttpInfo($jSON)
+    public function updateAccountWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling updateAccount');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling updateAccount');
         }
         // parse inputs
         $resourcePath = "/v1/update_account";
@@ -131,8 +131,8 @@ class UpdateAccountApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **customEvent**
-> \ai\thirdwatch\Model\EventResponse customEvent($jSON)
+> \ai\thirdwatch\Model\EventResponse customEvent($json)
 
 Use order_status to track the order processing workflow of a previously submitted order.
 
@@ -25,10 +25,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\CustomEventApi();
-$jSON = new \ai\thirdwatch\Model\Custom(); // \ai\thirdwatch\Model\Custom | Pass order status to thirdwatch. Only `_userID` is required field. But this should contain custom info.
+$json = new \ai\thirdwatch\Model\Custom(); // \ai\thirdwatch\Model\Custom | Pass order status to thirdwatch. Only `_userID` is required field. But this should contain custom info.
 
 try {
-    $result = $api_instance->customEvent($jSON);
+    $result = $api_instance->customEvent($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CustomEventApi->customEvent: ', $e->getMessage(), PHP_EOL;
@@ -40,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai\thirdwatch\Model\Custom**](../Model/Custom.md)| Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain custom info. |
+ **json** | [**\ai\thirdwatch\Model\Custom**](../Model/Custom.md)| Pass order status to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain custom info. |
 
 ### Return type
 

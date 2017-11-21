@@ -92,13 +92,13 @@ class LinkSessionToUserApi
      *
      * Use link_session_to_user to associate specific session to a user. Generally used only in anonymous checkout workflows.
      *
-     * @param \ai\thirdwatch\Model\LinkSessionToUser $jSON Pass session and user to thirdwatch for link. Only &#x60;_userID&#x60; is required field. But this should contain session and user info. (required)
+     * @param \ai\thirdwatch\Model\LinkSessionToUser $json Pass session and user to thirdwatch for link. Only &#x60;_userID&#x60; is required field. But this should contain session and user info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function linkSessionToUser($jSON)
+    public function linkSessionToUser($json)
     {
-        list($response) = $this->linkSessionToUserWithHttpInfo($jSON);
+        list($response) = $this->linkSessionToUserWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class LinkSessionToUserApi
      *
      * Use link_session_to_user to associate specific session to a user. Generally used only in anonymous checkout workflows.
      *
-     * @param \ai\thirdwatch\Model\LinkSessionToUser $jSON Pass session and user to thirdwatch for link. Only &#x60;_userID&#x60; is required field. But this should contain session and user info. (required)
+     * @param \ai\thirdwatch\Model\LinkSessionToUser $json Pass session and user to thirdwatch for link. Only &#x60;_userID&#x60; is required field. But this should contain session and user info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function linkSessionToUserWithHttpInfo($jSON)
+    public function linkSessionToUserWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling linkSessionToUser');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling linkSessionToUser');
         }
         // parse inputs
         $resourcePath = "/v1/link_session_to_user";
@@ -131,8 +131,8 @@ class LinkSessionToUserApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)

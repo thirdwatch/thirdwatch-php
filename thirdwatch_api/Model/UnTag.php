@@ -54,10 +54,10 @@ class UnTag implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'userId' => 'string',
-        'abuseType' => 'string',
-        'analyst' => 'string',
-        'customInfo' => '\ai\thirdwatch\Model\CustomInfo'
+        '_user_id' => 'string',
+        '_abuse_type' => 'string',
+        '_analyst' => 'string',
+        '_custom_info' => '\ai\thirdwatch\Model\CustomInfo'
     ];
 
     /**
@@ -65,10 +65,10 @@ class UnTag implements ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'userId' => null,
-        'abuseType' => null,
-        'analyst' => null,
-        'customInfo' => null
+        '_user_id' => null,
+        '_abuse_type' => null,
+        '_analyst' => null,
+        '_custom_info' => null
     ];
 
     public static function swaggerTypes()
@@ -86,10 +86,10 @@ class UnTag implements ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'userId' => '_userId',
-        'abuseType' => '_abuseType',
-        'analyst' => '_analyst',
-        'customInfo' => '_customInfo'
+        '_user_id' => '_userId',
+        '_abuse_type' => '_abuseType',
+        '_analyst' => '_analyst',
+        '_custom_info' => '_customInfo'
     ];
 
 
@@ -98,10 +98,10 @@ class UnTag implements ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'userId' => 'setUserId',
-        'abuseType' => 'setAbuseType',
-        'analyst' => 'setAnalyst',
-        'customInfo' => 'setCustomInfo'
+        '_user_id' => 'setUserId',
+        '_abuse_type' => 'setAbuseType',
+        '_analyst' => 'setAnalyst',
+        '_custom_info' => 'setCustomInfo'
     ];
 
 
@@ -110,10 +110,10 @@ class UnTag implements ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'userId' => 'getUserId',
-        'abuseType' => 'getAbuseType',
-        'analyst' => 'getAnalyst',
-        'customInfo' => 'getCustomInfo'
+        '_user_id' => 'getUserId',
+        '_abuse_type' => 'getAbuseType',
+        '_analyst' => 'getAnalyst',
+        '_custom_info' => 'getCustomInfo'
     ];
 
     public static function attributeMap()
@@ -147,10 +147,10 @@ class UnTag implements ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['userId'] = isset($data['userId']) ? $data['userId'] : null;
-        $this->container['abuseType'] = isset($data['abuseType']) ? $data['abuseType'] : null;
-        $this->container['analyst'] = isset($data['analyst']) ? $data['analyst'] : null;
-        $this->container['customInfo'] = isset($data['customInfo']) ? $data['customInfo'] : null;
+        $this->container['_user_id'] = isset($data['_user_id']) ? $data['_user_id'] : null;
+        $this->container['_abuse_type'] = isset($data['_abuse_type']) ? $data['_abuse_type'] : null;
+        $this->container['_analyst'] = isset($data['_analyst']) ? $data['_analyst'] : null;
+        $this->container['_custom_info'] = isset($data['_custom_info']) ? $data['_custom_info'] : null;
     }
 
     /**
@@ -179,85 +179,85 @@ class UnTag implements ArrayAccess
 
 
     /**
-     * Gets userId
+     * Gets _user_id
      * @return string
      */
     public function getUserId()
     {
-        return $this->container['userId'];
+        return $this->container['_user_id'];
     }
 
     /**
-     * Sets userId
-     * @param string $userId The user's account ID according to your systems. Note that user IDs are case sensitive.
+     * Sets _user_id
+     * @param string $_user_id The user's account ID according to your systems. Note that user IDs are case sensitive.
      * @return $this
      */
-    public function setUserId($userId)
+    public function setUserId($_user_id)
     {
-        $this->container['userId'] = $userId;
+        $this->container['_user_id'] = $_user_id;
 
         return $this;
     }
 
     /**
-     * Gets abuseType
+     * Gets _abuse_type
      * @return string
      */
     public function getAbuseType()
     {
-        return $this->container['abuseType'];
+        return $this->container['_abuse_type'];
     }
 
     /**
-     * Sets abuseType
-     * @param string $abuseType The type of abuse for which you want to untag user. It's important to send a untag specific to the type of abuse. You'll end up with more accurate results this way. e.g. _paymentAbuse, _contentAbuse, _promotionAbuse, _accountAbuse If you wants to untag from all type of abuses than don't send this parameter.
+     * Sets _abuse_type
+     * @param string $_abuse_type The type of abuse for which you want to untag user. It's important to send a untag specific to the type of abuse. You'll end up with more accurate results this way. e.g. _paymentAbuse, _contentAbuse, _promotionAbuse, _accountAbuse If you wants to untag from all type of abuses than don't send this parameter.
      * @return $this
      */
-    public function setAbuseType($abuseType)
+    public function setAbuseType($_abuse_type)
     {
-        $this->container['abuseType'] = $abuseType;
+        $this->container['_abuse_type'] = $_abuse_type;
 
         return $this;
     }
 
     /**
-     * Gets analyst
+     * Gets _analyst
      * @return string
      */
     public function getAnalyst()
     {
-        return $this->container['analyst'];
+        return $this->container['_analyst'];
     }
 
     /**
-     * Sets analyst
-     * @param string $analyst Unique identifier (e.g. email address) of the analyst who applied the label. Useful for tracking purposes after the fact.
+     * Sets _analyst
+     * @param string $_analyst Unique identifier (e.g. email address) of the analyst who applied the label. Useful for tracking purposes after the fact.
      * @return $this
      */
-    public function setAnalyst($analyst)
+    public function setAnalyst($_analyst)
     {
-        $this->container['analyst'] = $analyst;
+        $this->container['_analyst'] = $_analyst;
 
         return $this;
     }
 
     /**
-     * Gets customInfo
+     * Gets _custom_info
      * @return \ai\thirdwatch\Model\CustomInfo
      */
     public function getCustomInfo()
     {
-        return $this->container['customInfo'];
+        return $this->container['_custom_info'];
     }
 
     /**
-     * Sets customInfo
-     * @param \ai\thirdwatch\Model\CustomInfo $customInfo
+     * Sets _custom_info
+     * @param \ai\thirdwatch\Model\CustomInfo $_custom_info
      * @return $this
      */
-    public function setCustomInfo($customInfo)
+    public function setCustomInfo($_custom_info)
     {
-        $this->container['customInfo'] = $customInfo;
+        $this->container['_custom_info'] = $_custom_info;
 
         return $this;
     }

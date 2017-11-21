@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **updateOrder**
-> \ai\thirdwatch\Model\EventResponse updateOrder($jSON)
+> \ai\thirdwatch\Model\EventResponse updateOrder($json)
 
 Update details of an existing order.
 
@@ -25,10 +25,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\UpdateOrderApi();
-$jSON = new \ai\thirdwatch\Model\UpdateOrder(); // \ai\thirdwatch\Model\UpdateOrder | Update details of an existing order. Only `_userID` is required field. But this should contain existing order info.
+$json = new \ai\thirdwatch\Model\UpdateOrder(); // \ai\thirdwatch\Model\UpdateOrder | Update details of an existing order. Only `_userID` is required field. But this should contain existing order info.
 
 try {
-    $result = $api_instance->updateOrder($jSON);
+    $result = $api_instance->updateOrder($json);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UpdateOrderApi->updateOrder: ', $e->getMessage(), PHP_EOL;
@@ -40,7 +40,7 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **jSON** | [**\ai\thirdwatch\Model\UpdateOrder**](../Model/UpdateOrder.md)| Update details of an existing order. Only &#x60;_userID&#x60; is required field. But this should contain existing order info. |
+ **json** | [**\ai\thirdwatch\Model\UpdateOrder**](../Model/UpdateOrder.md)| Update details of an existing order. Only &#x60;_userID&#x60; is required field. But this should contain existing order info. |
 
 ### Return type
 

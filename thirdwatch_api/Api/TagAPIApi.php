@@ -92,13 +92,13 @@ class TagAPIApi
      *
      * The Tag API enables you to tell Thirdwatch which of your users are bad and which are good.
      *
-     * @param \ai\thirdwatch\Model\Tag $jSON Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain tag info. (required)
+     * @param \ai\thirdwatch\Model\Tag $json Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain tag info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return \ai\thirdwatch\Model\EventResponse
      */
-    public function tagUser($jSON)
+    public function tagUser($json)
     {
-        list($response) = $this->tagUserWithHttpInfo($jSON);
+        list($response) = $this->tagUserWithHttpInfo($json);
         return $response;
     }
 
@@ -107,15 +107,15 @@ class TagAPIApi
      *
      * The Tag API enables you to tell Thirdwatch which of your users are bad and which are good.
      *
-     * @param \ai\thirdwatch\Model\Tag $jSON Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain tag info. (required)
+     * @param \ai\thirdwatch\Model\Tag $json Pass user and it&#39;s info to thirdwatch. Only &#x60;_userID&#x60; is required field. But this should contain tag info. (required)
      * @throws \ai\thirdwatch\ApiException on non-2xx response
      * @return array of \ai\thirdwatch\Model\EventResponse, HTTP status code, HTTP response headers (array of strings)
      */
-    public function tagUserWithHttpInfo($jSON)
+    public function tagUserWithHttpInfo($json)
     {
-        // verify the required parameter 'jSON' is set
-        if ($jSON === null) {
-            throw new \InvalidArgumentException('Missing the required parameter $jSON when calling tagUser');
+        // verify the required parameter 'json' is set
+        if ($json === null) {
+            throw new \InvalidArgumentException('Missing the required parameter $json when calling tagUser');
         }
         // parse inputs
         $resourcePath = "/v1/tag";
@@ -131,8 +131,8 @@ class TagAPIApi
 
         // body params
         $_tempBody = null;
-        if (isset($jSON)) {
-            $_tempBody = $jSON;
+        if (isset($json)) {
+            $_tempBody = $json;
         }
 
         // for model (json/xml)
