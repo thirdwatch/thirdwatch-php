@@ -6,8 +6,10 @@ The first version of the Thirdwatch API is an exciting step forward towards maki
 
 # Introduction 
 
-Once you've [registered your website/app](https://www.thirdwatch.ai/) it's easy to start sending data to Thirdwatch.  All endpoints are only accessible via https and are located at `api.thirdwatch.ai`. 
-For instance: you can send event at the moment by ```HTTPS POST``` request to the following URL with your API key in ```Header``` and ```JSON``` data in request body. 
+You will get an api key for staging from thirdwatch. You have to mail us at hello[at]thirdwatch.ai, in order to get the api key.
+
+Once you've the key, it's easy to start sending data to Thirdwatch.  All endpoints are only accessible via https and are located at `api.thirdwatch.ai`. 
+For instance: you can send event at the moment by ```HTTP POST``` request to the following URL with your API key in ```Header``` and ```JSON``` data in request body. 
 
 ```   https://api.thirdwatch.ai/event/v1 ``` 
 
@@ -34,7 +36,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
     }
   ],
   "require": {
-    "thirdwatch/thirdwatch-php": "*@dev"
+    "thirdwatch/thirdwatch-php": "*@staging"
   }
 }
 ```
@@ -72,10 +74,10 @@ ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-
 // ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
 
 $api_instance = new ai\thirdwatch\Api\AddPromotionApi();
-$json = new \ai\thirdwatch\Model\AddPromotion(); // \ai\thirdwatch\Model\AddPromotion | Pass added promotion info to thirdwatch. Only `_userID` is required field. But this should contain promotion info.
+$jSON = new \ai\thirdwatch\Model\AddPromotion(); // \ai\thirdwatch\Model\AddPromotion | Pass added promotion info to thirdwatch. Only `_userID` is required field. But this should contain promotion info.
 
 try {
-    $result = $api_instance->addPromotion($json);
+    $result = $api_instance->addPromotion($jSON);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling AddPromotionApi->addPromotion: ', $e->getMessage(), PHP_EOL;
