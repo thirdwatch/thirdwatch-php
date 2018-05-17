@@ -5,10 +5,10 @@ The first version of the Thirdwatch API is an exciting step forward towards maki
 
 # Introduction 
 
-Once you've [registered your website/app](https://www.thirdwatch.ai/) it's easy to start sending data to Thirdwatch.  All endpoints are only accessible via https and are located at `api.thirdwatch.ai`. 
+Once you've [registered your website/app](https://dashboardstaging.thirdwatch.co/login) it's easy to start sending data to Thirdwatch.  All endpoints are only accessible via https and are located at `staging.thirdwatch.co`. 
 For instance: you can send event at the moment by ```HTTPS POST``` request to the following URL with your API key in ```Header``` and ```JSON``` data in request body. 
 
-```   https://api.thirdwatch.ai/event/v1 ``` 
+```   https://staging.thirdwatch.co/event/v1 ``` 
 
 Every API request must contain ```API Key``` in header value ```X-THIRDWATCH-API-KEY```. Every event must contain your ```_userId``` (if this is not available, you can alternatively provide a ```_sessionId``` value also in ```_userId```). 
 
@@ -33,7 +33,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
     }
   ],
   "require": {
-    "thirdwatch/thirdwatch-php": "*@dev"
+    "thirdwatch/thirdwatch-php": "*@async"
   }
 }
 ```
@@ -65,24 +65,26 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: api_key
 $config = ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// $config = ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
+$cartData = array();
 
-$apiInstance = new ai\thirdwatch\Api\AddPromotionApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client(),
-    $config
-);
-$json = new \ai\thirdwatch\Model\AddPromotion(); // \ai\thirdwatch\Model\AddPromotion | Pass added promotion info to thirdwatch. Only `_userID` is required field. But this should contain promotion info.
+try{
+    $cartData['_user_id'] = (string) 'USER_ID';
+    $cartData['_session_id'] = (string) 'SESSION_ID';
+    $cartData['_device_ip'] = (string) 'IP_ADDRESS';
+    $cartData['_origin_timestamp'] = (string) (time() * 1000);
+    $api_instance = new \ai\thirdwatch\Api\AddToCartApi(new GuzzleHttp\Client(), $config);
+    $body = new \ai\thirdwatch\Model\AddToCart($cartData);
+}
+catch (Exception $e){
+    echo $e->getMessage();
+}
 
 try {
-    $result = $apiInstance->addPromotion($json);
+    $result = $api_instance->addToCart($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AddPromotionApi->addPromotion: ', $e->getMessage(), PHP_EOL;
+    echo $e->getMessage();
 }
 
 ?>
@@ -90,7 +92,7 @@ try {
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://localhost/event*
+All URIs are relative to *https://staging.thirdwatch.co/event*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
