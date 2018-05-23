@@ -36,7 +36,7 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
     }
   ],
   "require": {
-    "thirdwatch/thirdwatch-php": "*@staging"
+    "thirdwatch/thirdwatch-php": "*@master"
   }
 }
 ```
