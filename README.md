@@ -1,26 +1,24 @@
 # thirdwatch_api
-
 ThirdwatchApi - PHP client for thirdwatch_api
 
 The first version of the Thirdwatch API is an exciting step forward towards making it easier for developers to pass data to Thirdwatch.  
 
 # Introduction 
 
-You will get an api key for staging from thirdwatch. You have to mail us at hello[at]thirdwatch.ai, in order to get the api key.
-
-Once you've the key, it's easy to start sending data to Thirdwatch.  All endpoints are only accessible via https and are located at `api.thirdwatch.ai`. 
-For instance: you can send event at the moment by ```HTTP POST``` request to the following URL with your API key in ```Header``` and ```JSON``` data in request body. 
+Once you've [registered your website/app](https://dashboard.thirdwatch.ai/login) it's easy to start sending data to Thirdwatch.  All endpoints are only accessible via https and are located at `api.thirdwatch.ai`. 
+For instance: you can send event at the moment by ```HTTPS POST``` request to the following URL with your API key in ```Header``` and ```JSON``` data in request body. 
 
 ```   https://api.thirdwatch.ai/event/v1 ``` 
 
+
 Every API request must contain ```API Key``` in header value ```X-THIRDWATCH-API-KEY```. Every event must contain your ```_userId``` (if this is not available, you can alternatively provide a ```_sessionId``` value also in ```_userId```). 
 
-- API version: 0.0.1
-- Package version: 0.0.1
+- API version: 0.0.2
+- Package version: 0.0.2
 
 ## Requirements
 
-PHP 5.4.0 and later
+PHP 5.5 and later
 
 ## Installation & Usage
 ### Composer
@@ -48,7 +46,7 @@ Then run `composer install`
 Download the files and include `autoload.php`:
 
 ```php
-    require_once('/path/to/thirdwatch-php/autoload.php');
+    require_once('/path/to/thirdwatch-php/vendor/autoload.php');
 ```
 
 ## Tests
@@ -68,19 +66,26 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-// Configure API key authorization: api_key
-ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
-// Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-// ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKeyPrefix('X-THIRDWATCH-API-KEY', 'Bearer');
+$config = ai\thirdwatch\Configuration::getDefaultConfiguration()->setApiKey('X-THIRDWATCH-API-KEY', 'YOUR_API_KEY');
+$cartData = array();
 
-$api_instance = new ai\thirdwatch\Api\AddPromotionApi();
-$jSON = new \ai\thirdwatch\Model\AddPromotion(); // \ai\thirdwatch\Model\AddPromotion | Pass added promotion info to thirdwatch. Only `_userID` is required field. But this should contain promotion info.
+try{
+    $cartData['_user_id'] = (string) 'USER_ID';
+    $cartData['_session_id'] = (string) 'SESSION_ID';
+    $cartData['_device_ip'] = (string) 'IP_ADDRESS';
+    $cartData['_origin_timestamp'] = (string) (time() * 1000);
+    $api_instance = new \ai\thirdwatch\Api\AddToCartApi(new GuzzleHttp\Client(), $config);
+    $body = new \ai\thirdwatch\Model\AddToCart($cartData);
+}
+catch (Exception $e){
+    echo $e->getMessage();
+}
 
 try {
-    $result = $api_instance->addPromotion($jSON);
+    $result = $api_instance->addToCart($body);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling AddPromotionApi->addPromotion: ', $e->getMessage(), PHP_EOL;
+    echo $e->getMessage();
 }
 
 ?>
@@ -155,3 +160,10 @@ Class | Method | HTTP request | Description
 - **Type**: API key
 - **API key parameter name**: X-THIRDWATCH-API-KEY
 - **Location**: HTTP header
+
+
+## Author
+
+
+
+
