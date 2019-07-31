@@ -57,7 +57,7 @@ class EventResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'message' => 'string'
+        'status' => 'string'
     ];
 
     /**
@@ -66,7 +66,7 @@ class EventResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerFormats = [
-        'message' => null
+        'status' => null
     ];
 
     /**
@@ -96,7 +96,7 @@ class EventResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'message' => 'message'
+        'status' => 'status'
     ];
 
     /**
@@ -105,7 +105,7 @@ class EventResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'setMessage'
+        'status' => 'setMessage'
     ];
 
     /**
@@ -114,7 +114,7 @@ class EventResponse implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'getMessage'
+        'status' => 'getMessage'
     ];
 
     /**
@@ -177,7 +177,7 @@ class EventResponse implements ModelInterface, ArrayAccess
      */
     public function __construct(array $data = null)
     {
-        $this->container['message'] = isset($data['message']) ? $data['message'] : null;
+        $this->container['status'] = isset($data['status']) ? $data['status'] : null;
     }
 
     /**
@@ -189,8 +189,8 @@ class EventResponse implements ModelInterface, ArrayAccess
     {
         $invalidProperties = [];
 
-        if ($this->container['message'] === null) {
-            $invalidProperties[] = "'message' can't be null";
+        if ($this->container['status'] === null) {
+            $invalidProperties[] = "'status' can't be null";
         }
         return $invalidProperties;
     }
@@ -204,7 +204,7 @@ class EventResponse implements ModelInterface, ArrayAccess
     public function valid()
     {
 
-        if ($this->container['message'] === null) {
+        if ($this->container['status'] === null) {
             return false;
         }
         return true;
@@ -218,7 +218,7 @@ class EventResponse implements ModelInterface, ArrayAccess
      */
     public function getMessage()
     {
-        return $this->container['message'];
+        return $this->container['status'];
     }
 
     /**
@@ -230,7 +230,7 @@ class EventResponse implements ModelInterface, ArrayAccess
      */
     public function setMessage($message)
     {
-        $this->container['message'] = $message;
+        $this->container['status'] = $message;
 
         return $this;
     }
